@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-rojoprimario:#e63946;
+    --color-blanco: #fff;
+    --color-whitesmoke: whitesmoke;
+    --color-azuloscuro: #003049;
+    --color-azulmuyoscuro: #14213d;
+    --txtgrande:18px;
+    --txtmediano:14px;
+}
+
+*{ 
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
+    list-style-type: none; 
+    font-family: "Inter","Poppins",sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background: var(--color-rojoprimario);
+}
+
+header a{color: var(--color-blanco);}
+header a:hover{ background: var(--color-blanco); color: var(--color-rojoprimario); cursor: pointer;}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header ul a{
+    padding: 1rem;
+    display: inline-block;
+}
+
+.botonnav{
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.cart_count{
+    background-color: var(--color-blanco);
+    color: var(--color-rojoprimario);
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size: 0.9rem;
+}
+
+.buscardor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscardor input{
+    height: 2rem;
+    width: 25rem;
+    border: 1px solid var(--color-whitesmoke);
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.buscardor button{
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    background: var(--color-azuloscuro);
+    padding: 50px 30px 20px;
+}
+footer li{padding: 0.5rem 0;}
+footer a{color: var(--color-blanco);}
+
+.footer-col{padding: 0 2rem;}
+
+.pie{
+    padding: 0.5rem 0;
+    color: var(--color-blanco);
+    background: var(--color-azulmuyoscuro);
+    text-align: center;
+}
+
+.seleccion_categorias{
+    padding: 2rem 2rem;
+    height: 20rem;
+    width: auto;
+    display: flex;
+    gap: 2vw;
+}
+
+.verde{ background: #29d884;} 
+.naranja{ background: #ff441f;}
+
+
+.seleccion_categorias a{
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5rem;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--color-blanco);
+}
+
+.listado{
+    width: 100%;
+    height: auto;
+}
+
+.rest-li{
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.rest-li img{height: 100%;  width: 10rem;}
+
+.banner {
+    height: 20vh;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+.wong {
+    background-image: url('../img/banner/bannerwong.jpg');
+}
+.banner_info img{ height: 60%; border-radius: 50%;}
+
+.banner_info{
+    display: flex;
+    color: var(--color-blanco);
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: auto; 
+    justify-content: start;
+    align-items: center;
+    padding: 0 5%;
+    gap: 1rem;
+}
+
+.contenidosuperm{padding: 2rem 1rem; display: flex; gap: 1rem;}
+
+.filtros-del{
+    display: block;
+    height: 8rem;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.del-op{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background: none;
+    outline: none;
+    border: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+#productos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-plato{
+    height: 15rem;
+    width: 12rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.menu-plato img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-des{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.modal{
+    position: absolute;
+    margin: 20vh 40vw;
+    padding: 10px;
+    width: 20vw;
+    height: 56vh;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.modal-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn-close-modal{border: none;background: none; cursor: pointer;}
+
+.btnagrpedido{
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.login{
+    margin: 65px 40vw;
+    width: 28rem;
+    height: 30rem;
+    border: none;
+}
+
+.log-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+.register{
+    margin: 65px 40vw;
+    width: 28rem;
+    height: 45rem;
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.reg-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+.selecubi{
+    border: none;
+    border-radius: 10px;
+    width: 35vw;
+    margin: 65px 35vw;
+    padding: 1rem 0;
+}
+
+.ubi-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+.contenido_index h4{padding: 1.5rem 2.5rem 0;}
+
+.supermercados_container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0.5rem 0 2.5rem 0;
+}
+
+.logo_supermcado img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.contenedor_vendedores{
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.contenedor_vendedores ul{
+    display: flex; 
+    flex-direction: column;
+}
+
+.contenedor_vendedores img{ width: 8rem;}
+
+.contenedor_vendedores li{
+    border: 1px solid #000;
+}
+
+.contenedor_vendedores li a{
+    display: flex;
+    gap: 1rem;
+}
+
+.contenido_supertarjeta{
+    justify-content: center;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
