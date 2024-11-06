@@ -2,7 +2,7 @@ const productos = [
   {
       id:1,
       name:'Pollo + papas + Gaseosa',
-      origin_name: 'Sazón Peruana',
+      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
       description: '1 pollo con 1 porcion grande + 1 gaseosa de 3L',
       price:63.5,
       delivery_time: '50 min',
@@ -12,7 +12,7 @@ const productos = [
     {
       id:2,
       name:'Especial Criollo',
-      origin_name: 'Sazón Peruana',
+      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
       description: 'Causa + Huancaina + anticucho + humita + papa rellena',
       price:90,
       delivery_time: '50 min',
