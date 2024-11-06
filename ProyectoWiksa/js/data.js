@@ -2,7 +2,6 @@ const productos = [
   {
       id:1,
       name:'Pollo + papas + Gaseosa',
-      category: 'Restaurante',
       origin_name: 'Sazón Peruana',
       description: '1 pollo con 1 porcion grande + 1 gaseosa de 3L',
       price:63.5,
@@ -13,7 +12,6 @@ const productos = [
     {
       id:2,
       name:'Especial Criollo',
-      category:'Restaurante',
       origin_name: 'Sazón Peruana',
       description: 'Causa + Huancaina + anticucho + humita + papa rellena',
       price:90,
@@ -24,7 +22,6 @@ const productos = [
     {
       id:3,
       name:'Ensalada Espechal',
-      category:'Restaurante',
       origin_name: 'Healthy Bites',
       description: 'Ensalada + salsas',
       price:19.5,
@@ -35,7 +32,6 @@ const productos = [
     {
       id:4,
       name:'1/2 Pollo + papas',
-      category:'Restaurante',
       origin_name: 'Sazón Peruana',
       description: '1/2 Pollo con porcion mediana de papas',
       price:30.5,
@@ -47,7 +43,6 @@ const productos = [
     {
       id:5,
       name:'Combo Parrillero',
-      category:'Restaurante',
       origin_name: 'Sazón Peruana',
       description: '1 Carne + papas + ensalada + 2L Chicha',
       price:55.5,
@@ -59,7 +54,6 @@ const productos = [
     {
       id:6,
       name:'3 Tacos + papas',
-      category:'Restaurante',
       origin_name: 'Delicias Caseras',
       description: '3 Tacos + papas',
       price:32.5,
@@ -70,7 +64,6 @@ const productos = [
     {
       id:7,
       name:'Lomo Saltado',
-      category:'Restaurante',
       origin_name: 'Tradiciones Peruanas',
       description: 'Lomo Saltado',
       price: 50,
@@ -81,7 +74,6 @@ const productos = [
     {
       id:8,
       name:'Salchipapa',
-      category:'Restaurante',
       origin_name: 'Sazón Peruana',
       description: 'Salchipapa',
       price: 15,
@@ -92,7 +84,6 @@ const productos = [
     {
       id:9,
       name:'Milanesa',
-      category:'Restaurante',
       origin_name: 'Cocina Italiana',
       description: 'Milanesa',
       price: 30,
@@ -104,7 +95,6 @@ const productos = [
     {
       id:10,
       name:'Pizza',
-      category:'Restaurante',
       origin_name: 'Cocina Italiana',
       description: 'Pizza',
       price: 30,
@@ -115,7 +105,6 @@ const productos = [
     {
       id:11,
       name:'Hamburgesa',
-      category:'Restaurante',
       origin_name: 'Delicias Caseras',
       description: 'Hamburgesa',
       price: 14.5,
@@ -126,7 +115,6 @@ const productos = [
     {
       id:12,
       name:'Curri',
-      category:'Restaurante',
       origin_name: 'Delicias Caseras',
       description: 'Curri',
       price: 22.5,
@@ -137,7 +125,6 @@ const productos = [
     {
       id:13,
       name:'Sushi',
-      category:'Restaurante',
       origin_name: 'Sazón Oriental',
       description: 'Sushi',
       price: 20,
@@ -148,8 +135,7 @@ const productos = [
     {
       id:14,
       name:'Ajinomen de Pollo',
-      category:'Supermercado',
-      origin_name: 'Tottus',
+      origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Ajinome de Pollo',
       price: 5,
       delivery_time: '15 min',
@@ -159,8 +145,7 @@ const productos = [
     {
       id:15,
       name:'Chocoton',
-      category:'Supermercado',
-      origin_name: 'Wong',
+      origin_name: { id:'wong', name:'Wong' },
       description: 'Chocoton',
       price: 25,
       delivery_time: '15 min',
@@ -170,8 +155,7 @@ const productos = [
     {
       id:16,
       name:'Colgate',
-      category:'Supermercado',
-      origin_name: 'Metro',
+      origin_name: { id:'metro', name:'Metro' },
       description: 'Colgate',
       price: 7,
       delivery_time: '15 min',
@@ -181,8 +165,7 @@ const productos = [
     {
       id:17,
       name:'Guarana 3L',
-      category:'Supermercado',
-      origin_name: 'Wong',
+      origin_name: { id:'wong', name:'Wong' },
       description: 'Guarana 3L',
       price: 10.0,
       delivery_time: '15 min',
@@ -192,8 +175,7 @@ const productos = [
     {
       id:18,
       name:'Leche Gloria 1L',
-      category:'Supermercado',
-      origin_name: 'Tottus',
+      origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Leche Gloria 1L',
       price: 12,
       delivery_time: '15 min',
@@ -203,8 +185,7 @@ const productos = [
     {
       id:19,
       name:'Pan Bimbo',
-      category:'Supermercado',
-      origin_name: 'Plaza Vea',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Pan Bimbo',
       price: 15,
       delivery_time: '15 min',
