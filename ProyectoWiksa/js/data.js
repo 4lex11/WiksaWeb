@@ -22,7 +22,7 @@ const productos = [
     {
       id:3,
       name:'Ensalada Espechal',
-      origin_name: 'Healthy Bites',
+      origin_name: {id:'healthybites',  name:'Healthy Bites'},
       description: 'Ensalada + salsas',
       price:19.5,
       delivery_time: '50 min',
@@ -32,7 +32,7 @@ const productos = [
     {
       id:4,
       name:'1/2 Pollo + papas',
-      origin_name: 'Sazón Peruana',
+      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
       description: '1/2 Pollo con porcion mediana de papas',
       price:30.5,
       delivery_time: '50 min',
@@ -43,7 +43,7 @@ const productos = [
     {
       id:5,
       name:'Combo Parrillero',
-      origin_name: 'Sazón Peruana',
+      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
       description: '1 Carne + papas + ensalada + 2L Chicha',
       price:55.5,
       delivery_time: '50 min',
@@ -74,7 +74,7 @@ const productos = [
     {
       id:8,
       name:'Salchipapa',
-      origin_name: 'Sazón Peruana',
+      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
       description: 'Salchipapa',
       price: 15,
       delivery_time: '50 min',
