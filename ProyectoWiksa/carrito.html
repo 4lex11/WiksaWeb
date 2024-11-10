@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Carrito</title>
+    <link rel="stylesheet" href="./css/carrito.css">
+    <title>Carrito de Compras - Wiksa</title>
 </head>
 <body>
-    
+    <div class="carrito-container">
+        <h1>Carrito de Compras</h1>
+
+        <!-- Sección de productos -->
+        <div class="productos">
+            <h2>Productos</h2>
+            <ul>
+                <li>
+                    <span>Producto 1</span>
+                    <span>$10.00</span>
+                </li>
+                <li>
+                    <span>Producto 2</span>
+                    <span>$15.00</span>
+                </li>
+                <li>
+                    <span>Producto 3</span>
+                    <span>$20.00</span>
+                </li>
+                <!-- Agrega más productos aquí -->
+            </ul>
+            <p>Total: $45.00</p>
+        </div>
+
+        <!-- Método de pago -->
+        <div class="metodo-pago">
+            <h2>Método de Pago</h2>
+            <select id="metodoPago">
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="yape">Yape</option>
+                <option value="plin">Plin</option>
+                <!-- Agrega más métodos de pago si es necesario -->
+            </select>
+        </div>
+
+        <!-- Dirección de entrega -->
+        <div class="direccion">
+            <h2>Dirección de Entrega</h2>
+            <input type="text" placeholder="Ingresa tu dirección de entrega">
+        </div>
+
+        <!-- Tiempo de delivery -->
+        <div class="delivery">
+            <h2>Tiempo de Delivery</h2>
+            <p>Aprox: 30-45 minutos</p>
+        </div>
+
+        <!-- Costo de envío -->
+        <div class="costo-envio">
+            <h2>Costo de Envío</h2>
+            <p>$5.00</p>
+        </div>
+
+        <!-- Botón para pedir -->
+        <button class="btn-pedir">Pedir</button>
+    </div>
 </body>
 </html>
