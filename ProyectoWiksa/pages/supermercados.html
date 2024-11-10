@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Supermercados</title>
 </head>
-<body onload="triggerbtninisup()">
+<body>
     <header>
         <div class="container">
         <ul>
@@ -41,32 +41,53 @@
         </div> 
     </header>
 
-    <div class="opciones_vendedores">
-      <button onclick="showInfo('metro')" id="metro">Metro</button>
-      <button onclick="showInfo('plazaVea')">Plaza Vea</button>
-      <button onclick="showInfo('tottus')">Tottus</button>
-      <button onclick="showInfo('wong')">Wong</button>
-  </div>
+    <div>
+      <ul class="contenedor_vendedores">
+        <li>
+          <a href="./supermercados/metropage.html" class="link-categoria" id="metro">
+            <img src="../img/iconos/metrologo.png">
+            <div class="contenido_supertarjeta">
+              <span>Metro</span>
+              <label>Tiempo de llegada: 30 minutos</label>
+              <label>Medios de Pago: Tarjeta o efectivo</label>
+            </div>
+          </a>
+        </li>
 
-  <div class="contenedor_vendedores">
-      <h2>Productos Supermercado</h2>
-      <div class="info_vendedor" id="metroProducts" style="display: none;">
-          <h3>Productos de Metro</h3>
-          <p>Leche, Pan, Arroz, Aceite.</p>
-      </div>
-      <div class="info_vendedor" id="plazaVeaProducts" style="display: none;">
-          <h3>Productos de Plaza Vea</h3>
-          <p>Frutas, Verduras, Carnes, Bebidas.</p>
-      </div>
-      <div class="info_vendedor" id="tottusProducts" style="display: none;">
-          <h3>Productos de Tottus</h3>
-          <p>Snacks, Cereales, Galletas, Lácteos.</p>
-      </div>
-      <div class="info_vendedor" id="wongProducts" style="display: none;">
-          <h3>Productos de Wong</h3>
-          <p>Productos Gourmet, Vinos, Quesos.</p>
-      </div>
-  </div>
+        <li>
+          <a href="./supermercados/tottuspage.html" class="link-categoria" id="tottus">
+            <img src="../img/iconos/tottuslogo.png">
+            <div class="contenido_supertarjeta">
+              <span>Tottus</span>
+              <label>Tiempo de llegada: 15 minutos</label>
+              <label>Medios de Pago: Tarjeta o efectivo</label>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="./supermercados/plazaveapage.html" class="link-categoria" id="plazavea"> 
+            <img src="../img/iconos/plazavealogo.png">
+            <div class="contenido_supertarjeta">
+              <span>Plaza Vea</span>
+              <label>Tiempo de llegada: 15 minutos</label>
+              <label>Medios de Pago: Tarjeta o efectivo</label>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="./supermercados/wongpage.html" class="link-categoria" id="wong">
+            <img src="../img/iconos/wonglogo.png">
+            <div class="contenido_supertarjeta">
+              <span>WONG</span>
+              <label>Tiempo de llegada: 20 minutos</label>
+              <label>Medios de Pago: Tarjeta o efectivo</label>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
 
 </body>
 </html>
