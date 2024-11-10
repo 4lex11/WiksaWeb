@@ -157,9 +157,11 @@ footer a{color: var(--color-blanco);}
     position: relative;
 }
 
-.wong {
-    background-image: url('../img/banner/bannerwong.jpg');
-}
+.wong { background-image: url('../img/banner/bannerwong.jpg');}
+.metro { background-image: url('../img/banner/metrobanner.jpg'); }
+.tottus { background-image: url('../img/banner/tottusbanner.jpg'); }
+.plazavea { background-image: url('../img/banner/plazaveabanner.jpg'); }
+
 .banner_info img{ height: 60%; border-radius: 50%;}
 
 .banner_info{
@@ -332,7 +334,6 @@ footer a{color: var(--color-blanco);}
 }
 
 .contenedor_vendedores{
-    width: 100%;
     padding: 2rem;
     gap: 1rem;
 }

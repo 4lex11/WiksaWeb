@@ -41,23 +41,32 @@
         </div> 
     </header>
 
-    <div>
-      <ul class="contenedor_vendedores">
-        <li><a>Metro</a></li>
-        <li><a>Tottus</a></li>
-        <li><a>Plaza Vea</a></li>
-        <li>
-          <a href="./supermercados/wongpage.html" class="link-categoria">
-            <img src="../img/iconos/wonglogo.png">
-            <div class="contenido_supertarjeta">
-              <span>WONG</span>
-              <label>Tiempo de llegada: 20 minutos</label>
-              <label>Medios de Pago: Tarjeta o efectivo</label>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class="opciones_vendedores">
+      <button onclick="showInfo('metro')">Metro</button>
+      <button onclick="showInfo('plazaVea')">Plaza Vea</button>
+      <button onclick="showInfo('tottus')">Tottus</button>
+      <button onclick="showInfo('wong')">Wong</button>
+  </div>
+
+  <div class="contenedor_vendedores">
+      <h2>Productos Supermercado</h2>
+      <div class="info_vendedor" id="metroProducts" style="display: none;">
+          <h3>Productos de Metro</h3>
+          <p>Leche, Pan, Arroz, Aceite.</p>
+      </div>
+      <div class="info_vendedor" id="plazaVeaProducts" style="display: none;">
+          <h3>Productos de Plaza Vea</h3>
+          <p>Frutas, Verduras, Carnes, Bebidas.</p>
+      </div>
+      <div class="info_vendedor" id="tottusProducts" style="display: none;">
+          <h3>Productos de Tottus</h3>
+          <p>Snacks, Cereales, Galletas, Lácteos.</p>
+      </div>
+      <div class="info_vendedor" id="wongProducts" style="display: none;">
+          <h3>Productos de Wong</h3>
+          <p>Productos Gourmet, Vinos, Quesos.</p>
+      </div>
+  </div>
 
 </body>
 </html>

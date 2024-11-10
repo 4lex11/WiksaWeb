@@ -1,3 +1,22 @@
+function showInfo(supermarket) {
+  // Ocultar todos los productos
+  document.getElementById('metroProducts').style.display = 'none';
+  document.getElementById('plazaVeaProducts').style.display = 'none';
+  document.getElementById('tottusProducts').style.display = 'none';
+  document.getElementById('wongProducts').style.display = 'none';
+
+  // Mostrar los productos del supermercado seleccionado
+  if (supermarket === 'metro') {
+      document.getElementById('metroProducts').style.display = 'block';
+  } else if (supermarket === 'plazaVea') {
+      document.getElementById('plazaVeaProducts').style.display = 'block';
+  } else if (supermarket === 'tottus') {
+      document.getElementById('tottusProducts').style.display = 'block';
+  } else if (supermarket === 'wong') {
+      document.getElementById('wongProducts').style.display = 'block';
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // Selecciona todos los botones y enlaces que quieras hacer accesibles
     const elements = document.querySelectorAll("a, button");
@@ -22,8 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 const contenerdorProductos = document.getElementById("productos-container");
-function CargarProductos(productos){
-    productos.forEach(producto => {
+const linksCategorias = document.querySelectorAll(".boton-categoria");
+
+function CargarProductos(productosElejidos){
+
+  contenerdorProductos.innerHTML="";
+
+  productosElejidos.forEach(producto => {
         const nuevoProducto = document.createElement("div");
         nuevoProducto.classList = "menu-plato";
         nuevoProducto.innerHTML = `
@@ -33,7 +57,7 @@ function CargarProductos(productos){
                 <span>Precio: ${producto.price}</span>
                 <span>Tiempo de entrega: ${producto.delivery_time}</span>
                 <span>Precio de entrega: ${producto.delivery_price}</span>
-                <button class="abrirmodal" id="${producto.id}">Agregar al carro</button>
+                <button id="${producto.id}">Agregar al carro</button>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
@@ -41,3 +65,7 @@ function CargarProductos(productos){
 };
 
 CargarProductos(productos);
+
+console.log(linksCategorias)
+const productosFilter = productos.filter( producto => producto.origin_name.id === linksCategorias);
+//CargarProductos(productosFilter);
