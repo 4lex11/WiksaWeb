@@ -27,8 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
-const modal = document.getElementById("myModal");
-const closeModal = document.getElementById("closeModal");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+//const modal = document.getElementById("myModal");
+//const closeModal = document.getElementById("closeModal");
 
 function CargarProductos(productosElejidos){
   contenerdorProductos.innerHTML="";
@@ -39,16 +40,16 @@ function CargarProductos(productosElejidos){
             <img src="../../img/productos/${producto.imgUrl}">
             <div class="menu-des">
                 <span>${producto.name}</span>
-                <span>Precio: ${producto.price}</span>
-                <span>Tiempo de entrega: ${producto.delivery_time}</span>
-                <span>Precio de entrega: ${producto.delivery_price}</span>
-                <button id="${producto.id}" onclick="openModal(${producto.id})">Agregar al carro</button>
+                <h4>Precio: S/ ${producto.price}</h4>
+                <button class="producto-agregar" id="${producto.id}" >Agregar al carro</button>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
-    });
+    })
+    actualizarBotonesAgregar();
+    console.log(botonesAgregar);
 };
-
+/*
 function openModal(productId) {
   const producto = productos.find(prod => prod.id === productId);
   if (producto) {
@@ -70,7 +71,7 @@ window.onclick = function(event) {
       modal.style.display = "none";
   }
 }
-
+*/
 CargarProductos(productos);
 
 linksCategorias.forEach(boton => {
@@ -79,3 +80,19 @@ linksCategorias.forEach(boton => {
     CargarProductos(productosFilter);
   })
 })
+
+function actualizarBotonesAgregar(){
+  botonesAgregar = document.querySelectorAll(".producto-agregar");
+  botonesAgregar.forEach(boton => {
+    boton.addEventListener("click", agregarAlCarrito);
+  });
+}
+
+const productosEnCarrito = [];
+
+function agregarAlCarrito(e){
+  const idboton = e.currentTarget.id;
+  
+  const productoAgregado = productos.find(producto => producto.id === idboton);
+  console.log(productoAgregado);
+}
