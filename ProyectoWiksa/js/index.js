@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 const contenerdorProductos = document.getElementById("productos-container");
+const linksCategorias = document.querySelectorAll(".link_categoria");
+
 function CargarProductos(productos){
     productos.forEach(producto => {
         const nuevoProducto = document.createElement("div");
@@ -33,7 +35,7 @@ function CargarProductos(productos){
                 <span>Precio: ${producto.price}</span>
                 <span>Tiempo de entrega: ${producto.delivery_time}</span>
                 <span>Precio de entrega: ${producto.delivery_price}</span>
-                <button class="abrirmodal" id="${producto.id}">Agregar al carro</button>
+                <button id="${producto.id}">Agregar al carro</button>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
@@ -41,3 +43,10 @@ function CargarProductos(productos){
 };
 
 CargarProductos(productos);
+
+linksCategorias.forEach(boton => {
+  boton.addEventListener("click", (e) => {
+    console.log(linksCategorias);
+    e.currentTarget();
+  })
+});
