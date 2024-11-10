@@ -36,7 +36,7 @@ function CargarProductos(productosElejidos){
         const nuevoProducto = document.createElement("div");
         nuevoProducto.classList = "menu-plato";
         nuevoProducto.innerHTML = `
-            <img src="../../img/${producto.imgUrl}">
+            <img src="../../img/productos/${producto.imgUrl}">
             <div class="menu-des">
                 <span>${producto.name}</span>
                 <span>Precio: ${producto.price}</span>
