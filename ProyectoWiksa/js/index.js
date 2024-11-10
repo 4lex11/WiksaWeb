@@ -1,3 +1,7 @@
+function triggerbtninisup(){ document.getElementById("metro").click();  }
+function triggerbtnclick(){ document.getElementById("wong").click();  }
+function triggerbtnmetro(){ document.getElementById("metro").click();  }
+
 function showInfo(supermarket) {
   // Ocultar todos los productos
   document.getElementById('metroProducts').style.display = 'none';
@@ -67,5 +71,17 @@ function CargarProductos(productosElejidos){
 CargarProductos(productos);
 
 console.log(linksCategorias)
-const productosFilter = productos.filter( producto => producto.origin_name.id === linksCategorias);
+
+linksCategorias.forEach(boton => {
+  boton.addEventListener("click", (e) => {
+
+    const productosFilter = productos.filter( producto => producto.origin_name.id === e.currentTarget.id);
+    CargarProductos(productosFilter);
+
+
+
+  })
+})
+
+
 //CargarProductos(productosFilter);
