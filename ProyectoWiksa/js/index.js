@@ -92,7 +92,16 @@ const productosEnCarrito = [];
 
 function agregarAlCarrito(e){
   const idboton = e.currentTarget.id;
-  
-  const productoAgregado = productos.find(producto => producto.id === idboton);
-  console.log(productoAgregado);
+  const productoAgregado = productos.find(producto => String(producto.id) === idboton);
+
+  if(productosEnCarrito.some(producto => String(producto.id) === idboton)){
+    const index = productosEnCarrito.findIndex(producto => String(producto.id) === idboton);
+    productosEnCarrito[index].cantidad++;
+  }
+  else{
+    productoAgregado.cantidad = 1;
+    productosEnCarrito.push(productoAgregado);   
+  }
+
+  console.log(productosEnCarrito);
 }
