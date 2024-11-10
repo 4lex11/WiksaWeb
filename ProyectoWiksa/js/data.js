@@ -142,7 +142,7 @@ const productos = [
       delivery_price: 2.0,
       imgUrl:'Ajinomen.jpg'
     },
-    
+
     {
       id:61,
       name:'Chocoton',
@@ -162,6 +162,106 @@ const productos = [
       delivery_time: '15 min',
       delivery_price: 2.5,
       imgUrl:'Guarana.jpg'
+    },
+    {
+      id:63,
+      name:'Agua San Mateo Bidon 7L',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Agua Sin Gas Mineral San Mateo Bidón 7 L',
+      price: 8.9,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Aguasanmateo7l.jpg'
+    },
+    {
+      id:64,
+      name:'Sixpack Coca Cola 300ml',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Sixpack Gaseosa Coca Cola Sin Azúcar Botella 300ml',
+      price: 10.0,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'SixpackCocaCola300ml.jpg'
+    },
+    {
+      id:65,
+      name:'Leche pasteurizada 900ml',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Leche Entera Pasteurizada Danlac Botella 900ml',
+      price: 7.6,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Lechepasteurizada900ml.jpg'
+    },
+    {
+      id:66,
+      name:'Carne Nacional x kg',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Carne para Guiso Nacional x kg',
+      price: 33.9,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Carnenacional.jpg'
+    },
+    {
+      id:67,
+      name:'Queso Edam 180g',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Queso Edam en Tajadas Braedt 180g',
+      price: 11.9,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Quesoedam180g.jpg'  
+    },
+    {
+      id:68,
+      name:'Pan Francés 5und',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Pan Francés Especial 5un',
+      price: 2.8,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Panfrances.jpg'
+    },
+    {
+      id:69,
+      name:'Naranja para Jugo x kg',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Naranja para Jugo Chanchamayo x kg',
+      price: 2.99,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Naranjajugoxkg.jpg'  
+    },
+    {
+      id:70,
+      name:'Sixpack Leche Laive 400g',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Sixpack Leche Concentrada Sin Lactosa Laive Botella 400g',
+      price: 24.95,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Sixpacklechelaive400g.jpg'
+    },
+    {
+      id:71,
+      name:'Papel Higienico Elite 8und',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Papel Higiénico Doble Hoja Elite Ultra 8un.',
+      price: 27.0,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Papelhigienicoelite8und.jpg'  
+    },
+    {
+      id:72,
+      name:'Jabon Bolivar 380g',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Jabón para Ropa Bolívar Floral 380g',
+      price: 5.7,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'Jabonbolivar380g.jpg'
     },
 
     {
