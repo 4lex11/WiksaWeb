@@ -361,3 +361,28 @@ footer a{color: var(--color-blanco);}
     display: flex;
     flex-direction: column;
 }
+
+.opciones_vendedores {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+.opciones_vendedores button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.opciones_vendedores button:hover {
+    background-color: #0056b3;
+}
+
+.info_vendedor {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
