@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/met_pago.js"></script>
+    <link rel="stylesheet" href="./css/met_pago.css">
+    <title>Metodos de Pago</title>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Selecciona un Método de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarPago()">
+            <div class="payment-method">
+                <label for="metodoPago">Método de Pago:</label>
+                <select id="metodoPago" name="metodoPago" onchange="mostrarFormularioPago()">
+                    <option value="">Selecciona un método</option>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+            </div>
+
+            <div id="formularioTarjeta" class="payment-option" style="display: none;">
+                <label for="numeroTarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" required>
+
+                <label for="fechaExpiracion">Fecha de Expiración:</label>
+                <input type="month" id="fechaExpiracion" name="fechaExpiracion" required>
+
+                <label for="codigoSeguridad">Código de Seguridad (CVV):</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="123" required>
+
+                <label for="titular">Titular de la Tarjeta:</label>
+                <input type="text" id="titular" name="titular" required>
+            </div>
+
+            <div id="formularioPaypal" class="payment-option" style="display: none;">
+                <label for="correoPaypal">Correo de PayPal:</label>
+                <input type="email" id="correoPaypal" name="correoPaypal" placeholder="ejemplo@paypal.com" required>
+            </div>
+
+            <div id="formularioEfectivo" class="payment-option" style="display: none;">
+                <p>Selecciona "Efectivo" para pagar al recibir el pedido.</p>
+            </div>
+
+            <button type="submit">Confirmar Pago</button>
+        </form>
+    </div>
+</body>
+</html>
