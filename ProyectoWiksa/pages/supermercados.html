@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Supermercados</title>
 </head>
-<body>
+<body onload="triggerbtninisup()">
     <header>
         <div class="container">
         <ul>
@@ -42,7 +42,7 @@
     </header>
 
     <div class="opciones_vendedores">
-      <button onclick="showInfo('metro')">Metro</button>
+      <button onclick="showInfo('metro')" id="metro">Metro</button>
       <button onclick="showInfo('plazaVea')">Plaza Vea</button>
       <button onclick="showInfo('tottus')">Tottus</button>
       <button onclick="showInfo('wong')">Wong</button>
