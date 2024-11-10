@@ -361,6 +361,8 @@ footer a{color: var(--color-blanco);}
     display: flex;
     flex-direction: column;
 }
+
+
 /* Estilos para pantallas grandes (escritorio) */
 body {
     font-size: 16px;
@@ -426,4 +428,5 @@ body {
     max-width: 100%; /* Hace que la imagen no sea más grande que su contenedor */
     height: auto;
   }
+  
   
