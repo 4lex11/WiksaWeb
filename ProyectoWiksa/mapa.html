@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Dirección en el Mapa</title>
+    <script src="./js/mapa.js"></script>
+    <link rel="stylesheet" href="./css/mapa.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbZVYmRogz2Q_LOOAnpp-mkJ8fUqaQP7k&libraries=places&callback=initMap" async defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Buscar Dirección</h2>
+            <div class="search-container">
+                <input type="text" id="address-input" placeholder="Escribe una dirección">
+                <button id="search-button">Buscar</button>
+            </div>
+    
+            <div id="map" class="map-container"></div>
+            <button id="select-button">Seleccionar</button>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    

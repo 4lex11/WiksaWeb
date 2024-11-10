@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../css/index.css">
     <title>WIKSA</title>
 </head>
-<body>
+<body onload="triggerbtnmetro()">
     <header>
         <div class="container">
         <ul>
@@ -45,8 +45,31 @@
       <div class="banner_info">
           <img src="../../img/iconos/metrologo.png" >
           <span>SUPERMERCADOS METRO</span>
+          <button class="boton-categoria" id="metro"></button>
       </div>
   </div>
+
+  <div class="contenidosuperm">
+    <div class="filtros-del">
+        <div class="del-op">
+            <input type="radio" name="deliveropc" id="opc1">
+            <div for="opc1">
+                <label for="opc1">Delivery</label>
+            </div>
+        </input>
+        </div>
+        <hr>
+        <div class="del-op">
+            <input type="radio" name="deliveropc" id="opc2">
+                <label for="opc2">Recojo en Tienda</label> 
+            </input>
+        </div>
+        
+    </div>
+
+    <div>
+        <section id="productos-container"></section>
+    </div>
 
 </body>
 </html>
