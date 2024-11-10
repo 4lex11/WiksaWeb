@@ -2,25 +2,6 @@ function triggerbtninisup(){ document.getElementById("metro").click();  }
 function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
 
-function showInfo(supermarket) {
-  // Ocultar todos los productos
-  document.getElementById('metroProducts').style.display = 'none';
-  document.getElementById('plazaVeaProducts').style.display = 'none';
-  document.getElementById('tottusProducts').style.display = 'none';
-  document.getElementById('wongProducts').style.display = 'none';
-
-  // Mostrar los productos del supermercado seleccionado
-  if (supermarket === 'metro') {
-      document.getElementById('metroProducts').style.display = 'block';
-  } else if (supermarket === 'plazaVea') {
-      document.getElementById('plazaVeaProducts').style.display = 'block';
-  } else if (supermarket === 'tottus') {
-      document.getElementById('tottusProducts').style.display = 'block';
-  } else if (supermarket === 'wong') {
-      document.getElementById('wongProducts').style.display = 'block';
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     // Selecciona todos los botones y enlaces que quieras hacer accesibles
     const elements = document.querySelectorAll("a, button");
@@ -46,11 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
+const modal = document.getElementById("myModal");
+const closeModal = document.getElementById("closeModal");
 
 function CargarProductos(productosElejidos){
-
   contenerdorProductos.innerHTML="";
-
   productosElejidos.forEach(producto => {
         const nuevoProducto = document.createElement("div");
         nuevoProducto.classList = "menu-plato";
@@ -61,27 +42,40 @@ function CargarProductos(productosElejidos){
                 <span>Precio: ${producto.price}</span>
                 <span>Tiempo de entrega: ${producto.delivery_time}</span>
                 <span>Precio de entrega: ${producto.delivery_price}</span>
-                <button id="${producto.id}">Agregar al carro</button>
+                <button id="${producto.id}" onclick="openModal(${producto.id})">Agregar al carro</button>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
     });
 };
 
-CargarProductos(productos);
+function openModal(productId) {
+  const producto = productos.find(prod => prod.id === productId);
+  if (producto) {
+      document.getElementById("modalProductName").innerText = producto.name;
+      document.getElementById("modalProductImage").src = producto.imgUrl;
+      document.getElementById("modalProductPrice").innerText = `Precio: ${producto.price}`;
+      document.getElementById("modalDeliveryTime").innerText = `Tiempo de entrega: ${producto.delivery_time}`;
+      document.getElementById("modalDeliveryPrice").innerText = `Precio de entrega: ${producto.delivery_price}`;
+      modal.style.display = "block";
+  }
+}
 
-console.log(linksCategorias)
+closeModal.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target === modal) {
+      modal.style.display = "none";
+  }
+}
+
+CargarProductos(productos);
 
 linksCategorias.forEach(boton => {
   boton.addEventListener("click", (e) => {
-
     const productosFilter = productos.filter( producto => producto.origin_name.id === e.currentTarget.id);
     CargarProductos(productosFilter);
-
-
-
   })
 })
-
-
-//CargarProductos(productosFilter);
