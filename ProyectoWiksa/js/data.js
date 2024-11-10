@@ -142,8 +142,9 @@ const productos = [
       delivery_price: 2.0,
       imgUrl:'Ajinomen.jpg'
     },
+    
     {
-      id:15,
+      id:61,
       name:'Chocoton',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Chocoton',
@@ -152,6 +153,17 @@ const productos = [
       delivery_price: 2.0,
       imgUrl:'Chocoton.jpg'
     },
+    {
+      id:62,
+      name:'Guarana 3L',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Guarana 3L',
+      price: 10.0,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'Guarana.jpg'
+    },
+
     {
       id:16,
       name:'Colgate',
@@ -162,16 +174,7 @@ const productos = [
       delivery_price: 2.0,
       imgUrl:'Colgate.jpg'
     },
-    {
-      id:17,
-      name:'Guarana 3L',
-      origin_name: { id:'wong', name:'Wong' },
-      description: 'Guarana 3L',
-      price: 10.0,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
-      imgUrl:'Guarana.jpg'
-    },
+    
     {
       id:18,
       name:'Leche Gloria 1L',
