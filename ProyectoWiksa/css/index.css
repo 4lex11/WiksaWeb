@@ -361,3 +361,72 @@ footer a{color: var(--color-blanco);}
     display: flex;
     flex-direction: column;
 }
+
+
+/* Estilos para pantallas grandes (escritorio) */
+body {
+    font-size: 16px;
+  }
+  
+  /* Pantallas medianas (tabletas) */
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buscardor input {
+      width: 100%; /* Expande el campo de búsqueda al 100% */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Coloca el menú en columna */
+      align-items: center;
+    }
+  
+    .seleccion_categorias a {
+      width: 100%; /* Botones de categoría en ancho completo */
+      text-align: center;
+    }
+  }
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .header .container {
+      padding: 0 10px;
+    }
+  
+    .logo {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente del logo */
+    }
+  
+    .buscardor input {
+      font-size: 1em;
+    }
+  
+    .supermercados_container {
+      display: flex;
+      flex-direction: column; /* Lista de supermercados en columna */
+      align-items: center;
+    }
+  
+    .footer-col ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  img {
+    max-width: 100%; /* Hace que la imagen no sea más grande que su contenedor */
+    height: auto;
+  }
+  
+  
