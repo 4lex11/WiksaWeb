@@ -21,13 +21,13 @@ const productos = [
     },
     {
       id:3,
-      name:'Ensalada Espechal',
-      origin_name: {id:'healthybites',  name:'Healthy Bites'},
-      description: 'Ensalada + salsas',
-      price:19.5,
+      name:'Quesadilla',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Quesadilla de tortilla de harina, proteína y mezcla de quesos a la parrilla.',
+      price:12.5,
       delivery_time: '50 min',
       delivery_price: 5.0,
-      imgUrl:'Ensalada.jpg'
+      imgUrl:'quesadilla.jpg'
     },
     {
       id:4,
