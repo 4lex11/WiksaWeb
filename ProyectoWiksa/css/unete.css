@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.registro-container {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo con texto superpuesto */
+.fondo-texto {
+    background-image: url("/img/iconos/unete.png"); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo-texto h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.fondo-texto p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.boton-registro {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b0ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.boton-registro:hover {
+    background-color: #008eff;
+}
+
+/* Beneficios */
+.beneficios {
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.beneficios h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.beneficio {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.beneficio:hover {
+    transform: scale(1.05);
+}
+
+.beneficio h4 {
+    color: #f44336;
+    margin-bottom: 10px;
+}
