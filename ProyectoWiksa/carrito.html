@@ -36,22 +36,22 @@
         <div class="carrito-container">
             <h1>Carrito de Compras</h1>
         
-            <div id="carrito_vacio" class="disabled">
+            <div id="carrito_vacio" class="carrito_vacio">
                 <p>No hay ningún producto en el carrito 😥</p>
             </div>
         
             <!-- Sección de productos -->
-            <div class="productos" id="carrito_productos">
+            <div id="carrito_productos" class="productos disabled">
                 <h2>Productos</h2>
                 <div id="carrito_productos"></div>
             </div>
 
-            <div class="contenedor">
+            <div id="total_pagar" class="contenedor disabled">
                     <p id="carrito_total">Total: $45.00</p>
                     <button id="vaciar_carrito">Vaciar Carrito</button>   
                 </div>
                 <!-- Sección de métodos de pago y dirección de entrega -->
-            <div class="info-pago" id="info_pago">
+            <div id="info_pago" class="info-pago disabled">
                 <div class="metodo-pago">
                     <h2>Método de Pago</h2>
                     <select id="metodoPago">
