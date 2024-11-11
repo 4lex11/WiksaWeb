@@ -3,6 +3,8 @@ function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
 function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
 function triggerbtngoikogrill(){ document.getElementById("goikogrill").click();  }
+function triggerbtnmemosushi(){ document.getElementById("memosushi").click();  }
+function triggerbtnperugourmet(){ document.getElementById("perugourmet").click();  }
 
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
