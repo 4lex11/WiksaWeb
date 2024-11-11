@@ -1,15 +1,17 @@
-const productosEnCarrito = JSON.parse(localStorage.getItem("productos_en_carro"));
+let productosEnCarrito = JSON.parse(localStorage.getItem("productos_en_carro"));
+productosEnCarrito = JSON.parse(productosEnCarrito);
 
-const contentcarritovacio = document.querySelector("#carrito_vacio");
+//const contentcarritovacio = document.querySelector("#carrito_vacio");
 const contentcarritolleno = document.querySelector("#carrito_productos");
-const contentcarritototal = document.querySelector("#contenedor");
-const contentcarritoinfopago = document.querySelector("#info_pago");
+//const contentcarritototal = document.querySelector("#contenedor");
+//const contentcarritoinfopago = document.querySelector("#info_pago");
 //const contentcarritoacciones = document.querySelector("#");
 let botonEliminar = document.querySelectorAll(".eliminar_producto");
+const botonvaciar = document.querySelector("#vaciar_carrito");
 
 
 function cargarProductosCarrito(){
-    if(productosEnCarrito){
+    if(productosEnCarrito && productosEnCarrito.length > 0){
         //contentcarritovacio.classList.add("disabled");
         //contentcarritolleno.classList.remove("disabled");
         //contentcarritoinfopago.classList.remove("disabled");
@@ -35,7 +37,6 @@ function cargarProductosCarrito(){
         });
         
     }else{}
-
     actualizarBotonesElimnar();
 }
 
@@ -49,8 +50,17 @@ function actualizarBotonesElimnar(){
 }
 
 function elimnarDelCarrito(e){
-    let idboton = e.currentTarget.id;
-    const productoEliminado = productosEnCarrito.find(producto => String(producto.id) === idboton);
-    const index = prod
-    console.log(productoEliminado);
+    const idboton = e.currentTarget.id;
+    const index = productosEnCarrito.findIndex(producto => String(producto.id) === idboton);
+    productosEnCarrito.splice(index,1);
+    cargarProductosCarrito();
+    localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+}
+
+botonvaciar.addEventListener("click",vaciarCarrito)
+
+function vaciarCarrito(){
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+    cargarProductosCarrito();
 }
