@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numeroCarrito = document.querySelector("#numero_carrito")
 //const modal = document.getElementById("myModal");
 //const closeModal = document.getElementById("closeModal");
 
@@ -102,6 +103,11 @@ function agregarAlCarrito(e){
     productoAgregado.cantidad = 1;
     productosEnCarrito.push(productoAgregado);   
   }
+  actualizarNumeroCarrito();
+  localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+}
 
-  console.log(productosEnCarrito);
+function actualizarNumeroCarrito(){
+  let Nuevonumero = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+  numeroCarrito.innerHTML = Nuevonumero;
 }
