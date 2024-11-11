@@ -449,3 +449,10 @@ body {
     height: auto;
   }
   
+#numero_carrito{ 
+    background: var(--color-blanco); 
+    color: var(--color-rojoprimario);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
