@@ -188,7 +188,7 @@ footer a{color: var(--color-blanco);}
     gap: 1rem;
 }
 
-.contenidosuperm{padding: 2rem 1rem; display: flex; gap: 1rem;}
+.contenidosuperm{padding: 2rem 3.5rem; display: flex;}
 
 .filtros-del{
     display: block;
@@ -215,7 +215,7 @@ footer a{color: var(--color-blanco);}
     justify-self: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
 }
 
 .menu-plato{
