@@ -12,7 +12,7 @@ h1 {
     color: #333;
 }
 
-#carrito_vacio {
+.carrito_vacio {
     text-align: center;
     margin: 20px 0;
 }
