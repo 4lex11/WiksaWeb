@@ -170,6 +170,7 @@ footer a{color: var(--color-blanco);}
 .metro { background-image: url('../img/banner/metrobanner.jpg'); }
 .tottus { background-image: url('../img/banner/tottusbanner.jpg'); }
 .plazavea { background-image: url('../img/banner/plazaveabanner.jpg'); }
+.speedytacos { background-image: url('../img/banner/speedytacosbanner.jpg'); }
 
 .banner_info img{ height: 60%; border-radius: 50%;}
 
