@@ -17,13 +17,14 @@ main {
 
 /* Fondo con texto superpuesto */
 .fondo-texto {
+    height: 60vh;
     background-image: url("/img/iconos/unete.png"); 
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 80px 20px;
-    border-radius: 10px;
+    padding: 0 20px;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
 }
