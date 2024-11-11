@@ -7,72 +7,111 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f2f2f2;
+    color: #a06518;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Header */
 .header {
-    background-color: #333;
+    background-color: #a06518;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     width: 100%;
 }
 
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header a.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Contenido principal */
 .payment-methods {
     max-width: 800px;
-    margin: 20px;
+    margin: 30px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-.payment-methods h2 {
-    margin-bottom: 15px;
-    color: #555;
+.payment-methods h1 {
+    text-align: center;
+    color: #a06518;
+    margin-bottom: 20px;
+}
+
+.payment-methods p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
 }
 
 .method {
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .banks {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-.bank {
+.payment-option {
     text-align: center;
-    width: 100px;
+    transition: transform 0.3s;
 }
 
-.bank img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 5px;
+.payment-option:hover {
+    transform: scale(1.1);
 }
 
-.paypal {
-    text-align: center;
-}
-
-.paypal img {
-    width: 80px;
+.payment-option img {
+    width: 70px;
     height: auto;
     margin-bottom: 10px;
 }
 
+.payment-option p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
 .footer {
-    width: 60%;
-    padding: 10px;
+    width: 100%;
+    padding: 15px;
     text-align: center;
-    background-color: #333;
+    background-color: #a06518;
     color: #fff;
     position: fixed;
     bottom: 0;
@@ -80,17 +119,13 @@ body {
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
-    .container {
+    .banks {
         flex-direction: column;
-        text-align: center;
+        gap: 20px;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .contenido {
-        padding: 50px;
     }
 }
