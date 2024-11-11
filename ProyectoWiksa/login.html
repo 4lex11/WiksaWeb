@@ -10,26 +10,32 @@
 <body>
     <div class="login-container">
         <div class="login-header">
-            <h1>Wiksa</h1>
+            <h1>WIKSA</h1>
         </div>
         <form id="loginForm" onsubmit="return validarLogin()">
             <div class="input-group">
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo">
+                <input type="email" id="correo" name="correo" required placeholder="Correo electrónico">
             </div>
 
             <div class="input-group">
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" required placeholder="Ingrese su contraseña">
+                <input type="password" id="contraseña" name="contraseña" required placeholder="Contraseña">
             </div>
+
+            <button type="submit" class="login-button">Iniciar sesión</button>
+
+            <div class="separator">o</div>
+
             <button type="button" class="google-button">
                 <img src="img/iconos/googlelogo.png" alt="Google logo" class="icon"> Iniciar sesión con Google
             </button>
             <button type="button" class="facebook-button">
                 <img src="img/iconos/facebooklogo.png" alt="Facebook logo" class="icon"> Iniciar sesión con Facebook
             </button>
-            <button type="submit">Iniciar sesión</button>
         </form>
+        
+        <div class="register-link">
+            ¿No tienes una cuenta? <a href="register.html">Registrarse</a>
+        </div>
     </div>
 </body>
 </html>

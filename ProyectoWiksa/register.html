@@ -9,39 +9,32 @@
 </head>
 <body>
     <div class="registro-container">
-        <h2>Formulario de Registro</h2>
+        <h2>WIKSA</h2>
+        <p>Crear una cuenta</p>
         <form id="registroForm" onsubmit="return validarFormulario()">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required>
-
-            <label for="confirmarContraseña">Confirmar contraseña:</label>
-            <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
-
-            <label for="fechaNacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" min="1924-01-01" max="2006-01-01" required>
-
-            <label for="sexo">Sexo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+            <input type="email" id="correo" name="correo" placeholder="Correo" required>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+            <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirmar Contraseña" required>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
             <select id="sexo" name="sexo" required>
-                <option value="">Seleccione...</option>
+                <option value="">Selecciona tu género</option>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
                 <option value="otro">Otro</option>
             </select>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="9\d{8}" required>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" pattern="9\d{8}" required placeholder="Ej: 987654321">
-
-            <button type="submit">Registrar</button>
+            <button type="button" class="social-login google" id="googleRegisterButton">
+                <img src="./img/iconos/googlelogo.png" alt="Google logo" class="logo-icon"> Registrarse con Google
+            </button>
+            <button type="button" class="social-login facebook">
+                <img src="./img/iconos/facebooklogo.png" alt="Facebook logo" class="logo-icon"> Registrarse con Facebook
+            </button>
+            <button type="submit" class="submit-btn">Registrarse</button>
         </form>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
     </div>
 </body>
 </html>
