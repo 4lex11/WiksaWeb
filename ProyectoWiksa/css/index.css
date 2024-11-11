@@ -172,8 +172,8 @@ footer a{color: var(--color-blanco);}
 .plazavea { background-image: url('../img/banner/plazaveabanner.jpg'); }
 .speedytacos { background-image: url('../img/banner/speedytacosbanner.jpg'); }
 .goikogrill{ background-image: url('../img/banner/goikogrillbanner.jpg'); }
-.memosushi{}
-.perugourmet{}
+.memosushi{ background-image: url('../img/banner/memosushibanner.jpg'); }
+.perugourmet{ background-image: url('../img/banner/perugourmetbanner.jpg'); }
 
 .banner_info img{ height: 60%; border-radius: 50%;}
 
