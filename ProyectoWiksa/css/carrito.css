@@ -30,16 +30,41 @@ h1 {
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.contenedor {
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    margin-top: 20px; /* Margen superior para separación */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde para el contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
 }
 
-li {
+#carrito_total {
+    font-weight: bold; /* Negrita para el total */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+}
+
+.contenedor button {
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Relleno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.carrito_item{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 5px;
     border-bottom: 1px solid #eee;
 }
 
@@ -56,19 +81,19 @@ li span {
     color: #555;
 }
 
-button {
+.carrito_item button{
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-button svg {
+.carrito_item button svg {
     padding: 0 10px;
     fill: #e74c3c; /* Color del icono de eliminar */
     transition: fill 0.3s;
 }
 
-button:hover svg {
+.carrito_item button:hover svg {
     fill: #c0392b; /* Color del icono de eliminar al pasar el mouse */
 }
 
@@ -87,8 +112,8 @@ button:hover svg {
 }
 
 input[type="text"], select {
-    width: 100%;
-    padding: 10px;
+    width: 100% ;
+    padding: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-top: 5px;
@@ -109,3 +134,6 @@ input[type="text"], select {
 .btn-pedir:hover {
     background-color: #218838; /* Color más oscuro al pasar el mouse */
 }
+
+.active{display: block;}
+.disabled{display: none;}
