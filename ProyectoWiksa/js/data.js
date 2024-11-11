@@ -1,23 +1,23 @@
 const productos = [
   {
       id:1,
-      name:'Pollo + papas + Gaseosa',
-      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
-      description: '1 pollo con 1 porcion grande + 1 gaseosa de 3L',
-      price:63.5,
-      delivery_time: '50 min',
+      name:'Crunchy Taco Supreme',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Taco de tortilla de maíz, proteína sazonada a elección, sour cream, lechuga, tomate y queso cheddar.',
+      price:8.5,
+      delivery_time: '10 min',
       delivery_price: 7.5,
-      imgUrl:'1Pollo.png'
+      imgUrl:'crunchytacosupreme.jpg'
     },
     {
       id:2,
-      name:'Especial Criollo',
-      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
-      description: 'Causa + Huancaina + anticucho + humita + papa rellena',
-      price:90,
-      delivery_time: '50 min',
+      name:'Burrito Supreme',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Burrito, proteína sazonada a elección, sour cream, lechuga, tomate, cebolla y queso cheddar.',
+      price:15,
+      delivery_time: '15 min',
       delivery_price: 8.5,
-      imgUrl:'CausaEspecial.jpg'
+      imgUrl:'burritosupreme.jpg'
     },
     {
       id:3,
