@@ -71,7 +71,7 @@ header ul a{
 }
 
 .buscardor input{
-    height: 2rem;
+    height: auto;
     width: 25rem;
     border: 1px solid var(--color-whitesmoke);
     outline: none;
@@ -183,7 +183,7 @@ footer a{color: var(--color-blanco);}
 .filtros-del{
     display: block;
     height: 8rem;
-    width: 15rem;
+    width: 20rem;
     border: 1px solid gray;
     border-radius: 8px;
     box-shadow: 2px 2px 2px gray;
@@ -202,29 +202,48 @@ footer a{color: var(--color-blanco);}
 }
 
 #productos-container{
+    justify-self: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 5px;
 }
 
 .menu-plato{
-    height: 15rem;
-    width: 12rem;
-    border: 1px solid gray;
-    border-radius: 10px;
+    height: 18rem;
+    width: 12.5rem;
 }
 
 .menu-plato img{
     width: 100%;
-    height: 8rem;
+    height: 11rem;
     border-radius: 10px 10px 0 0;
+}
+
+.producto-agregar{
+    border: 1px solid var(--color-rojoprimario);
+    background: none;
+    color: var(--color-rojoprimario);
+    cursor: pointer;
+    width: 90%;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.producto-agregar:hover{
+    background: var(--color-rojoprimario);
+    color: var(--color-blanco);
 }
 
 .menu-des{
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 5px;
+    font-size: var(--txtmediano);
 }
+
+.menu-des h4{color: var(--color-rojoprimario);}
 
 .modal{
     position: fixed;
@@ -430,3 +449,10 @@ body {
     height: auto;
   }
   
+#numero_carrito{ 
+    background: var(--color-blanco); 
+    color: var(--color-rojoprimario);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}

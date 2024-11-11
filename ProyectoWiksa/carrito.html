@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Carrito</title>
+    <script src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Carrito de Compras - Wiksa</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+        <a class="logo" href="/index.html">WIKSA</a>
+          
+          <div class="buscardor">
+            <input type="text" placeholder="Buscar productos"/>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+              </button>
+          </div>
+  
+          <nav>
+            <ul>
+                <li><a href="./mapa.html">Ingresar Dirección</a></li>
+                <li><a>Cambiar Modo</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>        
+                <li><a href="./carrito.html">Carrito</a></li>
+            </ul>
+          </nav>
+        </div> 
+    </header>
+
+    <main>
+
+        
+    <div class="carrito-container">
+        <h1>Carrito de Compras</h1>
+
+    <div id="carrito_vacio" class="disabled">
+        <p>No hay ningun producto en el carrito 😥</p>
+    </div>
+        
+
+        <!-- Sección de productos -->
+    <div id="carrito_lleno" class="">
+        <div class="productos" id="carrito_productos">
+            <h2>Productos</h2>
+            <ul>
+                <li>
+                    <span><img src="./img/productos/1Pollo.png" width="20"> Producto 1</span>
+                    <span>$10.00</span>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      </svg></button>
+                </li>
+                <li>
+                    <span>Producto 2</span>
+                    <span>$15.00</span>
+                </li>
+                <li>
+                    <span>Producto 3</span>
+                    <span>$20.00</span>
+                </li>
+                <!-- Agrega más productos aquí -->
+            </ul>
+            <p id="carrito_total">Total: $45.00</p>
+        </div>
+
+        <!-- Método de pago -->
+        <div class="metodo-pago">
+            <h2>Método de Pago</h2>
+            <select id="metodoPago">
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="yape">Yape</option>
+                <option value="plin">Plin</option>
+                <!-- Agrega más métodos de pago si es necesario -->
+            </select>
+        </div>
+
+        <!-- Dirección de entrega -->
+        <div class="direccion">
+            <h2>Dirección de Entrega</h2>
+            <input type="text" placeholder="Ingresa tu dirección de entrega">
+        </div>
+
+        <!-- Tiempo de delivery -->
+        <div class="delivery">
+            <h2>Tiempo de Delivery</h2>
+            <p>Aprox: 30-45 minutos</p>
+        </div>
+
+        <!-- Costo de envío -->
+        <div class="costo-envio">
+            <h2>Costo de Envío</h2>
+            <p>$5.00</p>
+        </div>
+
+        <!-- Botón para pedir -->
+        <button class="btn-pedir">Pedir</button>
+    </div>
+    </div>
+</main>
 </body>
 </html>
