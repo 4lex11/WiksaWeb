@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-    --color-rojoprimario:#e63946;
+    --color-rojoprimario:#422929c9;
     --color-blanco: #fff;
     --color-whitesmoke: whitesmoke;
-    --color-azuloscuro: #003049;
-    --color-azulmuyoscuro: #14213d;
+    --color-azuloscuro: #422929c9;
+    --color-azulmuyoscuro: #422929e0;
     --txtgrande:18px;
     --txtmediano:14px;
 }
