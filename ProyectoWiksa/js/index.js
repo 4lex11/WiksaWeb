@@ -1,57 +1,113 @@
+function triggerbtninisup(){ document.getElementById("metro").click();  }
+function triggerbtnclick(){ document.getElementById("wong").click();  }
+function triggerbtnmetro(){ document.getElementById("metro").click();  }
+
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll("a, button");
-  let voiceModeEnabled = false; // bandera para habilitar/deshabilitar síntesis de voz
-
-  // Función para activar el modo de voz
-  function toggleVoiceMode() {
-      voiceModeEnabled = !voiceModeEnabled;
-      if (voiceModeEnabled) {
-          console.log("Modo de voz activado.");
+    // Selecciona todos los botones y enlaces que quieras hacer accesibles
+    const elements = document.querySelectorAll("a, button");
+  
+    // Función para hablar el texto
+    function speakText(text) {
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
       } else {
-          console.log("Modo de voz desactivado.");
-          window.speechSynthesis.cancel(); // Detener cualquier síntesis en curso al desactivar
+        console.warn("API de síntesis de voz no soportada en este navegador.");
       }
-  }
-
-  // Función para hablar el texto
-  function speakText(text) {
-      if (voiceModeEnabled && 'speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(text);
-          window.speechSynthesis.speak(utterance);
-      } else if (!voiceModeEnabled) {
-          console.log("Modo de voz está desactivado.");
-      }
-  }
-
-  // Agregar evento de foco a cada elemento para hablar el texto al ser enfocado
-  elements.forEach((element) => {
+    }
+  
+    // Agrega el evento de foco a cada elemento seleccionado
+    elements.forEach((element) => {
       element.addEventListener("focus", () => {
-          const text = element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
-          speakText(text);
+        const text = element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
+        speakText(text);
       });
+    });
   });
 
-  // Evento para el botón "Cambiar Modo"
-  document.querySelector('nav ul li:nth-child(2) a').addEventListener("click", (e) => {
-      e.preventDefault(); // Evitar redirección, ya que es un enlace sin href
-      toggleVoiceMode();
+const contenerdorProductos = document.getElementById("productos-container");
+const linksCategorias = document.querySelectorAll(".boton-categoria");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numeroCarrito = document.querySelector("#numero_carrito")
+//const modal = document.getElementById("myModal");
+//const closeModal = document.getElementById("closeModal");
+
+function CargarProductos(productosElejidos){
+  contenerdorProductos.innerHTML="";
+  productosElejidos.forEach(producto => {
+        const nuevoProducto = document.createElement("div");
+        nuevoProducto.classList = "menu-plato";
+        nuevoProducto.innerHTML = `
+            <img src="../../img/productos/${producto.imgUrl}">
+            <div class="menu-des">
+                <span>${producto.name}</span>
+                <h4>Precio: S/ ${producto.price}</h4>
+                <button class="producto-agregar" id="${producto.id}" >Agregar al carro</button>
+            </div>
+        `;
+        contenerdorProductos.append(nuevoProducto);
+    })
+    actualizarBotonesAgregar();
+    console.log(botonesAgregar);
+};
+/*
+function openModal(productId) {
+  const producto = productos.find(prod => prod.id === productId);
+  if (producto) {
+      document.getElementById("modalProductName").innerText = producto.name;
+      document.getElementById("modalProductImage").src = producto.imgUrl;
+      document.getElementById("modalProductPrice").innerText = `Precio: ${producto.price}`;
+      document.getElementById("modalDeliveryTime").innerText = `Tiempo de entrega: ${producto.delivery_time}`;
+      document.getElementById("modalDeliveryPrice").innerText = `Precio de entrega: ${producto.delivery_price}`;
+      modal.style.display = "block";
+  }
+}
+
+closeModal.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target === modal) {
+      modal.style.display = "none";
+  }
+}
+*/
+CargarProductos(productos);
+
+linksCategorias.forEach(boton => {
+  boton.addEventListener("click", (e) => {
+    const productosFilter = productos.filter( producto => producto.origin_name.id === e.currentTarget.id);
+    CargarProductos(productosFilter);
+  })
+})
+
+function actualizarBotonesAgregar(){
+  botonesAgregar = document.querySelectorAll(".producto-agregar");
+  botonesAgregar.forEach(boton => {
+    boton.addEventListener("click", agregarAlCarrito);
   });
+}
 
-  // Detectar combinación de teclas F y J simultáneamente
-  let fKeyPressed = false;
-  let jKeyPressed = false;
+const productosEnCarrito = [];
 
-  document.addEventListener("keydown", (e) => {
-      if (e.key === "f" || e.key === "F") fKeyPressed = true;
-      if (e.key === "j" || e.key === "J") jKeyPressed = true;
+function agregarAlCarrito(e){
+  const idboton = e.currentTarget.id;
+  const productoAgregado = productos.find(producto => String(producto.id) === idboton);
 
-      if (fKeyPressed && jKeyPressed) {
-          toggleVoiceMode();
-      }
-  });
+  if(productosEnCarrito.some(producto => String(producto.id) === idboton)){
+    const index = productosEnCarrito.findIndex(producto => String(producto.id) === idboton);
+    productosEnCarrito[index].cantidad++;
+  }
+  else{
+    productoAgregado.cantidad = 1;
+    productosEnCarrito.push(productoAgregado);   
+  }
+  actualizarNumeroCarrito();
+  localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+}
 
-  document.addEventListener("keyup", (e) => {
-      if (e.key === "f" || e.key === "F") fKeyPressed = false;
-      if (e.key === "j" || e.key === "J") jKeyPressed = false;
-  });
-});
+function actualizarNumeroCarrito(){
+  let Nuevonumero = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+  numeroCarrito.innerHTML = Nuevonumero;
+}
