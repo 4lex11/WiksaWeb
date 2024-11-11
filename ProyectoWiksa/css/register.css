@@ -10,14 +10,22 @@ body {
 
 .registro-container {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
     margin-bottom: 20px;
 }
 
@@ -26,20 +34,50 @@ form {
     flex-direction: column;
 }
 
-label {
-    margin: 10px 0 5px;
-    text-align: left;
-}
-
-input, select, button {
+input, select, .social-login, .submit-btn {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 14px;
+    width: 100%;
 }
 
-button {
+input[type="date"] {
+    text-align: center;
+}
+
+.social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logo-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.social-login.google {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.social-login.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-login:hover {
+    opacity: 0.9;
+}
+
+.submit-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -47,23 +85,17 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.submit-btn:hover {
     background-color: #45a049;
 }
 
-input[type="tel"] {
-    width: 100%;
+
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
 }
 
-input[type="email"], input[type="date"], input[type="password"], select {
-    width: 100%;
-}
-
-input:focus, select:focus, button:focus {
-    outline: none;
-    border-color: #4CAF50;
-}
-
-input[type="tel"]:invalid {
-    border-color: red;
+p a:hover {
+    text-decoration: underline;
 }
