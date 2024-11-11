@@ -113,8 +113,10 @@ footer a{color: var(--color-blanco);}
 }
 
 .verde{ 
-    background-image: url(/img/iconos/supermercado.jpg);} 
-.naranja{ background-image: url(/img/iconos/restaurantes.avif);}
+    background-image: url(/img/iconos/supermercado.jpg);background-size: cover;
+    background-position:center;} 
+.naranja{ background-image: url(/img/iconos/restaurantes.avif);background-size: cover;
+    background-position:center;}
 
 
 .seleccion_categorias a{
