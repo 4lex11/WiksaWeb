@@ -14,7 +14,7 @@ const productos = [
       name:'Burrito Supreme',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Burrito, proteína sazonada a elección, sour cream, lechuga, tomate, cebolla y queso cheddar.',
-      price:15,
+      price:15.0,
       delivery_time: '15 min',
       delivery_price: 8.5,
       imgUrl:'burritosupreme.jpg'
@@ -31,13 +31,13 @@ const productos = [
     },
     {
       id:4,
-      name:'1/2 Pollo + papas',
-      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
-      description: '1/2 Pollo con porcion mediana de papas',
-      price:30.5,
+      name:'Nachos',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Nachos fritos sazonados, proteína a elección, salsa de Queso Nacho, sour cream y tomate.',
+      price:20.0,
       delivery_time: '50 min',
       delivery_price: 7.5,
-      imgUrl:'MedioPollo.jpg'
+      imgUrl:'nachos.jpg'
       
     },
     {
