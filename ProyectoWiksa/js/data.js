@@ -40,26 +40,27 @@ const productos = [
       imgUrl:'nachos.jpg'
       
     },
+
     {
-      id:5,
-      name:'Combo Parrillero',
-      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
-      description: '1 Carne + papas + ensalada + 2L Chicha',
-      price:55.5,
+      id:13,
+      name:'Kevin Bacon',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Carne directamente en la plancha y la mezclamos con trozos de bacon, cebolla crunchy y queso americano.',
+      price:13.5,
       delivery_time: '50 min',
       delivery_price: 8.0,
-      imgUrl:'Parrilla.jpg'
+      imgUrl:'kevinbacon.png'
       
     },
     {
-      id:6,
-      name:'3 Tacos + papas',
-      origin_name: 'Delicias Caseras',
-      description: '3 Tacos + papas',
-      price:32.5,
+      id:14,
+      name:'Kevin Costner',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Carne, bacon bits, cebolla crunchy y queso americano con costilla desmenuzada y salsa barbacoa.',
+      price:10.9,
       delivery_time: '50 min',
       delivery_price: 8.0,
-      imgUrl:'tacos.jpg'
+      imgUrl:'kevincostner.png'
     },
     {
       id:7,
@@ -296,140 +297,3 @@ const productos = [
       imgUrl:'PanBimbo.jpg'
     },
 ];
-
-/*
-const vendedores =[
-    {
-        category:'SUPERMERCADO',
-        name: 'Wong',
-        imgUrl: 'wonglogo.png',
-        time: '20 min',
-        cost: 2.2,
-        linkUrl: 'wongpage.html'
-    },
-    {
-        category:'SUPERMERCADO',
-        name: 'Metro',
-        imgUrl: 'metrologo.png',
-        time: '10 min',
-        cost: 2.0,
-        linkUrl: 'metropage.html'
-    },
-    {
-        category:'SUPERMERCADO',
-        name: 'Plaza Vea',
-        imgUrl: 'plazavealogo.png',
-        time: '30 min',
-        cost: 3.5,
-        linkUrl: 'plazaveapage.html'
-    },
-    {
-        category:'SUPERMERCADO',
-        name: 'Tottus',
-        imgUrl: 'tottuslogo.png',
-        time: '25 min',
-        cost: 2.5,
-        linkUrl: 'tottuspage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Tradiciones Andinas',
-        imgUrl: 'plazavea.png',
-        time: '34 min',
-        cost: 2.49,
-        linkUrl: 'tradicionespage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Sazón Peruana',
-        imgUrl: 'plazavea.png',
-        time: '15 min',
-        cost: 1.5,
-        linkUrl: 'sazonpepage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'La Nonna Italiana',
-        imgUrl: 'plazavea.png',
-        time: '20 min',
-        cost: 1.0,
-        linkUrl: 'nonaitapage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Sazón Oriental',
-        imgUrl: 'plazavea.png',
-        time: '41 min',
-        cost: 2.6,
-        linkUrl: 'sazonoripage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Cocina Tradicional',
-        imgUrl: 'plazavea.png',
-        time: '30 min',
-        cost: 3.4,
-        linkUrl: 'cocinatradpage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'El Rincón Marino',
-        imgUrl: 'plazavea.png',
-        time: '60 min',
-        cost: 7.4,
-        linkUrl: 'riconmarinopage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Pizzería Napolitana',
-        imgUrl: 'plazavea.png',
-        time: '15 min',
-        cost: 3.4,
-        linkUrl: 'pizzerianappage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Tradiciones Peruanas',
-        imgUrl: 'plazavea.png',
-        time: '25 min',
-        cost: 1.4,
-        linkUrl: 'tradperupage.html'
-    },
-
-    {
-        category:'RESTAURANTE',
-        name: 'Cocina Italiana',
-        imgUrl: 'plazavea.png',
-        time: '35 min',
-        cost: 1.9,
-        linkUrl: 'cocitapage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Delicias Caseras',
-        imgUrl: 'plazavea.png',
-        time: '10 min',
-        cost: 2.4,
-        linkUrl: 'delicasepage.html'
-    },
-    {
-        category:'RESTAURANTE',
-        name: 'Healthy Bites',
-        imgUrl: 'plazavea.png',
-        time: '25 min',
-        cost: 1.9,
-        linkUrl: 'healbitepage.html'
-    }];
-
-const supermercados = vendedores.filter((vendedor) => {
-    return vendedor.category == 'SUPERMERCADO';
-});
-
-const restaurantes = vendedores.filter((vendedor) => {
-  return vendedor.category == 'RESTAURANTE';
-});
-
-const prodWong = productos.filter((producto) => {
-  return producto.origin_name == 'Wong';
-});*/
-
