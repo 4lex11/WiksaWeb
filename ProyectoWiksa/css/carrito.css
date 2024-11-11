@@ -1,72 +1,111 @@
-main{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
 .carrito-container {
-    width: 500px;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
     border-radius: 8px;
-}
-
-h1, h2 {
-    color: #333;
+    background-color: #f9f9f9;
 }
 
 h1 {
     text-align: center;
+    color: #333;
 }
 
-.productos ul {
+#carrito_vacio {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.productos, .info-pago {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.productos h2, .info-pago h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-.productos ul li {
+li {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li:hover{
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    color: #555;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    padding: 0 10px;
+    fill: #e74c3c; /* Color del icono de eliminar */
+    transition: fill 0.3s;
+}
+
+button:hover svg {
+    fill: #c0392b; /* Color del icono de eliminar al pasar el mouse */
+}
+
+#carrito_total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.info-pago {
+    margin-top: 20px;
 }
 
 .metodo-pago, .direccion, .delivery, .costo-envio {
-    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 input[type="text"], select {
     width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    border: 1px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 5px;
 }
 
 .btn-pedir {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #28a745;
-    color: #fff;
+    background-color: #28a745; /* Color verde para el botón de pedir */
+    color: white;
+    padding: 10px 15px;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 .btn-pedir:hover {
-    background-color: #218838;
-}
-
-.disabled{display: none;}
-
-#carrito_vacio{
-    text-align: center;
-    padding: 10px 0;
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
 }

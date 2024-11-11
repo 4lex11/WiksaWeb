@@ -2,29 +2,6 @@ function triggerbtninisup(){ document.getElementById("metro").click();  }
 function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Selecciona todos los botones y enlaces que quieras hacer accesibles
-    const elements = document.querySelectorAll("a, button");
-  
-    // Función para hablar el texto
-    function speakText(text) {
-      if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        window.speechSynthesis.speak(utterance);
-      } else {
-        console.warn("API de síntesis de voz no soportada en este navegador.");
-      }
-    }
-  
-    // Agrega el evento de foco a cada elemento seleccionado
-    elements.forEach((element) => {
-      element.addEventListener("focus", () => {
-        const text = element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
-        speakText(text);
-      });
-    });
-  });
-
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
