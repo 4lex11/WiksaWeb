@@ -3,15 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/carrito.js"></script>
     <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Carrito de Compras - Wiksa</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+        <a class="logo" href="/index.html">WIKSA</a>
+          
+          <div class="buscardor">
+            <input type="text" placeholder="Buscar productos"/>
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+              </button>
+          </div>
+  
+          <nav>
+            <ul>
+                <li><a href="./mapa.html">Ingresar Dirección</a></li>
+                <li><a>Cambiar Modo</a></li>
+                <li><a href="./login.html">Iniciar sesión</a></li>        
+                <li><a href="./carrito.html">Carrito</a></li>
+            </ul>
+          </nav>
+        </div> 
+    </header>
+
+    <main>
+
+        
     <div class="carrito-container">
         <h1>Carrito de Compras</h1>
 
+    <div id="carrito_vacio">
+        <h2>No hay ningun producto en el carrito 😥</h2>
+    </div>
+        
+
         <!-- Sección de productos -->
-        <div class="productos">
+    <div id="carrito_lleno" class="disabled">
+        <div class="productos" id="carrito_productos">
             <h2>Productos</h2>
             <ul>
                 <li>
@@ -64,5 +99,7 @@
         <!-- Botón para pedir -->
         <button class="btn-pedir">Pedir</button>
     </div>
+    </div>
+</main>
 </body>
 </html>
