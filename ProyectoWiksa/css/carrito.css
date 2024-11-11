@@ -1,3 +1,4 @@
+/* Estilos generales */
 .carrito-container {
     max-width: 800px;
     margin: 20px auto;
@@ -5,6 +6,7 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+    width: 100%;
 }
 
 h1 {
@@ -31,36 +33,36 @@ h1 {
 }
 
 .contenedor {
-    display: flex; /* Usar flexbox para alinear elementos */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alinear verticalmente al centro */
-    margin-top: 20px; /* Margen superior para separación */
-    padding: 10px; /* Relleno interno */
-    border: 1px solid #ddd; /* Borde para el contenedor */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Color de fondo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 #carrito_total {
-    font-weight: bold; /* Negrita para el total */
-    font-size: 1.2em; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .contenedor button {
-    background-color: #007bff; /* Color del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 15px; /* Relleno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar el mouse */
-    transition: background-color 0.3s; /* Transición suave para el hover */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    background-color: #0056b3;
 }
 
-.carrito_item{
+.carrito_item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +70,7 @@ button:hover {
     border-bottom: 1px solid #eee;
 }
 
-li:hover{
+li:hover {
     background-color: #ccc;
     border-radius: 10px;
 }
@@ -81,7 +83,7 @@ li span {
     color: #555;
 }
 
-.carrito_item button{
+.carrito_item button {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -89,12 +91,12 @@ li span {
 
 .carrito_item button svg {
     padding: 0 10px;
-    fill: #e74c3c; /* Color del icono de eliminar */
+    fill: #e74c3c;
     transition: fill 0.3s;
 }
 
 .carrito_item button:hover svg {
-    fill: #c0392b; /* Color del icono de eliminar al pasar el mouse */
+    fill: #c0392b;
 }
 
 #carrito_total {
@@ -112,7 +114,7 @@ li span {
 }
 
 input[type="text"], select {
-    width: 100% ;
+    width: 100%;
     padding: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -120,7 +122,7 @@ input[type="text"], select {
 }
 
 .btn-pedir {
-    background-color: #28a745; /* Color verde para el botón de pedir */
+    background-color: #28a745;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -132,8 +134,66 @@ input[type="text"], select {
 }
 
 .btn-pedir:hover {
-    background-color: #218838; /* Color más oscuro al pasar el mouse */
+    background-color: #218838;
 }
 
-.active{display: block;}
-.disabled{display: none;}
+.active { display: block; }
+.disabled { display: none; }
+
+/* Media queries para pantallas de tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .carrito-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #carrito_total {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media queries para pantallas de teléfonos */
+@media (max-width: 599px) {
+    .carrito-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .contenedor button {
+        width: 100%;
+    }
+
+    #carrito_total {
+        font-size: 1em;
+    }
+
+    .btn-pedir {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .productos, .info-pago {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    input[type="text"], select {
+        font-size: 14px;
+    }
+}
