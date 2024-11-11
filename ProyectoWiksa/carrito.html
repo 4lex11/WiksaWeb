@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/carrito.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="../js/main.js" defer></script>
     <title>Carrito de Compras - Wiksa</title>
 </head>
 <body>
@@ -36,26 +37,22 @@
         <div class="carrito-container">
             <h1>Carrito de Compras</h1>
         
-            <div id="carrito_vacio" class="">
+            <div id="carrito_vacio" class="carrito_vacio">
                 <p>No hay ningún producto en el carrito 😥</p>
             </div>
         
             <!-- Sección de productos -->
-            <div class="productos" id="carrito_productos disabled">
+            <div id="carrito_productos" class="productos disabled">
                 <h2>Productos</h2>
-                
-                <div id="carrito_productos">
-                </div>
-            
-                <div class="contenedor disabled">
-                    <p id="carrito_total">Total: $45.00</p>
-                    <button>Vaciar Carrito</button>   
-                </div>
-                
+                <div id="carrito_productos"></div>
             </div>
-        
+
+            <div id="total_pagar" class="contenedor disabled">
+                <p id="carrito_total">Total: $45.00</p>
+                <button id="vaciar_carrito">Vaciar Carrito</button>   
+            </div>
                 <!-- Sección de métodos de pago y dirección de entrega -->
-            <div class="info-pago" id="info_pago disabled">
+            <div id="info_pago" class="info-pago disabled">
                 <div class="metodo-pago">
                     <h2>Método de Pago</h2>
                     <select id="metodoPago">

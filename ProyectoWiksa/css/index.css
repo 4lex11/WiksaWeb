@@ -170,6 +170,7 @@ footer a{color: var(--color-blanco);}
 .metro { background-image: url('../img/banner/metrobanner.jpg'); }
 .tottus { background-image: url('../img/banner/tottusbanner.jpg'); }
 .plazavea { background-image: url('../img/banner/plazaveabanner.jpg'); }
+.speedytacos { background-image: url('../img/banner/speedytacosbanner.jpg'); }
 
 .banner_info img{ height: 60%; border-radius: 50%;}
 
@@ -187,7 +188,7 @@ footer a{color: var(--color-blanco);}
     gap: 1rem;
 }
 
-.contenidosuperm{padding: 2rem 1rem; display: flex; gap: 1rem;}
+.contenidosuperm{padding: 2rem 3.5rem; display: flex;}
 
 .filtros-del{
     display: block;
@@ -214,7 +215,7 @@ footer a{color: var(--color-blanco);}
     justify-self: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
 }
 
 .menu-plato{
@@ -350,11 +351,13 @@ footer a{color: var(--color-blanco);}
 .supermercados_container{
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     padding: 0.5rem 0 2.5rem 0;
 }
+.logo_supermcado {text-align: center; }
+
+.logo_supermcado label { color: #000; margin-top: 10px; display: block;}
 
 .logo_supermcado img{
     object-fit: cover;

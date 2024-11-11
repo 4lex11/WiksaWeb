@@ -1,6 +1,7 @@
 function triggerbtninisup(){ document.getElementById("metro").click();  }
 function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
+function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
 
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
@@ -67,10 +68,12 @@ function actualizarBotonesAgregar(){
 }
 
 let productosEnCarrito;
-const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos_en_carro"));
+let productosEnCarritoLS = localStorage.getItem("productos_en_carro");
+//const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos_en_carro"));
 
 if(productosEnCarritoLS){
-  productosEnCarrito = productosEnCarritoLS;
+  productosEnCarrito = JSON.parse(productosEnCarritoLS) ;
+  actualizarNumeroCarrito();
 }
 else{
   productosEnCarrito = [];
