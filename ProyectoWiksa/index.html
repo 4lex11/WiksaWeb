@@ -1,74 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/data.js"></script>
-    <script src="./js/index.js" defer></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Wiksa</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-        <a class="logo" href="/index.html">WIKSA</a>
-          
-          <div class="buscardor">
-            <input type="text" placeholder="Buscar productos"/>
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-              </button>
-          </div>
-  
-          <nav>
-            <ul>
-                <li><a href="./mapa.html">Ingresar Dirección</a></li>
-                <li><a>Cambiar Modo</a></li>
-                <li><a href="./login.html">Iniciar sesión</a></li>        
-                <li><a href="./carrito.html">Carrito</a></li>
-            </ul>
-          </nav>
-        </div> 
-    </header>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/data.js"></script>
+        <script src="./js/index.js" defer></script>
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Wiksa</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+            <a class="logo" href="/index.html">WIKSA</a>
+            
+            <div class="buscardor">
+                <input type="text" placeholder="Buscar productos"/>
+                <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                </button>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="./mapa.html">Ingresar Dirección</a></li>
+                    <li><a>Cambiar Modo</a></li>
+                    <li><a href="./login.html">Iniciar sesión</a></li>        
+                    <li><a href="./carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+            </div> 
+        </header>
 
-    <div class="contenido_index">
-        <h4>¿Que vas a pedir?</h4>
-        <div class="seleccion_categorias">
-            <a class="verde" href="./pages/supermercados.html">SUPERMERCADOS</a>
-            <a class="naranja" href="./pages/restaurantes.html">RESTAURANTES</a>
+        <div class="contenido_index">
+            <h4>¿Que vas a pedir?</h4>
+            <div class="seleccion_categorias">
+                <a class="verde" href="./pages/supermercados.html">SUPERMERCADOS</a>
+                <a class="naranja" href="./pages/restaurantes.html">RESTAURANTES</a>
+            </div>
+
+            <h4>Restaurantes afiliados</h4>
+            <div>
+                <ul class="supermercados_container">
+                    <li class="logo_supermcado">
+                        <a href="./pages/supermercados/metropage.html">
+                            <img src="./img/iconos/metrologo.png" />
+                            <label>Metro</label>
+                        </a>
+                    </li>
+                    <li class="logo_supermcado">
+                        <a href="./pages/supermercados/wongpage.html">
+                            <img src="./img/iconos/tottuslogo.png" />
+                            <label>Tottus</label>
+                        </a>
+                    </li>
+                    <li class="logo_supermcado">
+                            <a href="../pages/supermercados/">
+                            <img src="./img/iconos/plazavealogo.png" />
+                            <label>Plaza Vea</label>
+                        </a>
+                    </li>
+                    <li class="logo_supermcado">
+                        <a href="./pages/supermercados/wongpage.html">
+                            <img src="./img/iconos/wonglogo.png" />
+                            <label>Wong</label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <h4>Restaurantes afiliados</h4>
-        <div>
-            <ul class="supermercados_container">
-                <li class="logo_supermcado">
-                    <a href="./pages/supermercados/metropage.html">
-                        <img src="./img/iconos/metrologo.png" />
-                        <label>Metro</label>
-                    </a>
-                </li>
-                <li class="logo_supermcado">
-                    <a href="./pages/supermercados/wongpage.html">
-                        <img src="./img/iconos/tottuslogo.png" />
-                        <label>Tottus</label>
-                    </a>
-                </li>
-                <li class="logo_supermcado">
-                        <a href="../pages/supermercados/">
-                        <img src="./img/iconos/plazavealogo.png" />
-                        <label>Plaza Vea</label>
-                    </a>
-                </li>
-                <li class="logo_supermcado">
-                    <a href="./pages/supermercados/wongpage.html">
-                        <img src="./img/iconos/wonglogo.png" />
-                        <label>Wong</label>
-                    </a>
-                </li>
-            </ul>
+        <footer>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="quienes-somos.html">¿Quienes somos?</a></li>
+                    <li><a href="terminos.html">Terminos y condiciones</a></li>
+                    <li><a href="#">Socios</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">Metodos de Pago</a></li>
+                    <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">Registra tu negocio</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="pie">
+            <p>WIKSA ©2024</p>
         </div>
+<<<<<<< HEAD
+    </body>
+    </html>
+=======
     </div>
 
     <footer>
@@ -95,3 +125,4 @@
     </div>
 </body>
 </html>
+>>>>>>> 65d430ed8ea723aa7ad42f6b41c9715d13f5566f
