@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #a06518;
+    background-color: #f5d089ef;
+    color: #422929c9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #a06518;
+    background-color: #422929c9;
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -65,7 +65,7 @@ nav a:hover {
 
 .payment-methods h1 {
     text-align: center;
-    color: #a06518;
+    color: #422929c9;
     margin-bottom: 20px;
 }
 
@@ -111,7 +111,7 @@ nav a:hover {
     width: 100%;
     padding: 15px;
     text-align: center;
-    background-color: #a06518;
+    background-color: #422929c9;
     color: #fff;
     position: fixed;
     bottom: 0;
