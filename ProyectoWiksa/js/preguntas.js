@@ -1,4 +1,3 @@
-// JavaScript para manejar el despliegue de las respuestas
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
         const answer = button.nextElementSibling;

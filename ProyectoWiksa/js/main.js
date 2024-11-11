@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const elements = document.querySelectorAll("a, button");
+
     let voiceModeEnabled = false; // bandera para habilitar/deshabilitar síntesis de voz
 
     // Función para activar el modo de voz
