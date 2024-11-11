@@ -34,11 +34,19 @@
     </header>
 
     <main>
+
+        
     <div class="carrito-container">
         <h1>Carrito de Compras</h1>
 
+    <div id="carrito_vacio">
+        <h2>No hay ningun producto en el carrito 😥</h2>
+    </div>
+        
+
         <!-- Sección de productos -->
-        <div class="productos">
+    <div id="carrito_lleno" class="disabled">
+        <div class="productos" id="carrito_productos">
             <h2>Productos</h2>
             <ul>
                 <li>
@@ -90,6 +98,7 @@
 
         <!-- Botón para pedir -->
         <button class="btn-pedir">Pedir</button>
+    </div>
     </div>
 </main>
 </body>
