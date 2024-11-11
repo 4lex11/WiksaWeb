@@ -1,20 +1,21 @@
 let productosEnCarrito = localStorage.getItem("productos_en_carro");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
-//const contentcarritovacio = document.querySelector("#carrito_vacio");
+const contentcarritovacio = document.querySelector("#carrito_vacio");
 const contentcarritolleno = document.querySelector("#carrito_productos");
-//const contentcarritototal = document.querySelector("#contenedor");
-//const contentcarritoinfopago = document.querySelector("#info_pago");
-//const contentcarritoacciones = document.querySelector("#");
+const contentcarritototal = document.querySelector("#total_pagar");
+const contentcarritoinfopago = document.querySelector("#info_pago");
+
 let botonEliminar = document.querySelectorAll(".eliminar_producto");
 const botonvaciar = document.querySelector("#vaciar_carrito");
 const contentTotal = document.querySelector("#carrito_total");
 
 function cargarProductosCarrito(){
     if(productosEnCarrito && productosEnCarrito.length > 0){
-        //contentcarritovacio.classList.add("disabled");
-        //contentcarritolleno.classList.remove("disabled");
-        //contentcarritoinfopago.classList.remove("disabled");
+        contentcarritovacio.classList.add("disabled");
+        contentcarritolleno.classList.remove("disabled");
+        contentcarritototal.classList.remove("disabled");
+        contentcarritoinfopago.classList.remove("disabled");
         contentcarritolleno.innerHTML="";
     
         productosEnCarrito.forEach(producto => {
@@ -36,7 +37,12 @@ function cargarProductosCarrito(){
             contentcarritolleno.append(div);
         });
         
-    }else{}
+    }else{
+        contentcarritovacio.classList.remove("disabled");
+        contentcarritolleno.classList.add("disabled");
+        contentcarritototal.classList.add("disabled");
+        contentcarritoinfopago.classList.add("disabled");
+    }
     actualizarBotonesElimnar();
     actualizarTotal();
 }
