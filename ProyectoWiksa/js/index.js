@@ -2,6 +2,7 @@ function triggerbtninisup(){ document.getElementById("metro").click();  }
 function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
 function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
+function triggerbtngoikogrill(){ document.getElementById("goikogrill").click();  }
 
 const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
