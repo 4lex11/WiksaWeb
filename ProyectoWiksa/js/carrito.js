@@ -2,13 +2,14 @@ const productosEnCarrito = JSON.parse(localStorage.getItem("productos_en_carro")
 
 const contentcarritovacio = document.querySelector("#carrito_vacio");
 const contentcarritolleno = document.querySelector("#carrito_productos");
-const contentcarritototal = document.querySelector("#carrito_total");
+const contentcarritototal = document.querySelector("#contenedor");
 const contentcarritoinfopago = document.querySelector("#info_pago");
 //const contentcarritoacciones = document.querySelector("#");
 
 if(productosEnCarrito){
     contentcarritovacio.classList.add("disabled");
     contentcarritolleno.classList.remove("disabled");
+    contentcarritoinfopago.classList.remove("disabled");
 
     contentcarritolleno.innerHTML="";
 
