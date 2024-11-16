@@ -47,7 +47,7 @@ const productos = [
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne directamente en la plancha y la mezclamos con trozos de bacon, cebolla crunchy y queso americano.',
       price:13.5,
-      delivery_time: '50 min',
+      delivery_time: '25 min',
       delivery_price: 8.0,
       imgUrl:'kevinbacon.png'
       
@@ -58,7 +58,7 @@ const productos = [
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne, bacon bits, cebolla crunchy y queso americano con costilla desmenuzada y salsa barbacoa.',
       price:10.9,
-      delivery_time: '50 min',
+      delivery_time: '25 min',
       delivery_price: 8.0,
       imgUrl:'kevincostner.png'
     },
@@ -68,7 +68,7 @@ const productos = [
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Contramuslo de pollo jugoso y crujiente de 170g, queso americano, bacon, lechuga batavia y salsa 50 Burger Spread.',
       price:15.5,
-      delivery_time: '50 min',
+      delivery_time: '25 min',
       delivery_price: 8.0,
       imgUrl:'LA MUSLONA.png'
     },
@@ -78,9 +78,89 @@ const productos = [
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Huevo frito, bacon, queso americano y salsa Mayo Goiko.',
       price:11.0,
-      delivery_time: '50 min',
+      delivery_time: '25 min',
       delivery_price: 8.0,
       imgUrl:'PIGMA.png'
+    },
+    {
+      id:90,
+      name:'Tori Teriyaki',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Filete de muslo de pollo trozado en salsa teriyaki.',
+      price:27.0,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'TORI TERIYAKI.webp'
+    },
+    {
+      id:91,
+      name:'Acevichado',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Relleno de langostinos empanizados y palta, cubierto con láminas de atún, bañado en salsa acevichado, coronado con cebollita china y togarashi (picante japonés).',
+      price:19.9,
+      delivery_time: '30 min',
+      delivery_price: 8.0,
+      imgUrl:'ACEVICHADO.jpg'
+    },
+    {
+      id:92,
+      name:'Parrillero',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Relleno de langostinos empanizados, queso crema y espárragos, cubierto de atún y flameado con salsa de orégano y ajos.',
+      price:19.9,
+      delivery_time: '30 min',
+      delivery_price: 8.0,
+      imgUrl:'PARRILLERO.webp'
+    },
+    {
+      id:93,
+      name:'Uzugoro',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Finos cortes de salmón, atún o bonito y pescado blanco, bañados en salsa cítrica de shoyu, aceite de ajonjolí y rocoto picado, salpicado con tobiko (ovas de pez volador).',
+      price:32.5,
+      delivery_time: '45 min',
+      delivery_price: 8.0,
+      imgUrl:'UZUGORO.webp'
+    },
+    {
+      id:94,
+      name:'Lomo Saltado',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Salteado de carne de res, cebolla, tomate, papas fritas y arroz.',
+      price:23.0,
+      delivery_time: '35 min',
+      delivery_price: 8.0,
+      imgUrl:'lomo.jpg'
+    },
+    {
+      id:95,
+      name:'Ceviche',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Pescado crudo y mariscos marinados en jugo de cítricos, principalmente jugo de limón.',
+      price:19.9,
+      delivery_time: '35 min',
+      delivery_price: 8.0,
+      imgUrl:'ceviche.jpg'
+    },
+    {
+      id:96,
+      name:'Arroz con Mariscos',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Cremoso y elegante arroz con mariscos con sabor a mar, langostinos, calamar, conchas de abanico.',
+      price:26.5,
+      delivery_time: '35 min',
+      delivery_price: 8.0,
+      imgUrl:'marisco.webp'
+    },
+    {
+      id:97,
+      name:'Causa',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Mezcla de papa prensaba, ají amarillo y limón',
+      price:26.5,
+      delivery_time: '35 min',
+      delivery_price: 8.0,
+      imgUrl:'causa.jpg'
     },
     {
       id:7,
@@ -92,6 +172,7 @@ const productos = [
       delivery_price: 8.0,
       imgUrl:'LomoSaltado.jpg'
     },
+
     {
       id:8,
       name:'Salchipapa',
