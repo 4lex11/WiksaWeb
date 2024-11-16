@@ -63,6 +63,26 @@ const productos = [
       imgUrl:'kevincostner.png'
     },
     {
+      id:15,
+      name:'La Muslona',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Contramuslo de pollo jugoso y crujiente de 170g, queso americano, bacon, lechuga batavia y salsa 50 Burger Spread.',
+      price:15.5,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'LA MUSLONA.png'
+    },
+    {
+      id:16,
+      name:'Pigma',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Huevo frito, bacon, queso americano y salsa Mayo Goiko.',
+      price:11.0,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'PIGMA.png'
+    },
+    {
       id:7,
       name:'Lomo Saltado',
       origin_name: 'Tradiciones Peruanas',
