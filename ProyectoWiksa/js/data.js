@@ -282,7 +282,7 @@ const productos = [
       imgUrl:'alitasmarinadas.jpg'
     },
     {
-      id:90,
+      id:29,
       name:'Tori Teriyaki',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Filete de muslo de pollo trozado en salsa teriyaki.',
@@ -292,7 +292,7 @@ const productos = [
       imgUrl:'TORI TERIYAKI.webp'
     },
     {
-      id:91,
+      id:30,
       name:'Acevichado',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Relleno de langostinos empanizados y palta, cubierto con láminas de atún, bañado en salsa acevichado, coronado con cebollita china y togarashi (picante japonés).',
@@ -302,7 +302,7 @@ const productos = [
       imgUrl:'ACEVICHADO.jpg'
     },
     {
-      id:92,
+      id:31,
       name:'Parrillero',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Relleno de langostinos empanizados, queso crema y espárragos, cubierto de atún y flameado con salsa de orégano y ajos.',
@@ -312,7 +312,7 @@ const productos = [
       imgUrl:'PARRILLERO.webp'
     },
     {
-      id:93,
+      id:32,
       name:'Uzugoro',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Finos cortes de salmón, atún o bonito y pescado blanco, bañados en salsa cítrica de shoyu, aceite de ajonjolí y rocoto picado, salpicado con tobiko (ovas de pez volador).',
@@ -322,7 +322,7 @@ const productos = [
       imgUrl:'UZUGORO.webp'
     },
     {
-      id:13,
+      id:33,
       name:'Makis',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
@@ -330,6 +330,96 @@ const productos = [
       delivery_time: '50 min',
       delivery_price: 8.0,
       imgUrl:'Sushi.jpg'
+    },
+    {
+      id:34,
+      name:'Jingisukan',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'jingisukan.jpg'
+    },
+    {
+      id:35,
+      name:'Tonkatsu',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 13,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'tonkatsu.jpg'
+    },
+    {
+      id:36,
+      name:'Ramen',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'ramen.jpg'
+    },
+    {
+      id:37,
+      name:'Okonomiyaki',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 8,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'okonomiyaki.jpg'
+    },
+    {
+      id:38,
+      name:'Sanuki udon',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 12,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'sanukiudon.jpg'
+    },
+    {
+      id:39,
+      name:'Yakiniku',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'yakiniku.jpg'
+    },
+    {
+      id:40,
+      name:'Takoyaki',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 7,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'takoyaki.jpg'
+    },
+    {
+      id:41,
+      name:'Yakitori',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'yakitori.jpg'
+    },
+    {
+      id:42,
+      name:'Castella',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 8,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'castella.jpg'
     },
     {
       id:94,
