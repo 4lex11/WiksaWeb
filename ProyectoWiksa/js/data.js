@@ -40,7 +40,106 @@ const productos = [
       imgUrl:'nachos.jpg'
       
     },
-
+    {
+      id:5,
+      name:'Pizza',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Pizza',
+      price: 30,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'Pizza.jpg'
+    },
+    {
+      id:6,
+      name:'Curri',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 22.5,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'Curri.jpg'
+    },
+    {
+      id:7,
+      name:'Tacos al pastor',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 22.5,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'tacosalpastor.jpg'
+    },
+    {
+      id:8,
+      name:'Enchiladas',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 22.5,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'enchiladas.jpg'
+    },
+    {
+      id:9,
+      name:'Quesadillas Especial',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'quesadillas.jpg'
+    },
+    {
+      id:10,
+      name:'Carnita',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 8,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'carnita.jpg'
+    },
+    {
+      id:11,
+      name:'Molletes',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'molletes.jpg'
+    },
+    {
+      id:12,
+      name:'Tacos de Cabeza',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 12,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'tacosdecabeza.jpg'
+    },
+    {
+      id:13,
+      name:'Mole',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 16,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'elmole.jpg'
+    },
+    {
+      id:14,
+      name:'Pozole',
+      origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
+      description: 'Curri',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 7.5,
+      imgUrl:'pozole.jpg'
+    },
     {
       id:13,
       name:'Kevin Bacon',
@@ -83,6 +182,16 @@ const productos = [
       imgUrl:'PIGMA.png'
     },
     {
+      id:11,
+      name:'Combo Simple',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 14.5,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'Hamburgesa.jpg'
+    },
+    {
       id:90,
       name:'Tori Teriyaki',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
@@ -121,6 +230,16 @@ const productos = [
       delivery_time: '45 min',
       delivery_price: 8.0,
       imgUrl:'UZUGORO.webp'
+    },
+    {
+      id:13,
+      name:'Makis',
+      origin_name: {id:'memosushi',  name:'Memo Sushi'},
+      description: 'Sushi',
+      price: 20,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'Sushi.jpg'
     },
     {
       id:94,
@@ -165,8 +284,8 @@ const productos = [
     {
       id:7,
       name:'Lomo Saltado',
-      origin_name: 'Tradiciones Peruanas',
-      description: 'Lomo Saltado',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Lomo Saltado de pollo',
       price: 50,
       delivery_time: '50 min',
       delivery_price: 8.0,
@@ -176,7 +295,7 @@ const productos = [
     {
       id:8,
       name:'Salchipapa',
-      origin_name: {id:'sasonperuana',  name:'Sazón Peruana'},
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Salchipapa',
       price: 15,
       delivery_time: '50 min',
@@ -186,53 +305,13 @@ const productos = [
     {
       id:9,
       name:'Milanesa',
-      origin_name: 'Cocina Italiana',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
       price: 30,
       delivery_time: '50 min',
       delivery_price: 8.0,
       imgUrl:'Milanesa.jpg'
       
-    },
-    {
-      id:10,
-      name:'Pizza',
-      origin_name: 'Cocina Italiana',
-      description: 'Pizza',
-      price: 30,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
-      imgUrl:'Pizza.jpg'
-    },
-    {
-      id:11,
-      name:'Hamburgesa',
-      origin_name: 'Delicias Caseras',
-      description: 'Hamburgesa',
-      price: 14.5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
-      imgUrl:'Hamburgesa.jpg'
-    },
-    {
-      id:12,
-      name:'Curri',
-      origin_name: 'Delicias Caseras',
-      description: 'Curri',
-      price: 22.5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
-      imgUrl:'Curri.jpg'
-    },
-    {
-      id:13,
-      name:'Sushi',
-      origin_name: 'Sazón Oriental',
-      description: 'Sushi',
-      price: 20,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
-      imgUrl:'Sushi.jpg'
     },
     {
       id:14,
