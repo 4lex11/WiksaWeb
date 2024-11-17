@@ -21,9 +21,9 @@ function CargarProductos(productosElejidos){
         nuevoProducto.innerHTML = `
             <img src="../../img/productos/${producto.imgUrl}">
             <div class="menu-des">
-                <span tabindex="7" aria-label=${producto.name}>${producto.name}</span>
-                <h4 tabindex="8" aria-label=${producto.price}>Precio: S/ ${producto.price}</h4>
-                <button class="producto-agregar" id="${producto.id}" tabindex="9">Agregar al carro</button>
+                <span aria-label=${producto.name}>${producto.name}</span>
+                <h4 aria-label=${producto.price}>Precio: S/ ${producto.price}</h4>
+                <a href="#" class="producto-agregar" id="${producto.id}" tabindex="7" aria-label=${producto.description}>Agregar al carro</a>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
