@@ -91,19 +91,3 @@ function geocodeLatLng(latlng) {
         }
     });
 }
-
-// Evento para el botón de "Seleccionar"
-document.getElementById("select-button").addEventListener("click", function () {
-    const position = marker.getPosition();
-    const lat = position.lat();
-    const lng = position.lng();
-
-    // Guarda las coordenadas en localStorage
-    localStorage.setItem("coordenadas", JSON.stringify({ lat, lng }));
-
-    // Muestra un mensaje de confirmación
-    alert("Ubicación guardada: " + lat + ", " + lng);
-
-    // Opcional: Redirige a otra página
-    window.location.href = "carrito.html";
-});
