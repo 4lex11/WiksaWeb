@@ -1,24 +1,52 @@
-function validarLogin() {
-    // Obtener los valores de los campos
-    const correo = document.getElementById('correo').value;
-    const contraseña = document.getElementById('contraseña').value;
+document.addEventListener("DOMContentLoaded", () => {
+    // Verificar si SpeechRecognition está disponible
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    // Validar que los campos no estén vacíos
-    if (correo === "" || contraseña === "") {
-        alert("Por favor, complete todos los campos.");
-        return false;
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.lang = "es-ES"; // Idioma español
+        recognition.interimResults = false; // Solo resultados finales
+        recognition.continuous = false; // Detener tras reconocer un comando
+
+        const micButtonEmail = document.getElementById("mic-button-email");
+        const micButtonPassword = document.getElementById("mic-button-password");
+        const correoInput = document.getElementById("correo");
+        const contraseñaInput = document.getElementById("contraseña");
+
+        // Función para manejar los eventos de reconocimiento de voz
+        function startRecognition(inputField) {
+            recognition.start();
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                inputField.value = transcript; // Insertar el texto reconocido en el campo
+            };
+        }
+
+        // Configurar el botón de micrófono para el campo de correo
+        micButtonEmail.addEventListener("click", () => {
+            startRecognition(correoInput);
+        });
+
+        // Configurar el botón de micrófono para el campo de contraseña
+        micButtonPassword.addEventListener("click", () => {
+            startRecognition(contraseñaInput);
+        });
+
+        recognition.onstart = () => {
+            micButtonEmail.textContent = "🎙️ Escuchando..."; // Cambiar icono mientras escucha
+            micButtonPassword.textContent = "🎙️ Escuchando..."; // Cambiar icono mientras escucha
+        };
+
+        recognition.onend = () => {
+            micButtonEmail.textContent = "Dictar"; // Restaurar icono
+            micButtonPassword.textContent = "Dictar"; // Restaurar icono
+        };
+
+        recognition.onerror = (event) => {
+            console.error("Error de reconocimiento de voz:", event.error);
+            alert("Hubo un problema al reconocer la voz. Inténtalo nuevamente.");
+        };
+    } else {
+        alert("Lo sentimos, tu navegador no soporta reconocimiento de voz.");
     }
-
-    // Validar el formato del correo (usando expresión regular simple)
-    const correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if (!correoRegex.test(correo)) {
-        alert("Por favor, ingrese un correo electrónico válido.");
-        return false;
-    }
-
-    // Aquí puedes agregar una lógica para comprobar las credenciales con una API o base de datos
-
-    // Si todo está bien, puedes permitir el envío del formulario (o hacer la acción que corresponda)
-    alert("Inicio de sesión exitoso.");
-    return true; // o redirigir a otra página si es necesario
-}
+});
