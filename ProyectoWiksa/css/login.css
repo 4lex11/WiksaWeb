@@ -21,7 +21,48 @@ body {
     padding: 20px;
     text-align: center;
 }
+.input-container {
+    display: flex;
+    align-items: center;  /* Centrar el input y el botón */
+    justify-content: space-between; /* Espacio entre el input y el botón */
+}
 
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 85%;  /* Ajusta el tamaño para que el input ocupe el espacio restante */
+}
+
+/* Estilos para los botones de dictado */
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7c6442;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px; /* Separar ligeramente el botón del input */
+    position: relative; /* Para ajustar la posición */
+    top: -5px;  /* Mover el botón hacia arriba */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.mic-button {
+    background-color: #f5a623;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mic-button:hover {
+    background-color: #f39c12;
+}
 
 
 .login-header h1 {
@@ -44,7 +85,7 @@ body {
 .login-button {
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
+    background-color: #7c6442;
     color: white;
     border: none;
     border-radius: 6px;
@@ -55,7 +96,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #2980b9;
+    background-color: #7c6442;
 }
 
 .separator {
@@ -109,7 +150,7 @@ body {
     color: #777;
 }
 .register-link a {
-    color: #3498db;
+    color: #ff5d48;
     text-decoration: none;
 }
 
