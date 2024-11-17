@@ -422,7 +422,7 @@ const productos = [
       imgUrl:'castella.jpg'
     },
     {
-      id:94,
+      id:43,
       name:'Lomo Saltado',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Salteado de carne de res, cebolla, tomate, papas fritas y arroz.',
@@ -432,7 +432,7 @@ const productos = [
       imgUrl:'lomo.jpg'
     },
     {
-      id:95,
+      id:44,
       name:'Ceviche',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Pescado crudo y mariscos marinados en jugo de cítricos, principalmente jugo de limón.',
@@ -442,7 +442,7 @@ const productos = [
       imgUrl:'ceviche.jpg'
     },
     {
-      id:96,
+      id:45,
       name:'Arroz con Mariscos',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Cremoso y elegante arroz con mariscos con sabor a mar, langostinos, calamar, conchas de abanico.',
@@ -452,7 +452,7 @@ const productos = [
       imgUrl:'marisco.webp'
     },
     {
-      id:97,
+      id:46,
       name:'Causa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Mezcla de papa prensaba, ají amarillo y limón',
@@ -462,7 +462,7 @@ const productos = [
       imgUrl:'causa.jpg'
     },
     {
-      id:7,
+      id:47,
       name:'Lomo Saltado',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Lomo Saltado de pollo',
@@ -473,7 +473,7 @@ const productos = [
     },
 
     {
-      id:8,
+      id:48,
       name:'Salchipapa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Salchipapa',
@@ -483,7 +483,7 @@ const productos = [
       imgUrl:'Salchipapa.jpg'
     },
     {
-      id:9,
+      id:49,
       name:'Milanesa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
@@ -491,7 +491,76 @@ const productos = [
       delivery_time: '50 min',
       delivery_price: 8.0,
       imgUrl:'Milanesa.jpg'
-      
+    },
+    {
+      id:50,
+      name:'Anticucho',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'anticucho.jpg'
+    },
+    {
+      id:51,
+      name:'Carapulcra',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'carapulcra.jpg'
+    },
+    {
+      id:52,
+      name:'Arroz Chaufa',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 12,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'chaufa.jpg'
+    },
+    {
+      id:53,
+      name:'Arroz con Pollo',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'arrozconpollo.jpg'
+    },
+    {
+      id:54,
+      name:'Caldo de Gallina',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 8,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'caldodegallina.jpg'
+    },
+    {
+      id:55,
+      name:'Picarones',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 5,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'picarones.jpg'
+    },
+    {
+      id:56,
+      name:'Seco de Carne',
+      origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
+      description: 'Milanesa',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'secodecarne.jpg'
     },
     {
       id:14,
