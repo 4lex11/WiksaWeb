@@ -563,6 +563,147 @@ const productos = [
       imgUrl:'secodecarne.jpg'
     },
     {
+      id:57,
+      name:'Colgate',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Colgate',
+      price: 7,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'Colgate.jpg'
+    },
+    {
+      id:58,
+      name:'Sixpack Panetón 800g',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Sixpack Panetón Metro Tradicional Bolsa 800g',
+      price: 71.4,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'sixpackpanetonmetro.jpg'
+    },
+    {
+      id:59,
+      name:'Pollo Rostizado Combo',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Pollo Rostizado + Papas Fritas + Gaseosa Inca Kola Sin Azúcar 1.5L',
+      price: 33.9,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'pollorostizadocombo.jpg'
+    },
+    {
+      id:60,
+      name:'Aji de Casa metro',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Ají de La Casa Metro 250g',
+      price: 9.1,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'ajidecasa.jpg'
+    },
+    {
+      id:61,
+      name:'Árbol de Navidad',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Árbol de Navidad Krea Nevado 571 Ramas 180Cm',
+      price: 279.99,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'arbolnavidad.jpg'
+    },
+    {
+      id:62,
+      name:'Torta Helada',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Torta Helada de Fresa 20 Porciones',
+      price: 54.9,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'tortahelada.jpg'
+    },
+    {
+      id:63,
+      name:'Petit Pan 25und',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Petit Pan Metro 25und',
+      price: 7.9,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'petipan.jpg'
+    },
+    {
+      id:64,
+      name:'Pan Baguette',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Petit Pan Metro 25und',
+      price: 1.9,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'baguette.jpg'
+    },
+    {
+      id:65,
+      name:'Fresa 1kg',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Fresa Entera Congelada El Frutero 1kg',
+      price: 15.99,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'fresa1kg.jpg'
+    },
+    {
+      id:66,
+      name:'Piña 1kg',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Piña Golden en Trozos Congelada El Frutero 1kg',
+      price: 16.99,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'pinia1kg.jpg'
+    },
+    {
+      id:67,
+      name:'Arandano 1kg',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Mix de Arándano, Fresa y Frambuesa El Frutero 1kg',
+      price: 20.99,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'arandano1kg.jpg'
+    },
+    {
+      id:68,
+      name:'Papa Green 400g',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Papa Ondulada Green Food 400g',
+      price: 6.5,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'papagreen400g.jpg'
+    },
+    {
+      id:69,
+      name:'Helado 900ml',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Helado de Crema Peziduri Tricolor 900ml',
+      price: 11.9,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'helado900ml.jpg'
+    },
+    {
+      id:70,
+      name:'Helado 2.2L',
+      origin_name: { id:'metro', name:'Metro' },
+      description: 'Helado Peziduri Tricolor 2.2L',
+      price: 21.99,
+      delivery_time: '15 min',
+      delivery_price: 2.0,
+      imgUrl:'helado22l.jpg'
+    },
+    
+    {
       id:14,
       name:'Ajinomen de Pollo',
       origin_name: {id:'tottus',  name:'Tottus'},
@@ -693,18 +834,6 @@ const productos = [
       delivery_price: 2.5,
       imgUrl:'Jabonbolivar380g.jpg'
     },
-
-    {
-      id:16,
-      name:'Colgate',
-      origin_name: { id:'metro', name:'Metro' },
-      description: 'Colgate',
-      price: 7,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
-      imgUrl:'Colgate.jpg'
-    },
-    
     {
       id:18,
       name:'Leche Gloria 1L',
