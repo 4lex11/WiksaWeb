@@ -122,3 +122,4 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Lo sentimos, tu navegador no soporta reconocimiento de voz.");
     }
 });
+
