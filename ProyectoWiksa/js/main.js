@@ -114,11 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault(); // Evitar redirección, ya que es un enlace sin href
         toggleVoiceMode();
     });
-    /*cambiarModoBtn.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevenir comportamiento por defecto
-        toggleVoiceMode();
-        speakText(voiceModeEnabled ? "Modo de voz activado" : "Modo de voz desactivado");
-    });*/
 
     // Detectar combinación de teclas F y J simultáneamente
     let fKeyPressed = false;
