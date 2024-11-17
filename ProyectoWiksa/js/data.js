@@ -702,9 +702,8 @@ const productos = [
       delivery_price: 2.0,
       imgUrl:'helado22l.jpg'
     },
-    
     {
-      id:14,
+      id:71,
       name:'Ajinomen de Pollo',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Ajinome de Pollo',
@@ -712,6 +711,136 @@ const productos = [
       delivery_time: '15 min',
       delivery_price: 2.0,
       imgUrl:'Ajinomen.jpg'
+    },
+    {
+      id:72,
+      name:'Leche Gloria 1L',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Leche Gloria 1L',
+      price: 12,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'LecheGloria.jpg'
+    },
+    {
+      id:73,
+      name:'Cafe Instantaneo 200g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Café Instantáneo Granulado Tottus 200g',
+      price: 21.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'cafeinstantaneo200g.jpg'
+    },
+    {
+      id:74,
+      name:'Azucar Rubia 5kg',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Azúcar Rubia Tottus 5 kg',
+      price: 19.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'azucarrubia5kg.jpg'
+    },
+    {
+      id:75,
+      name:'Cereal de Chocolate 500g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Bolitas de cereales sabor chocolate Tottus 500gr',
+      price: 12.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'cerealdechocolate500g.jpg'
+    },
+    {
+      id:76,
+      name:'Turron Doña Pepa 500g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Turrón Doña Pepa Tottus 500 g',
+      price: 11.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'turrondonapepa.jpg'
+    },
+    {
+      id:77,
+      name:'Aceite 900ml',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Aceite de Girasol Tottus 900 mL',
+      price: 7.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'aceite900ml.jpg'
+    },
+    {
+      id:78,
+      name:'Aceituna verde 270g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'ACEITUNA VERDE DESHUESADA PREMIUM TOTTUSX270G',
+      price: 12.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'acitunaverde270g.jpg'
+    },
+    {
+      id:79,
+      name:'Caramelos de Limón 250g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Caramelos Sabor Limón Tottus 250 g',
+      price: 5.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'carameloslimon250g.jpg'
+    },
+    {
+      id:80,
+      name:'Gomitas 100g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Gomitas gusanos Tottus 100 g',
+      price: 3.9,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'gomitas100g.jpeg'
+    },
+    {
+      id:81,
+      name:'Aceituna Negra 510g',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Aceituna negra entera de cóctel',
+      price: 11.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'aceitunasnegra.jpg'
+    },
+    {
+      id:82,
+      name:'Huevos 30und',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'HUEVOS PARDOS TOTTUS X 30 UND',
+      price: 11.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'huevos30und.jpg'
+    },    
+    {
+      id:83,
+      name:'Cafetera Roja',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'CAFETERA PRIMA LATTE ROJA',
+      price: 899,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'cafeteraroja.jpg'
+    },
+    {
+      id:84,
+      name:'Freidora de Aire',
+      origin_name: {id:'tottus',  name:'Tottus'},
+      description: 'Freidora de aire manual Oster 4L con revestimiento DiamondForce',
+      price: 299,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'freidoradeaire.jpg'
     },
 
     {
@@ -833,16 +962,6 @@ const productos = [
       delivery_time: '20 min',
       delivery_price: 2.5,
       imgUrl:'Jabonbolivar380g.jpg'
-    },
-    {
-      id:18,
-      name:'Leche Gloria 1L',
-      origin_name: {id:'tottus',  name:'Tottus'},
-      description: 'Leche Gloria 1L',
-      price: 12,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
-      imgUrl:'LecheGloria.jpg'
     },
     {
       id:19,
