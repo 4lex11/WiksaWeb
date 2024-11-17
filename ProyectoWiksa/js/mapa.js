@@ -76,6 +76,13 @@ function geocodeLatLng(latlng) {
             if (results[0]) {
                 infowindow.setContent(results[0].formatted_address);
                 infowindow.open(map, marker);
+
+                // Almacena la dirección en localStorage
+                localStorage.setItem("direccion_seleccionada", results[0].formatted_address);
+                localStorage.setItem("coordenadas", JSON.stringify({
+                    lat: latlng.lat(),
+                    lng: latlng.lng()
+                }));
             } else {
                 alert("No se encontraron resultados");
             }
@@ -88,5 +95,15 @@ function geocodeLatLng(latlng) {
 // Evento para el botón de "Seleccionar"
 document.getElementById("select-button").addEventListener("click", function () {
     const position = marker.getPosition();
-    alert("Dirección seleccionada: " + position.lat() + ", " + position.lng());
+    const lat = position.lat();
+    const lng = position.lng();
+
+    // Guarda las coordenadas en localStorage
+    localStorage.setItem("coordenadas", JSON.stringify({ lat, lng }));
+
+    // Muestra un mensaje de confirmación
+    alert("Ubicación guardada: " + lat + ", " + lng);
+
+    // Opcional: Redirige a otra página
+    window.location.href = "carrito.html";
 });
