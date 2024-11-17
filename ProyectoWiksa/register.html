@@ -13,26 +13,44 @@
         <h2>WIKSA</h2>
         <p>Crear una cuenta</p>
         <form id="registroForm" onsubmit="return validarFormulario()">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-            <input type="email" id="correo" name="correo" placeholder="Correo" required>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
-            <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirmar Contraseña" required>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-            <select id="sexo" name="sexo" required>
-                <option value="">Selecciona tu género</option>
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="otro">Otro</option>
-            </select>
-            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="9\d{8}" required>
+            <div class="input-container">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+                <button type="button" id="mic-nombre">Dictar</button> <!-- Botón para dictar nombre -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <button type="button" id="mic-apellidos">Dictar</button> <!-- Botón para dictar apellidos -->
+            </div>
+            <div class="input-container">
+                <input type="email" id="correo" name="correo" placeholder="Correo" required>
+                <button type="button" id="mic-correo">Dictar</button> <!-- Botón para dictar correo -->
+            </div>
+            <div class="input-container">
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                <button type="button" id="mic-contraseña">Dictar</button> <!-- Botón para dictar contraseña -->
+            </div>
+            <div class="input-container">
+                <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirmar Contraseña" required>
+                <button type="button" id="mic-confirmarContraseña">Dictar</button> <!-- Botón para dictar confirmar contraseña -->
+            </div>  
+            <div class="input-container">
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
+                <button type="button" id="mic-fechaNacimiento">Dictar</button> <!-- Botón para dictar fecha -->
+            </div>
+            <div class="input-container">
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecciona tu género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <button type="button" id="mic-sexo">Dictar</button> <!-- Botón para dictar sexo -->
+            </div>
+            <div class="input-container">
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="9\d{8}" required>
+                <button type="button" id="mic-telefono">Dictar</button> <!-- Botón para dictar teléfono -->
+            </div>
 
-            <button type="button" class="social-login google" id="googleRegisterButton">
-                <img src="./img/iconos/googlelogo.png" alt="Google logo" class="logo-icon"> Registrarse con Google
-            </button>
-            <button type="button" class="social-login facebook">
-                <img src="./img/iconos/facebooklogo.png" alt="Facebook logo" class="logo-icon"> Registrarse con Facebook
-            </button>
             <button type="submit" class="submit-btn">Registrarse</button>
         </form>
         <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>

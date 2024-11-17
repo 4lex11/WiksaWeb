@@ -1,46 +1,66 @@
-function validarFormulario() {
-    // Obtenemos los valores de los campos
-    const contraseña = document.getElementById('contraseña').value;
-    const confirmarContraseña = document.getElementById('confirmarContraseña').value;
+document.addEventListener("DOMContentLoaded", () => {
+    // Verificar si SpeechRecognition está disponible
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    // Verificar que las contraseñas coincidan
-    if (contraseña !== confirmarContraseña) {
-        alert("Las contraseñas no coinciden.");
-        return false;
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.lang = "es-ES"; // Idioma español
+        recognition.interimResults = false; // Solo resultados finales
+        recognition.continuous = false; // Detener tras reconocer un comando
+
+        // Función para iniciar el reconocimiento de voz y poner el texto dictado en el campo correspondiente
+        function startRecognition(inputElement) {
+            recognition.start();
+
+            recognition.onstart = () => {
+                inputElement.nextElementSibling.textContent = "🎙️ Escuchando...";
+                inputElement.nextElementSibling.disabled = true;
+            };
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                inputElement.value = transcript; // Insertar texto reconocido en el campo
+                console.log("Texto reconocido:", transcript);
+            };
+
+            recognition.onerror = (event) => {
+                console.error("Error de reconocimiento de voz:", event.error);
+                alert("Hubo un problema al reconocer la voz. Inténtalo nuevamente.");
+            };
+
+            recognition.onend = () => {
+                inputElement.nextElementSibling.textContent = "Dictar";
+                inputElement.nextElementSibling.disabled = false;
+            };
+        }
+
+        // Asociar los botones de micrófono con los campos
+        document.getElementById("mic-nombre").addEventListener("click", () => {
+            startRecognition(document.getElementById("nombre"));
+        });
+        document.getElementById("mic-apellidos").addEventListener("click", () => {
+            startRecognition(document.getElementById("apellidos"));
+        });
+        document.getElementById("mic-correo").addEventListener("click", () => {
+            startRecognition(document.getElementById("correo"));
+        });
+        document.getElementById("mic-contraseña").addEventListener("click", () => {
+            startRecognition(document.getElementById("contraseña"));
+        });
+        document.getElementById("mic-confirmarContraseña").addEventListener("click", () => {
+            startRecognition(document.getElementById("confirmarContraseña"));
+        });
+        document.getElementById("mic-fechaNacimiento").addEventListener("click", () => {
+            startRecognition(document.getElementById("fechaNacimiento"));
+        });
+        document.getElementById("mic-sexo").addEventListener("click", () => {
+            startRecognition(document.getElementById("sexo"));
+        });
+        document.getElementById("mic-telefono").addEventListener("click", () => {
+            startRecognition(document.getElementById("telefono"));
+        });
+
+    } else {
+        alert("Lo sentimos, tu navegador no soporta reconocimiento de voz.");
     }
-
-    // Verificar que el teléfono tenga 9 dígitos y empiece con 9
-    const telefono = document.getElementById('telefono').value;
-    const telefonoPattern = /^9\d{8}$/;
-    if (!telefonoPattern.test(telefono)) {
-        alert("El número de teléfono debe comenzar con 9 y tener 9 dígitos.");
-        return false;
-    }
-
-    // Verificar que la fecha de nacimiento sea mayor o igual a 1/1/1924 y menor o igual a 1/1/2006
-    const fechaNacimiento = document.getElementById('fechaNacimiento').value;
-    const fechaMinima = new Date("1924-01-01");
-    const fechaMaxima = new Date("2006-01-01");
-    const fechaUsuario = new Date(fechaNacimiento);
-
-    if (fechaUsuario < fechaMinima || fechaUsuario > fechaMaxima) {
-        alert("La fecha de nacimiento debe ser posterior al 1 de enero de 1924 y anterior al 1 de enero de 2006.");
-        return false;
-    }
-
-    return true;  // Si todo está bien, se envía el formulario
-}
-
-// Cambiar el formato de la fecha a día/mes/año
-document.addEventListener("DOMContentLoaded", function() {
-    const fechaNacimiento = document.getElementById('fechaNacimiento');
-    
-    // Establecer el formato de la fecha de nacimiento a día/mes/año (en el input visualmente)
-    fechaNacimiento.addEventListener('input', function() {
-        const fecha = new Date(fechaNacimiento.value);
-        const dia = fecha.getDate().toString().padStart(2, '0');
-        const mes = (fecha.getMonth() + 1).toString().padStart(2, '0');
-        const año = fecha.getFullYear();
-        fechaNacimiento.setAttribute('placeholder', `${dia}/${mes}/${año}`);
-    });
 });
