@@ -34,65 +34,52 @@ form {
     flex-direction: column;
 }
 
-input, select, .social-login, .submit-btn {
+.input-container {
+    display: flex;
+    align-items: center;  /* Centrar el input y el botón */
+    justify-content: space-between; /* Espacio entre el input y el botón */
+}
+
+input, select {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 14px;
-    width: 100%;
+    width: 85%;  /* Ajustar para que el input ocupe el espacio restante */
 }
 
-input[type="date"] {
-    text-align: center;
-}
-
-.social-login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+button {
     padding: 10px;
-    margin-bottom: 15px;
     border-radius: 5px;
-    border: none;
+    background-color: rgb(124, 100, 66);
+    color: white;
     font-size: 16px;
     cursor: pointer;
-}
-.logo-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-.social-login.google {
-    background-color: #4285f4;
-    color: #fff;
+    border: none;
+    margin-left: 10px; /* Separar ligeramente el botón del input */
+    margin-top: -15px; /* Mover el botón hacia arriba */
 }
 
-.social-login.facebook {
-    background-color: #3b5998;
-    color: #fff;
-}
-
-.social-login:hover {
+button:hover {
     opacity: 0.9;
 }
 
 .submit-btn {
-    background-color: #4CAF50;
+    background-color: #7c6442;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    margin-top: -1px; /* Mover el botón hacia arriba */
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #7c6442;
 }
 
-
-
 p a {
-    color: #4CAF50;
+    color: #f34b18;
     text-decoration: none;
 }
 
