@@ -64,6 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Bandera para habilitar/deshabilitar síntesis de voz y verificar si el modo lector está activado en localStorage
     let voiceModeEnabled = localStorage.getItem("modoLector") === "activado";
+    const cambiarModoBtn = document.getElementById("toggleVoiceMode");
+
 
     // Función para activar el modo de voz
     function activarModoLector() {
@@ -108,9 +110,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Evento para el botón "Cambiar Modo"
-    document.querySelector('nav ul li:nth-child(2) a').addEventListener("click", (e) => {
+    /*document.querySelector('nav ul li:nth-child(2) a').addEventListener("click", (e) => {
         e.preventDefault(); // Evitar redirección, ya que es un enlace sin href
         toggleVoiceMode();
+    });*/
+    cambiarModoBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevenir comportamiento por defecto
+        toggleVoiceMode();
+        speakText(voiceModeEnabled ? "Modo de voz activado" : "Modo de voz desactivado");
     });
 
     // Detectar combinación de teclas F y J simultáneamente
