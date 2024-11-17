@@ -10,6 +10,7 @@ let botonEliminar = document.querySelectorAll(".eliminar_producto");
 const botonvaciar = document.querySelector("#vaciar_carrito");
 const contentTotal = document.querySelector("#carrito_total");
 
+
 function cargarProductosCarrito(){
     if(productosEnCarrito && productosEnCarrito.length > 0){
         contentcarritovacio.classList.add("disabled");
