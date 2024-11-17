@@ -1,6 +1,7 @@
 function triggerbtninisup(){ document.getElementById("metro").click();  }
 function triggerbtnclick(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
+function triggerbtntottus(){ document.getElementById("tottus").click();  }
 function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
 function triggerbtngoikogrill(){ document.getElementById("goikogrill").click();  }
 function triggerbtnmemosushi(){ document.getElementById("memosushi").click();  }
