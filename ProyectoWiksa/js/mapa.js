@@ -6,8 +6,8 @@ let infowindow;
 function initMap() {
     // Inicializa el mapa centrado en una ubicación por defecto
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 10,
+        center: { lat: -12.05848, lng: -77.05876 },
+        zoom: 12,
     });
 
     // Inicializa el geocoder
