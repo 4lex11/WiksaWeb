@@ -19,11 +19,11 @@ function CargarProductos(productosElejidos){
         const nuevoProducto = document.createElement("div");
         nuevoProducto.classList = "menu-plato";
         nuevoProducto.innerHTML = `
-            <img src="../../img/productos/${producto.imgUrl}" tabindex="7" id=${producto.name}>
+            <img src="../../img/productos/${producto.imgUrl}">
             <div class="menu-des">
-                <span>${producto.name}</span>
-                <h4>Precio: S/ ${producto.price}</h4>
-                <button class="producto-agregar" id="${producto.id}" tabindex="8">Agregar al carro</button>
+                <span tabindex="7" aria-label=${producto.name}>${producto.name}</span>
+                <h4 tabindex="8" aria-label=${producto.price}>Precio: S/ ${producto.price}</h4>
+                <button class="producto-agregar" id="${producto.id}" tabindex="9">Agregar al carro</button>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
