@@ -1,5 +1,5 @@
-function triggerbtninisup(){ document.getElementById("metro").click();  }
-function triggerbtnclick(){ document.getElementById("wong").click();  }
+function triggerbtnplazavea(){ document.getElementById("plazavea").click();  }
+function triggerbtnwong(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
 function triggerbtntottus(){ document.getElementById("tottus").click();  }
 function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
