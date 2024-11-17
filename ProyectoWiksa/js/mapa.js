@@ -92,46 +92,5 @@ function geocodeLatLng(latlng) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Verificar si SpeechRecognition está disponible
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    if (SpeechRecognition) {
-        const recognition = new SpeechRecognition();
-        recognition.lang = "es-ES"; // Idioma español
-        recognition.interimResults = false; // Solo resultados finales
-        recognition.continuous = false; // Detener tras reconocer un comando
-
-        const micButton = document.getElementById("mic-button");
-        const addressInput = document.getElementById("address-input");
-
-        // Manejar eventos de reconocimiento
-        recognition.onstart = () => {
-            micButton.textContent = "🎙️ Escuchando...";
-            micButton.disabled = true;
-        };
-
-        recognition.onresult = (event) => {
-            const transcript = event.results[0][0].transcript;
-            addressInput.value = transcript; // Insertar texto reconocido en el campo
-            console.log("Texto reconocido:", transcript);
-        };
-
-        recognition.onerror = (event) => {
-            console.error("Error de reconocimiento de voz:", event.error);
-            alert("Hubo un problema al reconocer la voz. Inténtalo nuevamente.");
-        };
-
-        recognition.onend = () => {
-            micButton.textContent = "Dictar";
-            micButton.disabled = false;
-        };
-
-        // Evento para iniciar el reconocimiento al hacer clic en el botón
-        micButton.addEventListener("click", () => {
-            recognition.start();
-        });
-    } else {
-        alert("Lo sentimos, tu navegador no soporta reconocimiento de voz.");
-    }
-});
+    
