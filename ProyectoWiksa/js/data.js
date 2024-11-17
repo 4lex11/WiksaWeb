@@ -141,7 +141,7 @@ const productos = [
       imgUrl:'pozole.jpg'
     },
     {
-      id:13,
+      id:15,
       name:'Kevin Bacon',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne directamente en la plancha y la mezclamos con trozos de bacon, cebolla crunchy y queso americano.',
@@ -152,7 +152,7 @@ const productos = [
       
     },
     {
-      id:14,
+      id:16,
       name:'Kevin Costner',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne, bacon bits, cebolla crunchy y queso americano con costilla desmenuzada y salsa barbacoa.',
@@ -162,7 +162,7 @@ const productos = [
       imgUrl:'kevincostner.png'
     },
     {
-      id:15,
+      id:17,
       name:'La Muslona',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Contramuslo de pollo jugoso y crujiente de 170g, queso americano, bacon, lechuga batavia y salsa 50 Burger Spread.',
@@ -172,7 +172,7 @@ const productos = [
       imgUrl:'LA MUSLONA.png'
     },
     {
-      id:16,
+      id:18,
       name:'Pigma',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Huevo frito, bacon, queso americano y salsa Mayo Goiko.',
@@ -182,7 +182,7 @@ const productos = [
       imgUrl:'PIGMA.png'
     },
     {
-      id:11,
+      id:19,
       name:'Combo Simple',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
@@ -190,6 +190,96 @@ const productos = [
       delivery_time: '50 min',
       delivery_price: 8.0,
       imgUrl:'Hamburgesa.jpg'
+    },
+    {
+      id:20,
+      name:'Zucchini y tomate grill',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 20,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'zucchiniytomategrill.jpg'
+    },
+    {
+      id:21,
+      name:'Patata Asada',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 5,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'papaasada.jpg'
+    },
+    {
+      id:22,
+      name:'Sandwich de Jamon',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'sandwichjamon.jpg'
+    },
+    {
+      id:23,
+      name:'Pollo al grill',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 13,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'polloalgrill.jpg'
+    },
+    {
+      id:24,
+      name:'Chuleton al grill',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 18,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'chuleton.jpg'
+    },
+    {
+      id:25,
+      name:'Pollo al romero',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'polloalromero.jpg'
+    },
+    {
+      id:26,
+      name:'Sandwich Mixto',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 10,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'sandwichmixto.jpg'
+    },
+    {
+      id:27,
+      name:'Cordero al grill',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 15,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'corderoalgrill.jpg'
+    },
+    {
+      id:28,
+      name:'Alitas Marinadas',
+      origin_name: {id:'goikogrill',  name:'Goiko Grill'},
+      description: 'Hamburgesa',
+      price: 12,
+      delivery_time: '50 min',
+      delivery_price: 8.0,
+      imgUrl:'alitasmarinadas.jpg'
     },
     {
       id:90,
