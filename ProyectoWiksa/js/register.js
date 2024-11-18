@@ -50,9 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("mic-confirmarContraseña").addEventListener("click", () => {
             startRecognition(document.getElementById("confirmarContraseña"));
         });
-        document.getElementById("mic-fechaNacimiento").addEventListener("click", () => {
-            startRecognition(document.getElementById("fechaNacimiento"));
-        });
         document.getElementById("mic-sexo").addEventListener("click", () => {
             startRecognition(document.getElementById("sexo"));
         });
