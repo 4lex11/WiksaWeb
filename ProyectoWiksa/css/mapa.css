@@ -2,7 +2,6 @@
     justify-self: center;
     align-self: center;
     background-color: #f4f4f4;
-    min-height: 100vh;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -10,7 +9,7 @@
     width: 100%;
     max-width: 815px;
     height: auto;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .containermap h2 {
