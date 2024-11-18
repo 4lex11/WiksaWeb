@@ -29,13 +29,60 @@ section p {
 
 /* Enlaces dentro del contenido */
 section a {
-    color: #422929c9
-
-    ; /* Verde oscuro */
+    color: #422929c9; /* Verde oscuro */
     text-decoration: none;
     font-weight: bold;
 }
 
 section a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Teléfonos (pantallas pequeñas) */
+@media (max-width: 576px) {
+    main {
+        padding: 15px; /* Reduce el padding */
+        max-width: 90%; /* Ocupa casi toda la pantalla */
+    }
+
+    section h2 {
+        font-size: 1.2em; /* Reduce el tamaño del encabezado */
+    }
+
+    section p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 577px) and (max-width: 992px) {
+    main {
+        padding: 20px; /* Padding intermedio */
+        max-width: 95%; /* Más amplio que en teléfonos */
+    }
+
+    section h2 {
+        font-size: 1.3em; /* Ajusta ligeramente el tamaño del encabezado */
+    }
+
+    section p {
+        font-size: 1rem; /* Tamaño estándar para tablets */
+    }
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 993px) {
+    main {
+        max-width: 800px; /* Mantiene el diseño original */
+    }
+
+    section h2 {
+        font-size: 1.4em; /* Tamaño original */
+    }
+
+    section p {
+        font-size: 1rem; /* Tamaño original */
+    }
 }
