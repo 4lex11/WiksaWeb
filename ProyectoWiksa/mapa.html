@@ -8,10 +8,25 @@
         <script src="js/main.js" defer></script>
         <script src="./js/mapa.js"></script>
         <link rel="stylesheet" href="./css/mapa.css">
+        <link rel="stylesheet" href="./css/index.css">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbZVYmRogz2Q_LOOAnpp-mkJ8fUqaQP7k&libraries=places&callback=initMap" async defer></script>
     </head>
     <body>
-        <div class="container">
+        <header class="header">
+            <div class="container">
+            <a class="logo" href="index.html">WIKSA</a>
+            <nav>
+                <ul>
+                    <li><a href="./mapa.html"><i class="bi bi-geo-alt-fill"></i> Ingresar Dirección</a></li>
+                    <li><a href="#" tabindex="0">Cambiar Modo</a></li>
+                    <li><a href="./login.html"><i class="bi bi-person-circle"></i> Iniciar sesión</a></li>        
+                    <li><a href="./carrito.html">Carrito <span id="numero_carrito">0</span></a></li>
+                </ul>
+            </nav>
+            </div> 
+        </header>
+    
+        <div class="containermap">
             <h2>Buscar Dirección</h2>
             <div class="search-container">
                 <input type="text" id="address-input" placeholder="Escribe una dirección">
