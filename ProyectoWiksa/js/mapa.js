@@ -6,8 +6,8 @@ let infowindow;
 function initMap() {
     // Inicializa el mapa centrado en una ubicación por defecto
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 10,
+        center: { lat: -12.05848, lng: -77.05876 },
+        zoom: 12,
     });
 
     // Inicializa el geocoder
@@ -76,6 +76,13 @@ function geocodeLatLng(latlng) {
             if (results[0]) {
                 infowindow.setContent(results[0].formatted_address);
                 infowindow.open(map, marker);
+
+                // Almacena la dirección en localStorage
+                localStorage.setItem("direccion_seleccionada", results[0].formatted_address);
+                localStorage.setItem("coordenadas", JSON.stringify({
+                    lat: latlng.lat(),
+                    lng: latlng.lng()
+                }));
             } else {
                 alert("No se encontraron resultados");
             }
@@ -85,8 +92,5 @@ function geocodeLatLng(latlng) {
     });
 }
 
-// Evento para el botón de "Seleccionar"
-document.getElementById("select-button").addEventListener("click", function () {
-    const position = marker.getPosition();
-    alert("Dirección seleccionada: " + position.lat() + ", " + position.lng());
-});
+
+    

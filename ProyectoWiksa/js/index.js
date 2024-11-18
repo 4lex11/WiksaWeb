@@ -1,6 +1,7 @@
-function triggerbtninisup(){ document.getElementById("metro").click();  }
-function triggerbtnclick(){ document.getElementById("wong").click();  }
+function triggerbtnplazavea(){ document.getElementById("plazavea").click();  }
+function triggerbtnwong(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
+function triggerbtntottus(){ document.getElementById("tottus").click();  }
 function triggerbtnspeedytacos(){ document.getElementById("speedytacos").click();  }
 function triggerbtngoikogrill(){ document.getElementById("goikogrill").click();  }
 function triggerbtnmemosushi(){ document.getElementById("memosushi").click();  }
@@ -21,9 +22,9 @@ function CargarProductos(productosElejidos){
         nuevoProducto.innerHTML = `
             <img src="../../img/productos/${producto.imgUrl}">
             <div class="menu-des">
-                <span>${producto.name}</span>
-                <h4>Precio: S/ ${producto.price}</h4>
-                <button class="producto-agregar" id="${producto.id}" >Agregar al carro</button>
+                <span aria-label=${producto.name}>${producto.name}</span>
+                <h4 aria-label=${producto.price}>Precio: S/ ${producto.price}</h4>
+                <a href="#" class="producto-agregar" id="${producto.id}" tabindex="7" aria-label=${producto.description}>Agregar al carro</a>
             </div>
         `;
         contenerdorProductos.append(nuevoProducto);
