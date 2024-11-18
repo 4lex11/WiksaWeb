@@ -1,3 +1,4 @@
+/* Contenedor principal */
 .registro-container {
     justify-self: center;
     background-color: #fff;
@@ -28,17 +29,18 @@ form {
 
 .input-container {
     display: flex;
-    align-items: center;  /* Centrar el input y el botón */
+    align-items: center; /* Centrar el input y el botón */
     justify-content: space-between; /* Espacio entre el input y el botón */
 }
 
-input, select {
+input,
+select {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 14px;
-    width: 85%;  /* Ajustar para que el input ocupe el espacio restante */
+    width: 85%; /* Ajustar para que el input ocupe el espacio restante */
 }
 
 button {
@@ -77,4 +79,83 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+/* Responsive design */
+
+/* Teléfonos (pantallas pequeñas) */
+@media (max-width: 576px) {
+    .registro-container {
+        padding: 20px; /* Reduce el padding */
+        max-width: 90%; /* Ocupa casi toda la pantalla */
+    }
+
+    h2 {
+        font-size: 24px; /* Reduce el tamaño del encabezado */
+    }
+
+    p {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    input,
+    select {
+        font-size: 12px; /* Ajusta el tamaño del input */
+        padding: 8px; /* Reduce el padding */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño del botón */
+        margin-top: 0; /* Elimina el desplazamiento hacia arriba */
+    }
+
+    .submit-btn {
+        font-size: 14px; /* Ajusta el tamaño del botón de envío */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .registro-container {
+        max-width: 70%; /* Más amplio que en teléfonos pero más estrecho que en escritorio */
+        padding: 25px; /* Padding intermedio */
+    }
+
+    h2 {
+        font-size: 28px; /* Ajusta ligeramente el tamaño del encabezado */
+    }
+
+    p {
+        font-size: 15px; /* Texto ligeramente más pequeño */
+    }
+
+    button,
+    .submit-btn {
+        font-size: 15px; /* Ajusta el tamaño de los botones */
+    }
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 993px) {
+    .registro-container {
+        max-width: 400px; /* Mantiene el tamaño original */
+    }
+
+    h2 {
+        font-size: 30px; /* Tamaño original */
+    }
+
+    p {
+        font-size: 16px; /* Tamaño original */
+    }
+
+    input,
+    select {
+        font-size: 14px; /* Tamaño original */
+    }
+
+    button,
+    .submit-btn {
+        font-size: 16px; /* Tamaño original */
+    }
 }
