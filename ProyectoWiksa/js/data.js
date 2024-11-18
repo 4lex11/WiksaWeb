@@ -842,9 +842,149 @@ const productos = [
       delivery_price: 2.5,
       imgUrl:'freidoradeaire.jpg'
     },
+    {
+      id:85,
+      name:'Pan Bimbo',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Pan Bimbo',
+      price: 15,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'PanBimbo.jpg'
+    },
+    {
+      id:86,
+      name:'Paneton 900g 6und',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Panetón GLORIA Bolsa 900g Caja 6un',
+      price: 158.4,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'paneton900g6und.jpg'
+    },
+    {
+      id:87,
+      name:'Cafe Altomayo 170g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Café Instantáneo ALTOMAYO Gourmet Frasco 170g',
+      price: 28.7,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'cafealtomayo.jpg'
+    },
+    {
+      id:88,
+      name:'Canasta Navideña',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Canasta Navideña Roja 2024 Caja 1un',
+      price: 34.7,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'canastanavidad.jpg'
+    },
+    {
+      id:89,
+      name:'Aceite de Oliva 500ml',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Aceite de Oliva EL OLIVAR Extra Virgen Botella 500ml',
+      price: 37.7,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'aceiteoliva500ml.jpg'
+    },
+    {
+      id:90,
+      name:'Blueberries 500g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Blueberries BELLS FRESCOS Bandeja 500g',
+      price: 14.4,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'blueberries500g.jpg'
+    },
+    {
+      id:91,
+      name:'Leche 390g 6unf',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Leche Reconstituida Entera GLORIA Lata 390g Paquete 6un',
+      price: 23.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'leche390g6und.jpg'
+    },
+    {
+      id:92,
+      name:'Mayonesa 850g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Mayonesa ALACENA Doypack 850g',
+      price: 19.6,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'mayonesa850g.jpg'
+    },
+    {
+      id:93,
+      name:'Arroz 5kg',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Arroz Extra COSTEÑO Bolsa 5Kg',
+      price: 27.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'arroz5kg.jpg'
+    },
+    {
+      id:94,
+      name:'Leche Condesada 393g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Leche Condensada NESTLÉ Lata 393g',
+      price: 6,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'lechecondensada393g.jpg'
+    },
+    {
+      id:95,
+      name:'Durazno 820g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Durazno en Mitades BELLS Lata 820g',
+      price: 8.09,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'durazno820g.jpg'
+    },
+    {
+      id:96,
+      name:'Aceite de Canola 170g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Durazno en Mitades BELLS Lata 820g',
+      price: 24.2,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'aceitecanola170g.jpg'
+    },
+    {
+      id:97,
+      name:'Filete Empanizado 500g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Filete Empanizado Alaska Pollock PESCATORE Bolsa 500g',
+      price: 17.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'fileteempanizado500g.jpg'
+    },
+    {
+      id:98,
+      name:'Piernas de Pollo 800g',
+      origin_name: {id:'plazavea',  name:'Plaza Vea'},
+      description: 'Piernitas de Pollo COPACOL Bolsa 800g',
+      price: 10.5,
+      delivery_time: '15 min',
+      delivery_price: 2.5,
+      imgUrl:'piernaspollo800g.jpg'
+    },
 
     {
-      id:61,
+      id:99,
       name:'Chocoton',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Chocoton',
@@ -854,7 +994,7 @@ const productos = [
       imgUrl:'Chocoton.jpg'
     },
     {
-      id:62,
+      id:100,
       name:'Guarana 3L',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Guarana 3L',
@@ -864,7 +1004,7 @@ const productos = [
       imgUrl:'Guarana.jpg'
     },
     {
-      id:63,
+      id:101,
       name:'Agua San Mateo Bidon 7L',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Agua Sin Gas Mineral San Mateo Bidón 7 L',
@@ -874,7 +1014,7 @@ const productos = [
       imgUrl:'Aguasanmateo7l.jpg'
     },
     {
-      id:64,
+      id:102,
       name:'Sixpack Coca Cola 300ml',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Sixpack Gaseosa Coca Cola Sin Azúcar Botella 300ml',
@@ -884,7 +1024,7 @@ const productos = [
       imgUrl:'SixpackCocaCola300ml.jpg'
     },
     {
-      id:65,
+      id:103,
       name:'Leche pasteurizada 900ml',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Leche Entera Pasteurizada Danlac Botella 900ml',
@@ -894,7 +1034,7 @@ const productos = [
       imgUrl:'Lechepasteurizada900ml.jpg'
     },
     {
-      id:66,
+      id:104,
       name:'Carne Nacional x kg',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Carne para Guiso Nacional x kg',
@@ -904,7 +1044,7 @@ const productos = [
       imgUrl:'Carnenacional.jpg'
     },
     {
-      id:67,
+      id:105,
       name:'Queso Edam 180g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Queso Edam en Tajadas Braedt 180g',
@@ -914,7 +1054,7 @@ const productos = [
       imgUrl:'Quesoedam180g.jpg'  
     },
     {
-      id:68,
+      id:106,
       name:'Pan Francés 5und',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Pan Francés Especial 5un',
@@ -924,7 +1064,7 @@ const productos = [
       imgUrl:'Panfrances.jpg'
     },
     {
-      id:69,
+      id:107,
       name:'Naranja para Jugo x kg',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Naranja para Jugo Chanchamayo x kg',
@@ -934,7 +1074,7 @@ const productos = [
       imgUrl:'Naranjajugoxkg.jpg'  
     },
     {
-      id:70,
+      id:108,
       name:'Sixpack Leche Laive 400g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Sixpack Leche Concentrada Sin Lactosa Laive Botella 400g',
@@ -944,7 +1084,7 @@ const productos = [
       imgUrl:'Sixpacklechelaive400g.jpg'
     },
     {
-      id:71,
+      id:109,
       name:'Papel Higienico Elite 8und',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Papel Higiénico Doble Hoja Elite Ultra 8un.',
@@ -954,7 +1094,7 @@ const productos = [
       imgUrl:'Papelhigienicoelite8und.jpg'  
     },
     {
-      id:72,
+      id:110,
       name:'Jabon Bolivar 380g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Jabón para Ropa Bolívar Floral 380g',
@@ -964,13 +1104,23 @@ const productos = [
       imgUrl:'Jabonbolivar380g.jpg'
     },
     {
-      id:19,
-      name:'Pan Bimbo',
-      origin_name: {id:'plazavea',  name:'Plaza Vea'},
-      description: 'Pan Bimbo',
-      price: 15,
-      delivery_time: '15 min',
+      id:111,
+      name:'Hamburgesas 4und',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Hamburguesas Parrilleras Wong Caja 4un',
+      price: 26.9,
+      delivery_time: '20 min',
       delivery_price: 2.5,
-      imgUrl:'PanBimbo.jpg'
+      imgUrl:'haburgesas6und.jpg'
+    },
+    {
+      id:112,
+      name:'Queso en Tajadas 500g',
+      origin_name: { id:'wong', name:'Wong' },
+      description: 'Queso Edam Gloria en Tajadas 500g',
+      price: 26,
+      delivery_time: '20 min',
+      delivery_price: 2.5,
+      imgUrl:'quesotajadas500g.jpg'
     },
 ];
