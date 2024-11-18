@@ -7,8 +7,9 @@
     padding: 5px 0;
 }
 
-main{margin: 20px 0;}
-
+main {
+    margin: 20px 0;
+}
 
 .cabezeratxt h1 {
     font-size: 2.5em;
@@ -17,13 +18,11 @@ main{margin: 20px 0;}
     margin-bottom: 20px;
 }
 
-
 p {
     margin-bottom: 15px;
     font-size: 16px;
     color: #666;
 }
-
 
 .faq-container {
     max-width: 800px;
@@ -64,4 +63,77 @@ p {
     background-color: #f8f9fa; /* Fondo gris claro para la respuesta */
     border-left: 3px solid #633e07; /* Borde verde moderno para destacar la respuesta */
     border-radius: 0 0 8px 8px;
+}
+
+/* Responsive design */
+
+/* Teléfonos (pantallas pequeñas) */
+@media (max-width: 576px) {
+    .cabezeratxt h1 {
+        font-size: 1.8em; /* Reduce el tamaño del encabezado */
+    }
+
+    p {
+        font-size: 14px; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .faq-container {
+        padding: 10px; /* Reduce el padding del contenedor */
+        max-width: 95%; /* Aumenta la ocupación de la pantalla */
+    }
+
+    .faq-question {
+        font-size: 1em; /* Ajusta el tamaño del texto de la pregunta */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .faq-answer {
+        font-size: 0.85em; /* Reduce el tamaño de la respuesta */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .cabezeratxt h1 {
+        font-size: 2.2em; /* Ajusta el encabezado */
+    }
+
+    p {
+        font-size: 15px; /* Texto ligeramente más pequeño */
+    }
+
+    .faq-container {
+        max-width: 85%; /* Ajusta el ancho del contenedor */
+    }
+
+    .faq-question {
+        font-size: 1.05em; /* Ajusta el tamaño del texto de la pregunta */
+    }
+
+    .faq-answer {
+        font-size: 0.9em; /* Ajusta el tamaño de la respuesta */
+    }
+}
+
+/* Escritorio (pantallas grandes) */
+@media (min-width: 993px) {
+    .faq-container {
+        max-width: 800px; /* Tamaño original */
+    }
+
+    .cabezeratxt h1 {
+        font-size: 2.5em;    /* Mantiene el tamaño original del encabezado */
+    }
+
+    p {
+        font-size: 16px; /* Texto original */
+    }
+
+    .faq-question {
+        font-size: 1.1em; /* Tamaño original */
+    }
+
+    .faq-answer {
+        font-size: 0.95em; /* Tamaño original */
+    }
 }
