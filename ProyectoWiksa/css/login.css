@@ -106,7 +106,7 @@ button:hover {
 }
 
 
-.google-button,
+/*.google-button,
 .facebook-button {
     width: 100%;
     padding: 10px;
@@ -139,6 +139,7 @@ button:hover {
 .facebook-button:hover {
     background-color: #2d4373;
 }
+    */
 
 .icon {
     width: 20px;
