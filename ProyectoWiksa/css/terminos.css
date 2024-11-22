@@ -7,14 +7,26 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
-
+.cabezeratxt {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #422929c9;
+    color: #fff;
+    padding: 5px 0;
+}
+.cabezeratxt h1 {
+    font-size: 2.5em;
+    color: #eff1eb;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 /* Secciones */
 section {
     margin-bottom: 20px;
 }
 
 section h2 {
-    color: #422929c9; /* Verde oscuro */
+    color: #422929c9; /*  */
     margin-bottom: 10px;
     font-size: 1.4em;
     border-bottom: 2px solid #ddd;
@@ -29,7 +41,7 @@ section p {
 
 /* Enlaces dentro del contenido */
 section a {
-    color: #422929c9; /* Verde oscuro */
+    color: #422929c9; /* 
     text-decoration: none;
     font-weight: bold;
 }
@@ -85,4 +97,5 @@ section a:hover {
     section p {
         font-size: 1rem; /* Tamaño original */
     }
+}
 }
