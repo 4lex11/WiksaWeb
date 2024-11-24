@@ -406,10 +406,12 @@ footer a{color: var(--color-blanco);}
 
 .contenedor_vendedores li{
     margin: 0.7rem 0;
-    border: 1px solid #000;
+    border: 1px solid gray;
+    border-radius: 20px;
 }
 
 .contenedor_vendedores li a{
+    color: #000;
     display: flex;
     gap: 1rem;
 }
