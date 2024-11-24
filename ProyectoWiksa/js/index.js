@@ -19,14 +19,13 @@ function CargarProductos(productosElejidos) {
       nuevoProducto.classList = "menu-plato";
       nuevoProducto.innerHTML = `
           <img src="../../img/productos/${producto.imgUrl}"
-               tabindex="0" 
                alt="${producto.name} - ${producto.description} - Precio: S/ ${producto.price} - Tiempo de entrega: ${producto.delivery_time}" 
                class="producto-imagen">
-          <div class="menu-des">
+          <div class="menu-des" tabindex="0" >
               <span aria-label="${producto.name}">${producto.name}</span>
               <h4 aria-label="Precio: S/ ${producto.price}">Precio: S/ ${producto.price}</h4>
-              <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro">Agregar al carro</a>
           </div>
+          <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro">Agregar al carro</a>
       `;
       contenerdorProductos.append(nuevoProducto);
   });
