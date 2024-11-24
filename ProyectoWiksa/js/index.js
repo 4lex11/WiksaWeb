@@ -13,8 +13,6 @@ const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
-//const modal = document.getElementById("myModal");
-//const closeModal = document.getElementById("closeModal");
 
 function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
@@ -53,29 +51,7 @@ function configurarAccesibilidadImagenes() {
       });
   });
 }
-/*
-function openModal(productId) {
-  const producto = productos.find(prod => prod.id === productId);
-  if (producto) {
-      document.getElementById("modalProductName").innerText = producto.name;
-      document.getElementById("modalProductImage").src = producto.imgUrl;
-      document.getElementById("modalProductPrice").innerText = `Precio: ${producto.price}`;
-      document.getElementById("modalDeliveryTime").innerText = `Tiempo de entrega: ${producto.delivery_time}`;
-      document.getElementById("modalDeliveryPrice").innerText = `Precio de entrega: ${producto.delivery_price}`;
-      modal.style.display = "block";
-  }
-}
 
-closeModal.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target === modal) {
-      modal.style.display = "none";
-  }
-}
-*/
 CargarProductos(productos);
 
 linksCategorias.forEach(boton => {
@@ -98,7 +74,6 @@ function actualizarBotonesAgregar() {
 
 let productosEnCarrito;
 let productosEnCarritoLS = localStorage.getItem("productos_en_carro");
-//const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos_en_carro"));
 
 if(productosEnCarritoLS){
   productosEnCarrito = JSON.parse(productosEnCarritoLS) ;
