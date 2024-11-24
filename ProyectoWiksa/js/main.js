@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Seleccionar todos los elementos de entrada del formulario de registro
-    const elements = document.querySelectorAll("a, button, input, select");  // Incluye input y select
+    const elements = document.querySelectorAll("a, button, input, select, [tabindex], [role='button'], [role='link']");  // Incluye input y select
 
     // Bandera para habilitar/deshabilitar síntesis de voz y verificar si el modo lector está activado en localStorage
     let voiceModeEnabled = localStorage.getItem("modoLector") === "activado";
