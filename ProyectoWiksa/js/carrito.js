@@ -78,6 +78,5 @@ function actualizarTotal(){
     const totalcalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.price * producto.cantidad), 0).toFixed(2);
     contentTotal.innerHTML = `S/ ${totalcalculado}`;
     const montoTotal = (parseFloat(totalcalculado) + 5.00).toFixed(2);
-    console.log(montoTotal);
     contentMontoTotal.innerHTML = `Monto Total: S/ ${montoTotal}`;
 }
