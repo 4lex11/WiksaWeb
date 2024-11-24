@@ -86,7 +86,7 @@ botonpedir.addEventListener("click",comprarCarrito)
 function comprarCarrito(){
     productosEnCarrito.length = 0;
     localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
-    contentcarritovacio.classList.remove("disabled");
+    contentcarritovacio.classList.add("disabled");
     contentcarritolleno.classList.add("disabled");
     contentcarritototal.classList.add("disabled");
     contentcarritoinfopago.classList.add("disabled");
