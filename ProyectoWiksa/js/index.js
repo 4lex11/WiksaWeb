@@ -1,5 +1,3 @@
-
-
 function triggerbtnplazavea(){ document.getElementById("plazavea").click();  }
 function triggerbtnwong(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
@@ -13,6 +11,16 @@ const contenerdorProductos = document.getElementById("productos-container");
 const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
+
+function configurarAccesibilidadElementos(elementos) {
+  elementos.forEach((element) => {
+      element.addEventListener("focus", () => {
+          // Leer texto asociado al elemento
+          const text = element.placeholder || element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
+          speakText(text);
+      });
+  });
+}
 
 function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
@@ -35,6 +43,7 @@ function CargarProductos(productosElejidos) {
   });
   actualizarBotonesAgregar();
   configurarAccesibilidadImagenes();
+  configurarAccesibilidadElementos(nuevoProducto);
 }
 // Nueva función para configurar eventos de accesibilidad en imágenes
 function configurarAccesibilidadImagenes() {
