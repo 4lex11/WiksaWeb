@@ -153,4 +153,5 @@ function guardardireccion() {
     }
 }
 
+const botonmenu = document.querySelector(".nav_btnmenu");
 
