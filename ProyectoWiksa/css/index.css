@@ -587,3 +587,11 @@ nav ul{
 .profile .info strong {
     color: #222;
 }
+
+/* Estilos para centrar la imagen */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
