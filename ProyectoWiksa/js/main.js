@@ -157,6 +157,8 @@ if (direccionubiLS) {
     direccionubi = "";
 }
 
+const inputDireccion = document.querySelector("#direccion_delivery");
+
 function guardardireccion() {
     // Obtener el valor ingresado por el usuario
     direccionubi = document.getElementById("address-input").value;
@@ -168,6 +170,13 @@ function guardardireccion() {
         document.getElementById("direccion_delivery").value = direccionubi;
 
         console.log("Dirección guardada:", direccionubi);
+        inputDireccion.setAttribute("aria-label", `Dirección de entrega: ${direccionubi}`);
+
+        inputDireccion.addEventListener("focus", () => {
+            speakText(`Dirección de entrega: ${direccionubi}`);
+        });
+
+
     } else {
         console.log("No se ingresó una dirección válida.");
         alert("Por favor, ingresa una dirección válida.");
@@ -175,6 +184,3 @@ function guardardireccion() {
 }
 
 const botonmenu = document.querySelector(".nav_btnmenu");
-
-
-
