@@ -222,8 +222,10 @@ footer a{color: var(--color-blanco);}
 }
 
 .menu-plato{
-    height: 18rem;
+    height: 16.5rem;
     width: 12.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-plato img{
@@ -237,10 +239,14 @@ footer a{color: var(--color-blanco);}
     background: none;
     color: var(--color-rojoprimario);
     cursor: pointer;
-    width: 90%;
-    align-self: center;
-    padding: 5px;
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
     border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;   
 }
 
 .producto-agregar:hover{
