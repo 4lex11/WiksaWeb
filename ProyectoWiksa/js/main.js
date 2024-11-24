@@ -147,17 +147,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let direccionubi;
 let direccionubiLS = localStorage.getItem("direccion_delivery");
+const inputDireccion = document.getElementById("direccion_delivery");
 
 if (direccionubiLS) {
     // Si existe una dirección guardada, parsearla y asignarla
     direccionubi = JSON.parse(direccionubiLS);
     document.getElementById("direccion_delivery").value = direccionubi;
+    inputDireccion.setAttribute("placeholder",``);
+    inputDireccion.setAttribute("aria-label", `Dirección de entrega: ${direccionubi}`);
 } else {
     // Si no hay dirección guardada, inicializar como vacío
     direccionubi = "";
+    inputDireccion.setAttribute("placeholder",`Ingresa tu dirección de entrega`);
 }
-
-const inputDireccion = document.querySelector("#direccion_delivery");
 
 function guardardireccion() {
     // Obtener el valor ingresado por el usuario
@@ -168,18 +170,13 @@ function guardardireccion() {
         localStorage.setItem("direccion_delivery", JSON.stringify(direccionubi));
         // Mostrar la dirección en el campo de delivery
         document.getElementById("direccion_delivery").value = direccionubi;
-
         console.log("Dirección guardada:", direccionubi);
-        inputDireccion.setAttribute("aria-label", `Dirección de entrega: ${direccionubi}`);
-
-        inputDireccion.addEventListener("focus", () => {
+        /*inputDireccion.addEventListener("focus", () => {
             speakText(`Dirección de entrega: ${direccionubi}`);
-        });
-
-
+        });*/
     } else {
         console.log("No se ingresó una dirección válida.");
-        alert("Por favor, ingresa una dirección válida.");
+        alert("Por favor, ingresa una dirección válida.");  
     }
 }
 
