@@ -2,6 +2,7 @@ let productosEnCarrito = localStorage.getItem("productos_en_carro");
 productosEnCarrito = JSON.parse(productosEnCarrito);
 
 const contentcarritovacio = document.querySelector("#carrito_vacio");
+const contentpedidorealizado = document.querySelector("#compra_realizada");
 const contentcarritolleno = document.querySelector("#carrito_productos");
 const contentcarritototal = document.querySelector("#total_pagar");
 const contentcarritoinfopago = document.querySelector("#info_pago");
@@ -86,6 +87,8 @@ botonpedir.addEventListener("click",comprarCarrito)
 function comprarCarrito(){
     productosEnCarrito.length = 0;
     localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+    contentpedidorealizado.classList.remove("disabled");
+    contentcarritovacio.classList.add("disabled");
     contentcarritovacio.classList.add("disabled");
     contentcarritolleno.classList.add("disabled");
     contentcarritototal.classList.add("disabled");
