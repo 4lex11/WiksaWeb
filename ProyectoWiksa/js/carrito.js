@@ -8,6 +8,7 @@ const contentcarritoinfopago = document.querySelector("#info_pago");
 
 let botonEliminar = document.querySelectorAll(".eliminar_producto");
 const botonvaciar = document.querySelector("#vaciar_carrito");
+const botonpedir = document.querySelector("#realizar_pedido");
 const contentTotal = document.querySelector("#carrito_total");
 const contentMontoTotal = document.querySelector("#carrito_montototal");
 
@@ -79,4 +80,14 @@ function actualizarTotal(){
     contentTotal.innerHTML = `S/ ${totalcalculado}`;
     const montoTotal = (parseFloat(totalcalculado) + 5.00).toFixed(2);
     contentMontoTotal.innerHTML = `Monto Total: S/ ${montoTotal}`;
+}
+
+botonpedir.addEventListener("click",comprarCarrito)
+function comprarCarrito(){
+    productosEnCarrito.length = 0;
+    localStorage.setItem("productos_en_carro", JSON.stringify(productosEnCarrito));
+    contentcarritovacio.classList.remove("disabled");
+    contentcarritolleno.classList.add("disabled");
+    contentcarritototal.classList.add("disabled");
+    contentcarritoinfopago.classList.add("disabled");
 }
