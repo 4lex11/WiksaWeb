@@ -12,9 +12,6 @@ const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
 
-if (typeof speakText !== "function") {
-  window.speakText = (text) => console.log(`Simulación de speakText: ${text}`);
-}
 
 /*function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
