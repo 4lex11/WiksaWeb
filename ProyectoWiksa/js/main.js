@@ -1,3 +1,15 @@
+function speakText(text) {
+    const voiceModeEnabled = localStorage.getItem("modoLector") === "activado";
+    if (voiceModeEnabled && 'speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        window.speechSynthesis.speak(utterance);
+    } else if (!voiceModeEnabled) {
+        console.log("Modo de voz está desactivado.");
+    }
+}
+
+window.speakText = speakText;
+
 document.addEventListener("DOMContentLoaded", () => {
     // Seleccionar todos los elementos de entrada del formulario de registro
     const elements = document.querySelectorAll("a, button, input, select, [tabindex], [role='button'], [role='link']");  // Incluye input y select
@@ -30,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Función para hablar el texto
+    /*// Función para hablar el texto
     function speakText(text) {
         if (voiceModeEnabled && 'speechSynthesis' in window) {
             const utterance = new SpeechSynthesisUtterance(text);
@@ -38,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (!voiceModeEnabled) {
             console.log("Modo de voz está desactivado.");
         }
-    }
+    }*/
 
     // Agregar evento de foco a cada elemento para hablar el texto al ser enfocado
     elements.forEach((element) => {
@@ -78,6 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
         activarModoLector();
     }
 });
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     // Verificar si SpeechRecognition está disponible
@@ -152,5 +173,7 @@ function guardardireccion() {
         alert("Por favor, ingresa una dirección válida.");
     }
 }
+
+
 
 
