@@ -12,6 +12,16 @@ const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
 
+function configurarAccesibilidadElementos(elementos) {
+  elementos.forEach((element) => {
+      element.addEventListener("focus", () => {
+          // Leer texto asociado al elemento
+          const name = element.getAttribute("aria-label") || element.alt || "Elemento sin nombre";
+          speakText(name);
+      });
+  });
+}
+
 function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
   productosElejidos.forEach(producto => {
@@ -29,6 +39,7 @@ function CargarProductos(productosElejidos) {
       `;
       contenerdorProductos.append(nuevoProducto);
   });
+  //configurarAccesibilidadElementos(nuevoProducto);
   actualizarBotonesAgregar();
   configurarAccesibilidadImagenes();
 }
@@ -48,6 +59,7 @@ function configurarAccesibilidadImagenes() {
       });
   });
 }
+
 
 CargarProductos(productos);
 
