@@ -35,7 +35,7 @@ function CargarProductos(productosElejidos) {
               <span aria-label="${producto.name}">${producto.name}</span>
               <h4 aria-label="Precio: S/ ${producto.price}">Precio: S/ ${producto.price}</h4>
           </div>
-          <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro">Agregar al carro</a>
+          <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro"> Agregar al carro</a>
       `;
       contenerdorProductos.append(nuevoProducto);
   });
