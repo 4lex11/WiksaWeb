@@ -84,10 +84,6 @@ li:last-child {
     border-bottom: none;
 }
 
-li span {
-    color: #555;
-}
-
 .carrito_item button {
     background-color: transparent;
     border: none;
