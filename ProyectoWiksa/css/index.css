@@ -33,6 +33,25 @@ header a:hover{ background: var(--color-blanco); color: var(--color-rojoprimario
     justify-content: space-between;
 }
 
+.nav_btnmenu{
+    display: none;
+    align-self: center;
+    background: none;
+    color: var(--color-blanco);
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav_btnmenu:hover{background: var(--color-blanco); color: var(--color-rojoprimario); border-radius: 5px;}
+
+.bi-list::before {
+    font-size: 30px;
+}
+
 .logo{
     font-weight: bold;
     padding: 1rem;
@@ -53,7 +72,6 @@ header ul a{
     cursor: pointer;
     border: none;
 }
-
 
 
 .cart_count{
@@ -403,33 +421,51 @@ footer a{color: var(--color-blanco);}
     flex-direction: column;
 }
 
+@media (max-width: 900px){
+    .nav_label {
+        display: none;
+    }
+}
 
-/* Estilos para pantallas grandes (escritorio) */
-body {
-    font-size: 16px;
-  }
-  
   /* Pantallas medianas (tabletas) */
-  @media (max-width: 768px) {
-    .header .container {
-      flex-direction: column;
-      align-items: center;
-    }
+@media (max-width: 768px) {
+
+header {height:auto;}
+
+.container {flex-direction: column;}
+
+.nav_label{display:inline;}
+
+.nav_btnmenu{display: flex; justify-content: end;}
+
+.principal_nav{
+    width: 100%;
+    display: flex;
+}
+
+nav{
+    flex-direction: column;
+    align-items: center;
+}
   
-    .buscardor input {
-      width: 100%; /* Expande el campo de búsqueda al 100% */
-    }
+nav ul{
+    flex-direction: column; /* Coloca el menú en columna */
+    align-items: center;
+}
   
-    nav ul {
-      flex-direction: column; /* Coloca el menú en columna */
-      align-items: center;
-    }
-  
-    .seleccion_categorias a {
-      width: 100%; /* Botones de categoría en ancho completo */
-      text-align: center;
-    }
-  }
+.seleccion_categorias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccion_categorias a{
+    width: 100%; 
+    border-radius: 35px;}
+
+}
   
   /* Pantallas pequeñas (móviles) */
   @media (max-width: 480px) {
