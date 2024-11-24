@@ -1,3 +1,5 @@
+
+
 function triggerbtnplazavea(){ document.getElementById("plazavea").click();  }
 function triggerbtnwong(){ document.getElementById("wong").click();  }
 function triggerbtnmetro(){ document.getElementById("metro").click();  }
@@ -14,24 +16,43 @@ const numeroCarrito = document.querySelector("#numero_carrito")
 //const modal = document.getElementById("myModal");
 //const closeModal = document.getElementById("closeModal");
 
-function CargarProductos(productosElejidos){
-  contenerdorProductos.innerHTML="";
+function CargarProductos(productosElejidos) {
+  contenerdorProductos.innerHTML = "";
   productosElejidos.forEach(producto => {
-        const nuevoProducto = document.createElement("div");
-        nuevoProducto.classList = "menu-plato";
-        nuevoProducto.innerHTML = `
-            <img src="../../img/productos/${producto.imgUrl}">
-            <div class="menu-des">
-                <span aria-label=${producto.name}>${producto.name}</span>
-                <h4 aria-label=${producto.price}>Precio: S/ ${producto.price}</h4>
-                <a href="#" class="producto-agregar" id="${producto.id}" tabindex="7" aria-label=${producto.description}>Agregar al carro</a>
-            </div>
-        `;
-        contenerdorProductos.append(nuevoProducto);
-    })
-    actualizarBotonesAgregar();
-    console.log(botonesAgregar);
-};
+      const nuevoProducto = document.createElement("div");
+      nuevoProducto.classList = "menu-plato";
+      nuevoProducto.innerHTML = `
+          <img src="../../img/productos/${producto.imgUrl}" 
+               alt="${producto.name}" 
+               tabindex="0" 
+               aria-label="${producto.name} - ${producto.description} - Precio: S/ ${producto.price} - Tiempo de entrega: ${producto.delivery_time}" 
+               class="producto-imagen">
+          <div class="menu-des">
+              <span aria-label="${producto.name}">${producto.name}</span>
+              <h4 aria-label="Precio: S/ ${producto.price}">Precio: S/ ${producto.price}</h4>
+              <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro">Agregar al carro</a>
+          </div>
+      `;
+      contenerdorProductos.append(nuevoProducto);
+  });
+  actualizarBotonesAgregar();
+  configurarAccesibilidadImagenes();
+}
+// Nueva función para configurar eventos de accesibilidad en imágenes
+function configurarAccesibilidadImagenes() {
+  const imagenes = document.querySelectorAll(".producto-imagen");
+  imagenes.forEach(imagen => {
+      imagen.addEventListener("focus", () => {
+          const descripcion = imagen.getAttribute("aria-label");
+          speakText(descripcion);
+      });
+
+      imagen.addEventListener("click", () => {
+          const descripcion = imagen.getAttribute("aria-label");
+          speakText(descripcion);
+      });
+  });
+}
 /*
 function openModal(productId) {
   const producto = productos.find(prod => prod.id === productId);
@@ -64,10 +85,14 @@ linksCategorias.forEach(boton => {
   })
 })
 
-function actualizarBotonesAgregar(){
+function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll(".producto-agregar");
   botonesAgregar.forEach(boton => {
-    boton.addEventListener("click", agregarAlCarrito);
+      boton.addEventListener("click", agregarAlCarrito);
+      boton.addEventListener("focus", () => {
+          const descripcion = boton.getAttribute("aria-label");
+          speakText(descripcion);
+      });
   });
 }
 
