@@ -482,3 +482,66 @@ body {
         background-color: rgba(245, 208, 137, 0.938);
     }
 }
+
+/* Estilo para la sección de programadores */
+.programadores-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.programadores-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Contenedor de perfiles */
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilo para cada perfil */
+.profile {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para las imágenes */
+.profile img {
+    width: 100%;
+    border: 2px solid black; /* Bordes negros delgados */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la información */
+.profile .info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+    font-family: "Inter", sans-serif;
+}
+
+.profile .info strong {
+    color: #222;
+}
