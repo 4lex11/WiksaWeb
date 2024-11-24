@@ -12,26 +12,15 @@ const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
 
-function configurarAccesibilidadElementos(elementos) {
-  elementos.forEach((element) => {
-      element.addEventListener("focus", () => {
-          // Leer texto asociado al elemento
-          const text = element.placeholder || element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
-          speakText(text);
-      });
-  });
-}
-
 function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
   productosElejidos.forEach(producto => {
       const nuevoProducto = document.createElement("div");
       nuevoProducto.classList = "menu-plato";
       nuevoProducto.innerHTML = `
-          <img src="../../img/productos/${producto.imgUrl}" 
-               alt="${producto.name}" 
+          <img src="../../img/productos/${producto.imgUrl}"
                tabindex="0" 
-               aria-label="${producto.name} - ${producto.description} - Precio: S/ ${producto.price} - Tiempo de entrega: ${producto.delivery_time}" 
+               alt="${producto.name} - ${producto.description} - Precio: S/ ${producto.price} - Tiempo de entrega: ${producto.delivery_time}" 
                class="producto-imagen">
           <div class="menu-des">
               <span aria-label="${producto.name}">${producto.name}</span>
@@ -43,8 +32,8 @@ function CargarProductos(productosElejidos) {
   });
   actualizarBotonesAgregar();
   configurarAccesibilidadImagenes();
-  configurarAccesibilidadElementos(nuevoProducto);
 }
+
 // Nueva función para configurar eventos de accesibilidad en imágenes
 function configurarAccesibilidadImagenes() {
   const imagenes = document.querySelectorAll(".producto-imagen");
