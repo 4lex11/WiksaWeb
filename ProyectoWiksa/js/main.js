@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.forEach((element) => {
         element.addEventListener("focus", () => {
             // Si el campo tiene un placeholder, lo lee, si no, lee el texto de la etiqueta
-            const text = element.placeholder || element.innerText || element.getAttribute("aria-label") || "Elemento sin nombre";
+            const text = element.placeholder || element.innerText || element.getAttribute("alt") ||element.getAttribute("aria-label") || "Elemento sin nombre";
             speakText(text);  // Leemos el texto asociado al campo
         });
     });
