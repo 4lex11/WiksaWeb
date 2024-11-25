@@ -46,10 +46,16 @@ header a:hover{ background: var(--color-blanco); color: var(--color-rojoprimario
     padding: 8px;
 }
 
-.nav_btnmenu:hover{background: var(--color-blanco); color: var(--color-rojoprimario); border-radius: 5px;}
+.menu_burg{display: none;}
+.menu_label{display: none; cursor: pointer;}
+
+.menu_label:hover{
+    border: 1px solid var(--color-blanco);
+    border-radius: 5px;}
 
 .bi-list::before {
-    font-size: 30px;
+    font-size: 40px;
+    color: var(--color-blanco);
 }
 
 .logo{
@@ -431,16 +437,18 @@ footer a{color: var(--color-blanco);}
 
   /* Pantallas medianas (tabletas) */
 @media (max-width: 768px) {
-
-header {height:auto;}
-
 .container {flex-direction: column;}
+
+.menu_label{display: flex; position: absolute; top: 0.5rem; right: 0.5rem;}
 
 .nav_label{display:inline;}
 
 .nav_btnmenu{display: flex; justify-content: end;}
 
 .principal_nav{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     display: flex;
 }
@@ -467,6 +475,12 @@ nav ul{
     width: 100%; 
     border-radius: 35px;}
 
+}
+
+@media (max-width: 610px) {
+    #productos-container{
+        justify-content: center;
+    }
 }
   
   /* Pantallas pequeñas (móviles) */
