@@ -46,12 +46,6 @@ section a {
     font-weight: bold;
 }
 
-section a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-
 /* Teléfonos (pantallas pequeñas) */
 @media (max-width: 576px) {
     main {
