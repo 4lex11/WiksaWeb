@@ -21,8 +21,8 @@ function CargarProductos(productosElejidos) {
       nuevoProducto.innerHTML = `
           <img src="../../img/productos/${producto.imgUrl}"
                tabindex="0" 
-               alt="${descripcionCompleta}" 
-               aria-label="${descripcionCompleta}" 
+               alt="${descripcionCompleta} precio: ${producto.price} soles" 
+               aria-label="${descripcionCompleta} precio: ${producto.price} soles" 
                class="producto-imagen">
           <div class="menu-des">
               <span aria-label="${producto.name}">${producto.name}</span>
