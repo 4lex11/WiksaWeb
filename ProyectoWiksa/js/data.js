@@ -4,8 +4,8 @@ const productos = [
       name:'Crunchy Taco Supreme',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Taco de tortilla de maíz, proteína sazonada a elección, sour cream, lechuga, tomate y queso cheddar.',
-      price:8.5,
-      delivery_time: '10 min',
+      price: 8.5,
+      delivery_time: '10 minutos',
       delivery_price: 7.5,
       imgUrl:'crunchytacosupreme.jpg'
     },
@@ -14,8 +14,8 @@ const productos = [
       name:'Burrito Supreme',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Burrito, proteína sazonada a elección, sour cream, lechuga, tomate, cebolla y queso cheddar.',
-      price:15.0,
-      delivery_time: '15 min',
+      price:15.0 ,
+      delivery_time: '15 minutos',
       delivery_price: 8.5,
       imgUrl:'burritosupreme.jpg'
     },
@@ -24,8 +24,8 @@ const productos = [
       name:'Quesadilla',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Quesadilla de tortilla de harina, proteína y mezcla de quesos a la parrilla.',
-      price:12.5,
-      delivery_time: '50 min',
+      price: 12.5,
+      delivery_time: '50 minutos',
       delivery_price: 5.0,
       imgUrl:'quesadilla.jpg'
     },
@@ -34,9 +34,11 @@ const productos = [
       name:'Nachos',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Nachos fritos sazonados, proteína a elección, salsa de Queso Nacho, sour cream y tomate.',
-      price:20.0,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 20.0
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'nachos.jpg'
       
     },
@@ -46,7 +48,7 @@ const productos = [
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Pizza',
       price: 30,
-      delivery_time: '50 min',
+      delivery_time: '50 minutos',
       delivery_price: 8.0,
       imgUrl:'Pizza.jpg'
     },
@@ -55,9 +57,11 @@ const productos = [
       name:'Curri',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 22.5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 22.5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'Curri.jpg'
     },
     {
@@ -65,9 +69,11 @@ const productos = [
       name:'Tacos al pastor',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 22.5,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 22.5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'tacosalpastor.jpg'
     },
     {
@@ -75,9 +81,11 @@ const productos = [
       name:'Enchiladas',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 22.5,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 22.5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'enchiladas.jpg'
     },
     {
@@ -85,9 +93,11 @@ const productos = [
       name:'Quesadillas Especial',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'quesadillas.jpg'
     },
     {
@@ -95,9 +105,11 @@ const productos = [
       name:'Carnita',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 8,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 8
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'carnita.jpg'
     },
     {
@@ -105,9 +117,11 @@ const productos = [
       name:'Molletes',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'molletes.jpg'
     },
     {
@@ -115,9 +129,11 @@ const productos = [
       name:'Tacos de Cabeza',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 12,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 12
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'tacosdecabeza.jpg'
     },
     {
@@ -125,9 +141,11 @@ const productos = [
       name:'Mole',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 16,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 16
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'elmole.jpg'
     },
     {
@@ -135,9 +153,11 @@ const productos = [
       name:'Pozole',
       origin_name: {id:'speedytacos',  name:'Speedy Tacos'},
       description: 'Curri',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 7.5,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 7.5
+,
       imgUrl:'pozole.jpg'
     },
     {
@@ -145,9 +165,11 @@ const productos = [
       name:'Kevin Bacon',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne directamente en la plancha y la mezclamos con trozos de bacon, cebolla crunchy y queso americano.',
-      price:13.5,
-      delivery_time: '25 min',
-      delivery_price: 8.0,
+      price: 13.5
+,
+      delivery_time: '25 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'kevinbacon.png'
       
     },
@@ -156,9 +178,11 @@ const productos = [
       name:'Kevin Costner',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Carne, bacon bits, cebolla crunchy y queso americano con costilla desmenuzada y salsa barbacoa.',
-      price:10.9,
-      delivery_time: '25 min',
-      delivery_price: 8.0,
+      price: 10.9
+,
+      delivery_time: '25 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'kevincostner.png'
     },
     {
@@ -166,9 +190,11 @@ const productos = [
       name:'La Muslona',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Contramuslo de pollo jugoso y crujiente de 170g, queso americano, bacon, lechuga batavia y salsa 50 Burger Spread.',
-      price:15.5,
-      delivery_time: '25 min',
-      delivery_price: 8.0,
+      price: 15.5
+,
+      delivery_time: '25 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'LA MUSLONA.png'
     },
     {
@@ -176,9 +202,11 @@ const productos = [
       name:'Pigma',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Huevo frito, bacon, queso americano y salsa Mayo Goiko.',
-      price:11.0,
-      delivery_time: '25 min',
-      delivery_price: 8.0,
+      price: 11.0
+,
+      delivery_time: '25 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'PIGMA.png'
     },
     {
@@ -186,9 +214,11 @@ const productos = [
       name:'Combo Simple',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 14.5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 14.5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'Hamburgesa.jpg'
     },
     {
@@ -196,9 +226,11 @@ const productos = [
       name:'Zucchini y tomate grill',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 20,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 20
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'zucchiniytomategrill.jpg'
     },
     {
@@ -206,9 +238,11 @@ const productos = [
       name:'Patata Asada',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'papaasada.jpg'
     },
     {
@@ -216,9 +250,11 @@ const productos = [
       name:'Sandwich de Jamon',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'sandwichjamon.jpg'
     },
     {
@@ -226,9 +262,11 @@ const productos = [
       name:'Pollo al grill',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 13,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 13
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'polloalgrill.jpg'
     },
     {
@@ -236,9 +274,11 @@ const productos = [
       name:'Chuleton al grill',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 18,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 18
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'chuleton.jpg'
     },
     {
@@ -246,9 +286,11 @@ const productos = [
       name:'Pollo al romero',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'polloalromero.jpg'
     },
     {
@@ -256,9 +298,11 @@ const productos = [
       name:'Sandwich Mixto',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'sandwichmixto.jpg'
     },
     {
@@ -266,9 +310,11 @@ const productos = [
       name:'Cordero al grill',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'corderoalgrill.jpg'
     },
     {
@@ -276,9 +322,11 @@ const productos = [
       name:'Alitas Marinadas',
       origin_name: {id:'goikogrill',  name:'Goiko Grill'},
       description: 'Hamburgesa',
-      price: 12,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 12
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'alitasmarinadas.jpg'
     },
     {
@@ -286,19 +334,23 @@ const productos = [
       name:'Tori Teriyaki',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Filete de muslo de pollo trozado en salsa teriyaki.',
-      price:27.0,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 27.0
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'TORI TERIYAKI.webp'
     },
     {
       id:30,
       name:'Acevichado',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
-      description: 'Relleno de langostinos empanizados y palta, cubierto con láminas de atún, bañado en salsa acevichado, coronado con cebollita china y togarashi (picante japonés).',
-      price:19.9,
-      delivery_time: '30 min',
-      delivery_price: 8.0,
+      description: 'Relleno de langostinos empanizados y palta, cubierto con láminutosas de atún, bañado en salsa acevichado, coronado con cebollita china y togarashi (picante japonés).',
+      price: 19.9
+,
+      delivery_time: '30 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'ACEVICHADO.jpg'
     },
     {
@@ -306,9 +358,11 @@ const productos = [
       name:'Parrillero',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Relleno de langostinos empanizados, queso crema y espárragos, cubierto de atún y flameado con salsa de orégano y ajos.',
-      price:19.9,
-      delivery_time: '30 min',
-      delivery_price: 8.0,
+      price: 19.9
+,
+      delivery_time: '30 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'PARRILLERO.webp'
     },
     {
@@ -316,9 +370,11 @@ const productos = [
       name:'Uzugoro',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Finos cortes de salmón, atún o bonito y pescado blanco, bañados en salsa cítrica de shoyu, aceite de ajonjolí y rocoto picado, salpicado con tobiko (ovas de pez volador).',
-      price:32.5,
-      delivery_time: '45 min',
-      delivery_price: 8.0,
+      price: 32.5
+,
+      delivery_time: '45 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'UZUGORO.webp'
     },
     {
@@ -326,9 +382,11 @@ const productos = [
       name:'Makis',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 20,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 20
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'Sushi.jpg'
     },
     {
@@ -336,9 +394,11 @@ const productos = [
       name:'Jingisukan',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'jingisukan.jpg'
     },
     {
@@ -346,9 +406,11 @@ const productos = [
       name:'Tonkatsu',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 13,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 13
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'tonkatsu.jpg'
     },
     {
@@ -356,9 +418,11 @@ const productos = [
       name:'Ramen',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'ramen.jpg'
     },
     {
@@ -366,9 +430,11 @@ const productos = [
       name:'Okonomiyaki',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 8,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 8
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'okonomiyaki.jpg'
     },
     {
@@ -376,9 +442,11 @@ const productos = [
       name:'Sanuki udon',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 12,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 12
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'sanukiudon.jpg'
     },
     {
@@ -386,9 +454,11 @@ const productos = [
       name:'Yakiniku',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'yakiniku.jpg'
     },
     {
@@ -396,9 +466,11 @@ const productos = [
       name:'Takoyaki',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 7,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 7
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'takoyaki.jpg'
     },
     {
@@ -406,9 +478,11 @@ const productos = [
       name:'Yakitori',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'yakitori.jpg'
     },
     {
@@ -416,9 +490,11 @@ const productos = [
       name:'Castella',
       origin_name: {id:'memosushi',  name:'Memo Sushi'},
       description: 'Sushi',
-      price: 8,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 8
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'castella.jpg'
     },
     {
@@ -426,9 +502,11 @@ const productos = [
       name:'Lomo Saltado',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Salteado de carne de res, cebolla, tomate, papas fritas y arroz.',
-      price:23.0,
-      delivery_time: '35 min',
-      delivery_price: 8.0,
+      price: 23.0
+,
+      delivery_time: '35 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'lomo.jpg'
     },
     {
@@ -436,9 +514,11 @@ const productos = [
       name:'Ceviche',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Pescado crudo y mariscos marinados en jugo de cítricos, principalmente jugo de limón.',
-      price:19.9,
-      delivery_time: '35 min',
-      delivery_price: 8.0,
+      price: 19.9
+,
+      delivery_time: '35 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'ceviche.jpg'
     },
     {
@@ -446,9 +526,11 @@ const productos = [
       name:'Arroz con Mariscos',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Cremoso y elegante arroz con mariscos con sabor a mar, langostinos, calamar, conchas de abanico.',
-      price:26.5,
-      delivery_time: '35 min',
-      delivery_price: 8.0,
+      price: 26.5
+,
+      delivery_time: '35 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'marisco.webp'
     },
     {
@@ -456,9 +538,11 @@ const productos = [
       name:'Causa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Mezcla de papa prensaba, ají amarillo y limón',
-      price:26.5,
-      delivery_time: '35 min',
-      delivery_price: 8.0,
+      price: 26.5
+,
+      delivery_time: '35 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'causa.jpg'
     },
     {
@@ -466,9 +550,11 @@ const productos = [
       name:'Lomo Saltado',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Lomo Saltado de pollo',
-      price: 50,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 50
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'LomoSaltado.jpg'
     },
 
@@ -477,9 +563,11 @@ const productos = [
       name:'Salchipapa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Salchipapa',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'Salchipapa.jpg'
     },
     {
@@ -487,9 +575,11 @@ const productos = [
       name:'Milanesa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 30,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 30
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'Milanesa.jpg'
     },
     {
@@ -497,9 +587,11 @@ const productos = [
       name:'Anticucho',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'anticucho.jpg'
     },
     {
@@ -507,9 +599,11 @@ const productos = [
       name:'Carapulcra',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'carapulcra.jpg'
     },
     {
@@ -517,9 +611,11 @@ const productos = [
       name:'Arroz Chaufa',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 12,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 12
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'chaufa.jpg'
     },
     {
@@ -527,9 +623,11 @@ const productos = [
       name:'Arroz con Pollo',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 10,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 10
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'arrozconpollo.jpg'
     },
     {
@@ -537,9 +635,11 @@ const productos = [
       name:'Caldo de Gallina',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 8,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 8
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'caldodegallina.jpg'
     },
     {
@@ -547,9 +647,11 @@ const productos = [
       name:'Picarones',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 5,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 5
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'picarones.jpg'
     },
     {
@@ -557,9 +659,11 @@ const productos = [
       name:'Seco de Carne',
       origin_name: {id:'perugourmet',  name:'Peru Gourmet'},
       description: 'Milanesa',
-      price: 15,
-      delivery_time: '50 min',
-      delivery_price: 8.0,
+      price: 15
+,
+      delivery_time: '50 minutos',
+      delivery_price: 8.0
+,
       imgUrl:'secodecarne.jpg'
     },
     {
@@ -567,9 +671,11 @@ const productos = [
       name:'Colgate',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Colgate',
-      price: 7,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 7
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'Colgate.jpg'
     },
     {
@@ -577,9 +683,11 @@ const productos = [
       name:'Sixpack Panetón 800g',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Sixpack Panetón Metro Tradicional Bolsa 800g',
-      price: 71.4,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 71.4
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'sixpackpanetonmetro.jpg'
     },
     {
@@ -587,9 +695,11 @@ const productos = [
       name:'Pollo Rostizado Combo',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Pollo Rostizado + Papas Fritas + Gaseosa Inca Kola Sin Azúcar 1.5L',
-      price: 33.9,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 33.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'pollorostizadocombo.jpg'
     },
     {
@@ -597,9 +707,11 @@ const productos = [
       name:'Aji de Casa metro',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Ají de La Casa Metro 250g',
-      price: 9.1,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 9.1
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'ajidecasa.jpg'
     },
     {
@@ -607,9 +719,11 @@ const productos = [
       name:'Árbol de Navidad',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Árbol de Navidad Krea Nevado 571 Ramas 180Cm',
-      price: 279.99,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 279.99
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'arbolnavidad.jpg'
     },
     {
@@ -617,9 +731,11 @@ const productos = [
       name:'Torta Helada',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Torta Helada de Fresa 20 Porciones',
-      price: 54.9,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 54.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'tortahelada.jpg'
     },
     {
@@ -627,9 +743,11 @@ const productos = [
       name:'Petit Pan 25und',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Petit Pan Metro 25und',
-      price: 7.9,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 7.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'petipan.jpg'
     },
     {
@@ -637,9 +755,11 @@ const productos = [
       name:'Pan Baguette',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Petit Pan Metro 25und',
-      price: 1.9,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 1.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'baguette.jpg'
     },
     {
@@ -647,9 +767,11 @@ const productos = [
       name:'Fresa 1kg',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Fresa Entera Congelada El Frutero 1kg',
-      price: 15.99,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 15.99
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'fresa1kg.jpg'
     },
     {
@@ -657,9 +779,11 @@ const productos = [
       name:'Piña 1kg',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Piña Golden en Trozos Congelada El Frutero 1kg',
-      price: 16.99,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 16.99
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'pinia1kg.jpg'
     },
     {
@@ -667,9 +791,11 @@ const productos = [
       name:'Arandano 1kg',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Mix de Arándano, Fresa y Frambuesa El Frutero 1kg',
-      price: 20.99,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 20.99
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'arandano1kg.jpg'
     },
     {
@@ -677,9 +803,11 @@ const productos = [
       name:'Papa Green 400g',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Papa Ondulada Green Food 400g',
-      price: 6.5,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 6.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'papagreen400g.jpg'
     },
     {
@@ -687,9 +815,11 @@ const productos = [
       name:'Helado 900ml',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Helado de Crema Peziduri Tricolor 900ml',
-      price: 11.9,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 11.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'helado900ml.jpg'
     },
     {
@@ -697,9 +827,11 @@ const productos = [
       name:'Helado 2.2L',
       origin_name: { id:'metro', name:'Metro' },
       description: 'Helado Peziduri Tricolor 2.2L',
-      price: 21.99,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 21.99
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'helado22l.jpg'
     },
     {
@@ -707,9 +839,11 @@ const productos = [
       name:'Ajinomen de Pollo',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Ajinome de Pollo',
-      price: 5,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'Ajinomen.jpg'
     },
     {
@@ -717,9 +851,11 @@ const productos = [
       name:'Leche Gloria 1L',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Leche Gloria 1L',
-      price: 12,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 12
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'LecheGloria.jpg'
     },
     {
@@ -727,9 +863,11 @@ const productos = [
       name:'Cafe Instantaneo 200g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Café Instantáneo Granulado Tottus 200g',
-      price: 21.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 21.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'cafeinstantaneo200g.jpg'
     },
     {
@@ -737,9 +875,11 @@ const productos = [
       name:'Azucar Rubia 5kg',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Azúcar Rubia Tottus 5 kg',
-      price: 19.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 19.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'azucarrubia5kg.jpg'
     },
     {
@@ -747,9 +887,11 @@ const productos = [
       name:'Cereal de Chocolate 500g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Bolitas de cereales sabor chocolate Tottus 500gr',
-      price: 12.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 12.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'cerealdechocolate500g.jpg'
     },
     {
@@ -757,9 +899,11 @@ const productos = [
       name:'Turron Doña Pepa 500g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Turrón Doña Pepa Tottus 500 g',
-      price: 11.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 11.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'turrondonapepa.jpg'
     },
     {
@@ -767,9 +911,11 @@ const productos = [
       name:'Aceite 900ml',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Aceite de Girasol Tottus 900 mL',
-      price: 7.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 7.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'aceite900ml.jpg'
     },
     {
@@ -777,9 +923,11 @@ const productos = [
       name:'Aceituna verde 270g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'ACEITUNA VERDE DESHUESADA PREMIUM TOTTUSX270G',
-      price: 12.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 12.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'acitunaverde270g.jpg'
     },
     {
@@ -787,9 +935,11 @@ const productos = [
       name:'Caramelos de Limón 250g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Caramelos Sabor Limón Tottus 250 g',
-      price: 5.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 5.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'carameloslimon250g.jpg'
     },
     {
@@ -797,9 +947,11 @@ const productos = [
       name:'Gomitas 100g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Gomitas gusanos Tottus 100 g',
-      price: 3.9,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 3.9
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'gomitas100g.jpeg'
     },
     {
@@ -807,9 +959,11 @@ const productos = [
       name:'Aceituna Negra 510g',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Aceituna negra entera de cóctel',
-      price: 11.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 11.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'aceitunasnegra.jpg'
     },
     {
@@ -817,9 +971,11 @@ const productos = [
       name:'Huevos 30und',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'HUEVOS PARDOS TOTTUS X 30 UND',
-      price: 11.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 11.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'huevos30und.jpg'
     },    
     {
@@ -827,9 +983,11 @@ const productos = [
       name:'Cafetera Roja',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'CAFETERA PRIMA LATTE ROJA',
-      price: 899,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 899
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'cafeteraroja.jpg'
     },
     {
@@ -837,9 +995,11 @@ const productos = [
       name:'Freidora de Aire',
       origin_name: {id:'tottus',  name:'Tottus'},
       description: 'Freidora de aire manual Oster 4L con revestimiento DiamondForce',
-      price: 299,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 299
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'freidoradeaire.jpg'
     },
     {
@@ -847,9 +1007,11 @@ const productos = [
       name:'Pan Bimbo',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Pan Bimbo',
-      price: 15,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 15
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'PanBimbo.jpg'
     },
     {
@@ -857,9 +1019,11 @@ const productos = [
       name:'Paneton 900g 6und',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Panetón GLORIA Bolsa 900g Caja 6un',
-      price: 158.4,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 158.4
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'paneton900g6und.jpg'
     },
     {
@@ -867,9 +1031,11 @@ const productos = [
       name:'Cafe Altomayo 170g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Café Instantáneo ALTOMAYO Gourmet Frasco 170g',
-      price: 28.7,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 28.7
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'cafealtomayo.jpg'
     },
     {
@@ -877,9 +1043,11 @@ const productos = [
       name:'Canasta Navideña',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Canasta Navideña Roja 2024 Caja 1un',
-      price: 34.7,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 34.7
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'canastanavidad.jpg'
     },
     {
@@ -887,9 +1055,11 @@ const productos = [
       name:'Aceite de Oliva 500ml',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Aceite de Oliva EL OLIVAR Extra Virgen Botella 500ml',
-      price: 37.7,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 37.7
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'aceiteoliva500ml.jpg'
     },
     {
@@ -897,9 +1067,11 @@ const productos = [
       name:'Blueberries 500g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Blueberries BELLS FRESCOS Bandeja 500g',
-      price: 14.4,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 14.4
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'blueberries500g.jpg'
     },
     {
@@ -907,9 +1079,11 @@ const productos = [
       name:'Leche 390g 6unf',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Leche Reconstituida Entera GLORIA Lata 390g Paquete 6un',
-      price: 23.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 23.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'leche390g6und.jpg'
     },
     {
@@ -917,9 +1091,11 @@ const productos = [
       name:'Mayonesa 850g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Mayonesa ALACENA Doypack 850g',
-      price: 19.6,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 19.6
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'mayonesa850g.jpg'
     },
     {
@@ -927,9 +1103,11 @@ const productos = [
       name:'Arroz 5kg',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Arroz Extra COSTEÑO Bolsa 5Kg',
-      price: 27.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 27.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'arroz5kg.jpg'
     },
     {
@@ -937,9 +1115,11 @@ const productos = [
       name:'Leche Condesada 393g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Leche Condensada NESTLÉ Lata 393g',
-      price: 6,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 6
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'lechecondensada393g.jpg'
     },
     {
@@ -947,9 +1127,11 @@ const productos = [
       name:'Durazno 820g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Durazno en Mitades BELLS Lata 820g',
-      price: 8.09,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 8.09
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'durazno820g.jpg'
     },
     {
@@ -957,9 +1139,11 @@ const productos = [
       name:'Aceite de Canola 170g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Durazno en Mitades BELLS Lata 820g',
-      price: 24.2,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 24.2
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'aceitecanola170g.jpg'
     },
     {
@@ -967,9 +1151,11 @@ const productos = [
       name:'Filete Empanizado 500g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Filete Empanizado Alaska Pollock PESCATORE Bolsa 500g',
-      price: 17.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 17.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'fileteempanizado500g.jpg'
     },
     {
@@ -977,9 +1163,11 @@ const productos = [
       name:'Piernas de Pollo 800g',
       origin_name: {id:'plazavea',  name:'Plaza Vea'},
       description: 'Piernitas de Pollo COPACOL Bolsa 800g',
-      price: 10.5,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 10.5
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'piernaspollo800g.jpg'
     },
 
@@ -988,9 +1176,11 @@ const productos = [
       name:'Chocoton',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Chocoton',
-      price: 25,
-      delivery_time: '15 min',
-      delivery_price: 2.0,
+      price: 25
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.0
+,
       imgUrl:'Chocoton.jpg'
     },
     {
@@ -998,19 +1188,23 @@ const productos = [
       name:'Guarana 3L',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Guarana 3L',
-      price: 10.0,
-      delivery_time: '15 min',
-      delivery_price: 2.5,
+      price: 10.0
+,
+      delivery_time: '15 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Guarana.jpg'
     },
     {
       id:101,
       name:'Agua San Mateo Bidon 7L',
       origin_name: { id:'wong', name:'Wong' },
-      description: 'Agua Sin Gas Mineral San Mateo Bidón 7 L',
-      price: 8.9,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      description: 'Agua Sin Gas minutoseral San Mateo Bidón 7 L',
+      price: 8.9
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Aguasanmateo7l.jpg'
     },
     {
@@ -1018,9 +1212,11 @@ const productos = [
       name:'Sixpack Coca Cola 300ml',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Sixpack Gaseosa Coca Cola Sin Azúcar Botella 300ml',
-      price: 10.0,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 10.0
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'SixpackCocaCola300ml.jpg'
     },
     {
@@ -1028,9 +1224,11 @@ const productos = [
       name:'Leche pasteurizada 900ml',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Leche Entera Pasteurizada Danlac Botella 900ml',
-      price: 7.6,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 7.6
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Lechepasteurizada900ml.jpg'
     },
     {
@@ -1038,9 +1236,11 @@ const productos = [
       name:'Carne Nacional x kg',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Carne para Guiso Nacional x kg',
-      price: 33.9,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 33.9
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Carnenacional.jpg'
     },
     {
@@ -1048,9 +1248,11 @@ const productos = [
       name:'Queso Edam 180g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Queso Edam en Tajadas Braedt 180g',
-      price: 11.9,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 11.9
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Quesoedam180g.jpg'  
     },
     {
@@ -1058,9 +1260,11 @@ const productos = [
       name:'Pan Francés 5und',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Pan Francés Especial 5un',
-      price: 2.8,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 2.8
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Panfrances.jpg'
     },
     {
@@ -1068,9 +1272,11 @@ const productos = [
       name:'Naranja para Jugo x kg',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Naranja para Jugo Chanchamayo x kg',
-      price: 2.99,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 2.99
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Naranjajugoxkg.jpg'  
     },
     {
@@ -1078,9 +1284,11 @@ const productos = [
       name:'Sixpack Leche Laive 400g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Sixpack Leche Concentrada Sin Lactosa Laive Botella 400g',
-      price: 24.95,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 24.95
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Sixpacklechelaive400g.jpg'
     },
     {
@@ -1088,9 +1296,11 @@ const productos = [
       name:'Papel Higienico Elite 8und',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Papel Higiénico Doble Hoja Elite Ultra 8un.',
-      price: 27.0,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 27.0
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Papelhigienicoelite8und.jpg'  
     },
     {
@@ -1098,9 +1308,11 @@ const productos = [
       name:'Jabon Bolivar 380g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Jabón para Ropa Bolívar Floral 380g',
-      price: 5.7,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 5.7
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'Jabonbolivar380g.jpg'
     },
     {
@@ -1108,9 +1320,11 @@ const productos = [
       name:'Hamburgesas 4und',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Hamburguesas Parrilleras Wong Caja 4un',
-      price: 26.9,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 26.9
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'haburgesas6und.jpg'
     },
     {
@@ -1118,9 +1332,11 @@ const productos = [
       name:'Queso en Tajadas 500g',
       origin_name: { id:'wong', name:'Wong' },
       description: 'Queso Edam Gloria en Tajadas 500g',
-      price: 26,
-      delivery_time: '20 min',
-      delivery_price: 2.5,
+      price: 26
+,
+      delivery_time: '20 minutos',
+      delivery_price: 2.5
+,
       imgUrl:'quesotajadas500g.jpg'
     },
 ];
