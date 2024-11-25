@@ -12,29 +12,6 @@ const linksCategorias = document.querySelectorAll(".boton-categoria");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numeroCarrito = document.querySelector("#numero_carrito")
 
-
-/*function CargarProductos(productosElejidos) {
-  contenerdorProductos.innerHTML = "";
-  productosElejidos.forEach(producto => {
-      const nuevoProducto = document.createElement("div");
-      nuevoProducto.classList = "menu-plato";
-      nuevoProducto.innerHTML = `
-          <img src="../../img/productos/${producto.imgUrl}"
-               tabindex="0" 
-               alt="${producto.name} - ${producto.description} - Precio: S/ ${producto.price} - Tiempo de entrega: ${producto.delivery_time}" 
-               class="producto-imagen">
-          <div class="menu-des">
-              <span aria-label="${producto.name}">${producto.name}</span>
-              <h4 aria-label="Precio: S/ ${producto.price}">Precio: S/ ${producto.price}</h4>
-              <a href="#" class="producto-agregar" id="${producto.id}" tabindex="0" aria-label="Agregar ${producto.name} al carro">Agregar al carro</a>
-          </div>
-      `;
-      contenerdorProductos.append(nuevoProducto);
-  });
-  actualizarBotonesAgregar();
-  configurarAccesibilidadImagenes();
-}*/
-
 function CargarProductos(productosElejidos) {
   contenerdorProductos.innerHTML = "";
   productosElejidos.forEach(producto => {
@@ -59,22 +36,6 @@ function CargarProductos(productosElejidos) {
   actualizarBotonesAgregar();
   configurarAccesibilidadImagenes();
 }
-
-// Nueva función para configurar eventos de accesibilidad en imágenes
-/*function configurarAccesibilidadImagenes() {
-  const imagenes = document.querySelectorAll(".producto-imagen");
-  imagenes.forEach(imagen => {
-      imagen.addEventListener("focus", () => {
-          const descripcion = imagen.getAttribute("aria-label");
-          speakText(descripcion);
-      });
-
-      imagen.addEventListener("click", () => {
-          const descripcion = imagen.getAttribute("aria-label");
-          speakText(descripcion);
-      });
-  });
-*/
 
 function configurarAccesibilidadImagenes() {
   const imagenes = document.querySelectorAll(".producto-imagen");
@@ -107,17 +68,6 @@ linksCategorias.forEach(boton => {
     CargarProductos(productosFilter);
   })
 })
-
-/*function actualizarBotonesAgregar() {
-  botonesAgregar = document.querySelectorAll(".producto-agregar");
-  botonesAgregar.forEach(boton => {
-      boton.addEventListener("click", agregarAlCarrito);
-      boton.addEventListener("focus", () => {
-          const descripcion = boton.getAttribute("aria-label");
-          speakText(descripcion);
-      });
-  });
-}*/
 
 function actualizarBotonesAgregar() {
   botonesAgregar = document.querySelectorAll(".producto-agregar");
