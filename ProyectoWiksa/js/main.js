@@ -42,16 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    /*// Función para hablar el texto
-    function speakText(text) {
-        if (voiceModeEnabled && 'speechSynthesis' in window) {
-            const utterance = new SpeechSynthesisUtterance(text);
-            window.speechSynthesis.speak(utterance);
-        } else if (!voiceModeEnabled) {
-            console.log("Modo de voz está desactivado.");
-        }
-    }*/
-
     // Agregar evento de foco a cada elemento para hablar el texto al ser enfocado
     elements.forEach((element) => {
         element.addEventListener("focus", () => {
@@ -90,14 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
         activarModoLector();
     }
 });
-
-
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
